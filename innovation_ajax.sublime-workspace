@@ -1,0 +1,426 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"background-",
+				"background-size:   (property)"
+			],
+			[
+				"mi",
+				"mixins.scss"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"array_",
+				"array_reverse"
+			],
+			[
+				"array_m",
+				"array_merge"
+			],
+			[
+				"fade",
+				"fadeOut	jQuery"
+			],
+			[
+				"remove_a",
+				"remove_action"
+			],
+			[
+				"border-",
+				"border-width"
+			],
+			[
+				"border-co",
+				"border-left-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 120.0,
+		"selected_items":
+		[
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"todo",
+				"Show TODOs: Project and open files"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"package",
+				"Package Control: Enable Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"disa",
+				"SublimeCodeIntel: Disable Plugin"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 570.0
+	},
+	"console":
+	{
+		"height": 287.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/innovation/sass/wordpress/_primary.scss",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/innovation/inc/template-tags.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/innovation/footer.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/innovation/header.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/innovation/sass/wordpress/_navigation.scss",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/innovation/sass/wordpress/_page.scss",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/innovation/js/mashthekeyboard.js",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/innovation/content-single.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/innovation/content-page.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/innovation/content-none.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/innovation/comments.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/innovation/archive.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/innovation/404.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/innovation/functions.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/innovation/sass/style.scss",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/innovation/sass/bootstrap.scss",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/sass/wordpress/_page.scss",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/sass/wordpress/_navigation.scss",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/sass/wordpress/_header.scss",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/inc/template-tags.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/sass/wordpress/_primary.scss",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/js/mashthekeyboard.js",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/footer.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/header.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/sass/core/helpers.scss",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/functions.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/inc/extras.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/js/waypoints.min.js",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/js/global.min.js",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/content.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/sass/core/font.scss",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/js/global.js",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/sass/style.scss",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/sass/mixins.scss",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/sass/wordpress/_secondary.scss",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/js/jquery.min.js",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/sass/wordpress/_footer.scss",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/config.rb",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/sass/core.scss",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/sass/core/variables.scss",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/sass/core/mixins.scss",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard/sass/core/normalize.scss",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard-volume2/templates/comments.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard-volume2/assets/css/app.css",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/templates/content-single.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/templates/content.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/lib/wc-hooks.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/lib/scripts.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/index.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/searchform.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/templates/searchform.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/loop/result-count.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/content-product.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/templates/head.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/functions.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/base.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/templates/sidebar-loggedout.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/assets/css/bootstrap.css",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/assets/js/main.js",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/assets/js/plugins.js",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/order/order-details.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/checkout/cart-errors.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/cart/cart-empty.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/cart/cart.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/myaccount/form-change-password.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/myaccount/form-edit-address.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/myaccount/form-login.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/myaccount/my-account.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/assets/css/font.css",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/assets/css/app.css",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/lib/custom.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/templates/header-top-navbar.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/cart/totals.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/shop/messages.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/myaccount/my-address.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/myaccount/my-orders.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/myaccount/my-downloads.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/single-product.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/content-single-product.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/single-product/product-image.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/templates/sidebar-loggedin.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/shop/errors.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/assets/css/bootstrap-responsive.css",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/archive-product.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/loop/no-products-found.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/page.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/archive.php",
+		"/Users/bill_riley/Sites/wriley/tapped_one/css/main.css",
+		"/Users/bill_riley/Sites/wriley/tapped_one/js/vendor/iscroll.min.js",
+		"/Users/bill_riley/Sites/wriley/tapped_one/index.html",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/assets/js/vendor/meny.min.js",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/loop/add-to-cart.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/single-product/add-to-cart/external.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/single-product/add-to-cart/grouped.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/single-product/add-to-cart/variable.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/single-product/add-to-cart/simple.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/single-product/tabs/tabs.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/single-product/review.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/single-product/title.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/single-product/product-thumbnails.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/single-product/price.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/lib/config.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/single-product/related.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/single-product/sale-flash.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce-hooks.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/lib/woocommerce-hooks.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/woocommerce/single-product/meta.php",
+		"/Users/bill_riley/Sites/ldfc/wp-content/themes/ldfcv2/single.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard-volume2/assets/js/plugins.js",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard-volume2/templates/content-single.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard-volume2/templates/entry-categories.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard-volume2/base.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard-volume2/lib/scripts.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard-volume2/assets/css/bootstrap-responsive.css",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard-volume2/templates/head.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard-volume2/assets/js/main.js",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard-volume2/templates/content.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard-volume2/lib/config.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard-volume2/lib/init.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard-volume2/lib/utils.php",
+		"/Users/bill_riley/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard-volume2/templates/entry-meta.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard-volume2/templates/footer.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard-volume2/templates/comment.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard-volume2/templates/content-page.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard-volume2/templates/page-header.php",
+		"/Users/bill_riley/Sites/MTK/wp-content/themes/mashthekeyboard-volume2/assets/css/bootstrap.css"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"nav",
+			"Large",
+			"jquery-2.0.3.min.map",
+			"NO COMMENTS",
+			":after",
+			"ldfc.local",
+			"20px",
+			"two-th",
+			"table",
+			"cart totals",
+			"total",
+			"woocommerce_in_cart_product_thumbnail",
+			"class=\"order-info\"",
+			"woocommerce-error,",
+			"fade-me-out",
+			"show_messages",
+			"my-acc",
+			"center",
+			".my-account",
+			"one-third",
+			"text-shadow",
+			"edit",
+			"login",
+			"text-shado",
+			"woocommerce_before_customer_login_form",
+			"after_my_account",
+			"before_my_account",
+			"woocommerce_before_my_account",
+			"class=\"woocommerce",
+			"class=\"woocommerce\"",
+			"out of",
+			"Add Review",
+			"Your comment is awaiting approval",
+			"Your comment is awaiting approval\n\n",
+			":before",
+			"woocommerce_single_product_image_thumbnail_html",
+			"attachment-shop_thumbnail",
+			"Add a review",
+			"15deg",
+			"navbar-fixed-bottom",
+			"pagination",
+			"Read More",
+			"btn",
+			"woocommerce_template_loop_add_to_cart",
+			"shop_thumbnail",
+			"single_product_small_thumbnail_size",
+			"single_product_large_thumbnail_size",
+			"woocommerce_before_single_product",
+			"trans",
+			"woocommerce_after_single_product_summary",
+			"woocommerce_single_product_summary",
+			"title",
+			"product_title",
+			"woocommerce_after_single_product_summary",
+			"header",
+			"Private",
+			"text-align: center",
+			"leaf",
+			".hex",
+			"title",
+			"excer",
+			"exerp",
+			"serif",
+			":hover",
+			"box-shad",
+			"15deg",
+			"100",
+			"_');",
+			"=>",
+			"\"",
+			"li a",
+			".main .social",
+			"width"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"10px",
+			".woocommerce-account",
+			"a href=\"http://ldfc.local/wp-login.php?action=register\">Sign in</a>",
+			"/');",
+			"200",
+			"_/');",
+			" => ",
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/bill_riley/Library/Application Support/Sublime Text 2/Packages/User/hubdia.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 230.0,
+	"status_bar_visible": false
+}
