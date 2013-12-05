@@ -4,7 +4,7 @@
  *
  * @package innovation_ajax
  */
-if ($_GET['ajax'] == 1): ?>
+if ($_GET['ajax'] == 1) : ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
@@ -21,7 +21,7 @@ if ($_GET['ajax'] == 1): ?>
 
 	<?php endwhile; // end of the loop. ?>
 
-<?php else: ?>
+<?php else : ?>
 <?php get_header(); ?>
 
 	<div id="primary" class="content-area">

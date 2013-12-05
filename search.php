@@ -5,7 +5,7 @@
  * @package innovation_ajax
  */
 
-if ($_GET['ajax'] == 1): ?>
+if ($_GET['ajax'] == 1) : ?>
 	<?php if ( have_posts() ) : ?>
 
 		<header class="page-header">
@@ -26,7 +26,7 @@ if ($_GET['ajax'] == 1): ?>
 		<?php get_template_part( 'content', 'none' ); ?>
 
 	<?php endif; ?>
-<?php else: ?>
+<?php else : ?>
 <?php get_header(); ?>
 
 	<section id="primary" class="content-area">
