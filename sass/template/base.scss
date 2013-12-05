@@ -1,7 +1,39 @@
-#primary {
-
+body {
+	padding-left: 75px;
+	width: 100%;
+	height: 100%;
 }
 
-#secondary {
+.frame {
+	#primary {
+		background-color: white;
+		position: relative;
+		z-index: 2;
+		@include translate3d(175px, 0, 0);
+		@include single-transition(all, 200ms, ease, 100ms);
+	}
 
+	#secondary {
+		position: fixed;
+		left: 0;
+		top: 0;
+		height: 100%;
+		overflow: hidden;
+		width: 225px;
+		@include single-transition(all, 200ms, ease, 100ms);
+
+		aside {
+			width: 225px;
+		}
+	}
+
+	&.collapsed {
+		#primary {
+			@include translate3d(0, 0, 0);
+		}
+
+		#secondary {
+			width: 75px;
+		}
+	}
 }

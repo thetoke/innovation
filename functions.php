@@ -38,7 +38,7 @@ function innovation_ajax_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -78,9 +78,12 @@ add_action( 'widgets_init', 'innovation_ajax_widgets_init' );
 function innovation_ajax_scripts() {
 	wp_enqueue_style( 'innovation_ajax-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
 	wp_enqueue_style( 'innovation_ajax-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'innovation_ajax-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
+	wp_enqueue_script( 'innovation_ajax-jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', array(), '20120206', true );
+	wp_enqueue_script( 'innovation_ajax-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '20130115', true );
 	wp_enqueue_script( 'innovation_ajax-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 	wp_enqueue_script( 'innovation_ajax-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
-	wp_enqueue_script( 'innovation_ajax-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '20130115', true );
+	wp_enqueue_script( 'innovation_ajax-js', get_template_directory_uri() . '/js/innovation_ajax.js', array(), '20120206', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

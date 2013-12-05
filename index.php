@@ -31,33 +31,32 @@ if ($_GET['ajax'] == 1) : ?>
 <?php else : ?>
 
 <?php get_header(); ?>
-<div class="row">
+<div class="frame collapsed">
+		<?php get_sidebar(); ?>
 
-	<?php get_sidebar(); ?>
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main" role="main">
 
-	<div id="primary" class="content-area col-md-11">
-		<main id="main" class="site-main" role="main">
+			<?php if ( have_posts() ) : ?>
 
-		<?php if ( have_posts() ) : ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+					<?php
+						get_template_part( 'content', get_post_format() );
+					?>
 
-				<?php
-					get_template_part( 'content', get_post_format() );
-				?>
+				<?php endwhile; ?>
 
-			<?php endwhile; ?>
+				<?php innovation_ajax_paging_nav(); ?>
 
-			<?php innovation_ajax_paging_nav(); ?>
+			<?php else : ?>
 
-		<?php else : ?>
+				<?php get_template_part( 'content', 'none' ); ?>
 
-			<?php get_template_part( 'content', 'none' ); ?>
+			<?php endif; ?>
 
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+			</main><!-- #main -->
+		</div><!-- #primary -->
 </div>
 <?php get_footer(); ?>
 
