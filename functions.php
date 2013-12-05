@@ -91,10 +91,12 @@ function innovation_ajax_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'innovation_ajax_scripts' );
 
+require get_template_directory().'/inc/nav-walker.php';
+
 /**
  * Implement the Custom Header feature.
  */
-//require get_template_directory() . '/inc/custom-header.php';
+require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
