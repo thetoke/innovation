@@ -2,15 +2,68 @@ body {
 	padding-left: 50px;
 	width: 100%;
 	height: 100%;
+	font-family: 'Open Sans', serif;
+}
+
+.site-title {
+	background: $base no-repeat;
+	color: white;
+	background-size: 100%;
+	text-align: right;
+	padding-right: 43px;
+	padding-bottom: 10px;
+	width: 100%;
+	margin: 0 auto;
+	position: fixed;
+	top: 0;
+	height: 112px;
+	font-size: 110px;
+}
+
+#page {
+	overflow: hidden;
 }
 
 .frame {
+	margin-top: 102px;
 	#primary {
+		padding-top: 50px;
 		background-color: white;
 		position: relative;
 		z-index: 2;
 		@include translate3d(150px, 0, 0);
-		@include single-transition(all, 200ms, ease, 100ms);
+		@include single-transition(all, 150ms, linear, 75ms);
+
+		#main {
+			width: 750px;
+			min-height:200px;
+			margin: 0 auto;
+			@include single-transition(all, 150ms, linear, 75ms);
+			@include translate3d(-75px, 0, 0);
+		}
+
+		article {
+			font-weight:100;
+			font-size: 24px;
+			p, span {font-family: 'Merriweather', serif;}
+			h1 {
+				font-family: 'Helvetica','Open Sans', serif !important;
+				@include single-transition(all, 150ms, linear, 75ms);
+				background: url(http://mtk.local/wp-content/uploads/2013/11/STV_BG.png) no-repeat;
+				background-size: 100%;
+				background-clip: text;
+				text-fill-color: transparent;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				text-align: center;
+				font-size: 90px;
+				font-weight: 600;
+
+				a {
+
+				}
+			}
+		}
 	}
 
 	#secondary {
@@ -20,20 +73,104 @@ body {
 		height: 100%;
 		overflow: hidden;
 		width: 200px;
-		background-color: #666666;
-		@include single-transition(all, 200ms, ease, 100ms);
+		background-color: $base;
+		@include single-transition(all, 150ms, linear, 75ms);
 
 		h1 {
 			position: relative;
+			font-size: 0;
+			line-height: 0;
+			margin-bottom: 82px;
+
+			.logo {
+				@include apply-origin(center center, false);
+				animation: spin 100s linear 0s infinite;
+				-webkit-animation: spin 100s linear 0s infinite;
+				@include single-transition(all, 150ms, linear, 75ms);
+				position: absolute;
+				border: 4px solid #232323;
+				display: block;
+				border-radius: 50%;
+				top: -10px;
+				right: 65px;
+				height: 75px;
+				width: 75px;
+				overflow: hidden;
+
+				.stripe {
+					@include single-transition(all, 150ms, linear, 75ms);
+					position: absolute;
+					content: '';
+					width: 100%;
+					height: 25%;
+					display: block;
+					&.orange {
+						background-color: $orange;
+						top: 0
+					}
+					&.yellow {
+						background-color: $yellow;
+						top: 25%
+					}
+					&.green {
+						background-color: $green;
+						top: 50%
+					}
+					&.blue {
+						background-color: $blue;
+						top: 75%
+					}
+				}
+			}
 		}
 
 		aside {
 			width: 200px;
-			color: #333333;
+			color: #666666;
 
-			a {
-				border: 0;
-				background-color: rgba(0, 0, 0, 0);
+			&:not(:first-child){
+				margin-top: 50px;
+			}
+
+			h3 {
+				padding-left: 50px;
+			}
+
+			li {
+				position: relative;
+				text-align: left;
+				border-bottom: 1px solid #454545;
+				color: #999999;
+
+				a {
+					padding-left: 55px;
+					text-align:left;
+					color: #999999;
+					border: 0;
+					background-color: rgba(0, 0, 0, 0);
+					@include single-transition(all, 250ms, linear, 0ms);
+				}
+
+				&:first-child {
+					border-top: 1px solid #454545;
+				}
+
+				&:hover {
+					background-color: rgba(0,0,0,.5);
+					a {
+						color: #dadada;
+					}
+				}
+
+				&.active {
+					background-color: white;
+					border-color: rgba(255, 255, 255, 0.5);
+					color: $base !important;
+
+					a {
+						color: $base !important;
+					}
+				}
 			}
 		}
 	}
@@ -41,10 +178,42 @@ body {
 	&.collapsed {
 		#primary {
 			@include translate3d(0, 0, 0);
+			#main {
+				@include translate3d(75px, 0, 0);
+			}
 		}
 
 		#secondary {
 			width: 50px;
+			h1 {
+				.logo {
+					right: 155px;
+					top: 10px;
+					border: 2px solid #232323;
+					width: 40px;
+					height: 40px;
+					&:after {
+						top:-100px;
+					}
+				}
+			}
+			aside {
+				li {
+					a {
+						color: #333333;
+					}
+				}
+			}
 		}
 	}
 }
+
+	@include respond-to(1178px){
+		.site-title{
+			font-size: 75px;
+			height: 68px;
+		}
+		.frame {
+			margin-top: 68px;
+		}
+	}

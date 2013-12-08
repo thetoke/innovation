@@ -1,16 +1,18 @@
 
 $(document).ready(function() {
 
-	$('#secondary').hover(function(){
+	$('#secondary, .site-title').hover(function(){
 		$('.frame').removeClass('collapsed');
-	}, function(){
+	}, function() {
 		$('.frame').addClass('collapsed');
 	});
 
-	$('a.ajax').bind('click', function(e) {
+	$('a.ajax').on('click', function(e) {
 		e.preventDefault();
+		$(this).parent().addClass('active').siblings().removeClass('active');
 		ajaxify($(this).attr('href'));
 	});
+
 });
 
 
@@ -18,18 +20,28 @@ function ajaxify(href){
 	$.ajax({
 		url: href,
 		data: {ajax: 1},
+		beforeSend: function() {
+			$('.frame').addClass('collapsed');
+		},
 		success: function(data) {
-			$('#main').empty().append(data);
+			$('body, html').animate({
+				scrollTop: 0
+			}, 1000);
 
-			$('a.ajax').bind('click', function(e) {
-				e.preventDefault();
-				ajaxify($(this).attr('href'));
+			$('#main').fadeOut(500, function(){
+				$('#main').empty().append(data).fadeIn(500, function(){
+					$('a.ajax', '#main').on('click', function(e) {
+						e.preventDefault();
+						ajaxify($(this).attr('href'));
+					});
+				});
 			});
+
 		},
 		error: function(){
 			// use old school redirection
 		}
 	});
 
-	history.pushState({}, "", $(this).attr('href'));
+	history.pushState({}, "", href);
 }

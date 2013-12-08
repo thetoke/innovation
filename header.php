@@ -14,7 +14,7 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link href='http://fonts.googleapis.com/css?family=Brawler|Open+Sans|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 
 <?php wp_head(); ?>
 </head>
@@ -23,3 +23,4 @@
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<div id="content" class="site-content">
+		<h1 class="site-title">Mash the Keyboard</h1>

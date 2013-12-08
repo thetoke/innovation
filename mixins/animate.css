@@ -1,0 +1,26 @@
+@-moz-keyframes spin {
+  /* line 2, ../sass/mixins/animate.scss */
+  from {
+    -moz-transform: rotate(0deg); }
+
+  /* line 3, ../sass/mixins/animate.scss */
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  /* line 7, ../sass/mixins/animate.scss */
+  from {
+    -webkit-transform: rotate(0deg); }
+
+  /* line 8, ../sass/mixins/animate.scss */
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  /* line 12, ../sass/mixins/animate.scss */
+  from {
+    transform: rotate(0deg); }
+
+  /* line 13, ../sass/mixins/animate.scss */
+  to {
+    transform: rotate(360deg); } }

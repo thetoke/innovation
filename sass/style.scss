@@ -22,10 +22,18 @@ along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normali
 and Blueprint http://www.blueprintcss.org/
 */
 
+$base: #3b3d43;
+$blue: #9dd2b5;
+$green: #6aa427;
+$yellow: #f0b747;
+$orange: #de5b1e;
+
 @import "compass/css3/transition";
 @import "compass/css3/transform";
 
 @import "mixins/responsive.scss";
+@import "mixins/fonts.scss";
+@import "mixins/animate.scss";
 
 @import "template/base.scss";
 @import "template/index.scss";

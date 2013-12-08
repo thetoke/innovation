@@ -27,6 +27,7 @@ if ($_GET['ajax'] == 1) : ?>
 
 	<?php endif; ?>
 <?php else : ?>
+<div class="frame">
 <?php get_header(); ?>
 
 	<section id="primary" class="content-area">
@@ -58,4 +59,5 @@ if ($_GET['ajax'] == 1) : ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+</div>
 <?php endif; ?>

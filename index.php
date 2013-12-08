@@ -31,7 +31,7 @@ if ($_GET['ajax'] == 1) : ?>
 <?php else : ?>
 
 <?php get_header(); ?>
-<div class="frame collapsed">
+<div class="frame">
 		<?php get_sidebar(); ?>
 
 		<div id="primary" class="content-area">

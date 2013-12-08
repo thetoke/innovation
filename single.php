@@ -23,7 +23,8 @@ if ($_GET['ajax'] == 1) : ?>
 
 <?php else : ?>
 <?php get_header(); ?>
-
+<div class="frame">
+	<?php get_sidebar(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -39,12 +40,12 @@ if ($_GET['ajax'] == 1) : ?>
 					comments_template();
 				endif;
 			?>
+			NICE
 
 		<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>
 <?php endif; ?>

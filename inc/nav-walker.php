@@ -46,7 +46,7 @@ function start_lvl( &$output, $depth ) {
 	$attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
 	$attributes .= ' class="menu-link ajax btn btn-default btn-block btn-lg ' . ( $depth > 0 ? 'sub-menu-link' : 'main-menu-link' ) . '"';
 
-	$item_output = sprintf( '%1$s<a%2$s>%3$s%4$s%5$s</a>%6$s',
+	$item_output = sprintf( '%1$s<a%2$s><span class="mtk-'.strtolower($item->attr_title).'"></span>%3$s%4$s%5$s</a>%6$s',
 		$args->before,
 		$attributes,
 		$args->link_before,
@@ -126,7 +126,7 @@ class innovation_ajax_walker_category_menu extends Walker_Category {
 
 		if ( 'list' == $args['style'] ) {
 			$output .= "\t<li";
-			$class = 'cat-item cat-item-' . $category->term_id;
+			$class = 'cat-item list-unstyled cat-item-' . $category->term_id;
 			if ( !empty($current_category) ) {
 				$_current_category = get_term( $current_category, $category->taxonomy );
 				if ( $category->term_id == $current_category )
