@@ -9,7 +9,8 @@ $(document).ready(function() {
 
 	$('a.ajax').on('click', function(e) {
 		e.preventDefault();
-		$(this).parent().addClass('active').siblings().removeClass('active');
+		$('li', '#secondary').removeClass('active');
+		$(this).parent().addClass('active');
 		ajaxify($(this).attr('href'));
 	});
 
