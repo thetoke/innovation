@@ -26,18 +26,22 @@ a {
 }
 
 .site-title {
-	background: $base no-repeat;
+	background: $base url(http://mtk.local/wp-content/uploads/2013/11/STV_BG.png) no-repeat;
 	color: white;
 	background-size: 100%;
 	text-align: right;
-	padding-right: 43px;
+	padding-right: 50px;
 	padding-bottom: 10px;
 	width: 100%;
 	margin: 0 auto;
 	position: fixed;
 	top: 0;
-	height: 112px;
-	font-size: 110px;
+	height: 115px;
+	font-size: 125px;
+	line-height: 107px;
+	z-index: 0;
+	text-transform: uppercase;
+	font-family: league-gothic, sans-serif;
 }
 
 #page {
@@ -67,7 +71,7 @@ a {
 			font-size: 24px;
 			p, span {font-family: 'Merriweather', serif;}
 			h1 {
-				font-family: 'Helvetica','Open Sans', serif !important;
+				font-family: 'league-gothic', 'Helvetica','Open Sans', serif;
 				@include single-transition(all, 150ms, linear, 75ms);
 				background: url(http://mtk.local/wp-content/uploads/2013/11/STV_BG.png) no-repeat;
 				background-size: 100%;
@@ -78,10 +82,14 @@ a {
 				text-align: center;
 				font-size: 90px;
 				font-weight: 600;
+				text-transform: uppercase;
+				font-weight: 100;
 
 				a {
 					position: initial;
 					border:none;
+					font-family: league-gothic, sans-serif;
+					font-weight: 100
 				}
 			}
 		}
@@ -105,8 +113,6 @@ a {
 
 			.logo {
 				@include apply-origin(center center, false);
-				animation: spin 100s linear 0s infinite;
-				-webkit-animation: spin 100s linear 0s infinite;
 				@include single-transition(all, 150ms, linear, 75ms);
 				position: absolute;
 				border: 4px solid #232323;
@@ -123,7 +129,7 @@ a {
 					position: absolute;
 					content: '';
 					width: 100%;
-					height: 25%;
+					height: 26%;
 					display: block;
 					&.orange {
 						background-color: $orange;

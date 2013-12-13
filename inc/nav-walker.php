@@ -59,11 +59,7 @@ function start_lvl( &$output, $depth ) {
 	$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 }
 }
-?>
 
-
-
-<?php
 class innovation_ajax_walker_category_menu extends Walker_Category {
 	/**
 	 * Start the element output.

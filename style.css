@@ -1873,27 +1873,31 @@ a {
 
 /* line 28, sass/template/base.scss */
 .site-title {
-  background: #3b3d43 no-repeat;
+  background: #3b3d43 url(http://mtk.local/wp-content/uploads/2013/11/STV_BG.png) no-repeat;
   color: white;
   background-size: 100%;
   text-align: right;
-  padding-right: 43px;
+  padding-right: 50px;
   padding-bottom: 10px;
   width: 100%;
   margin: 0 auto;
   position: fixed;
   top: 0;
-  height: 112px;
-  font-size: 110px; }
+  height: 115px;
+  font-size: 125px;
+  line-height: 107px;
+  z-index: 0;
+  text-transform: uppercase;
+  font-family: league-gothic, sans-serif; }
 
-/* line 43, sass/template/base.scss */
+/* line 47, sass/template/base.scss */
 #page {
   overflow: hidden; }
 
-/* line 47, sass/template/base.scss */
+/* line 51, sass/template/base.scss */
 .frame {
   margin-top: 102px; }
-  /* line 49, sass/template/base.scss */
+  /* line 53, sass/template/base.scss */
   .frame #primary {
     padding-top: 50px;
     background-color: white;
@@ -1909,7 +1913,7 @@ a {
     -moz-transition: all 150ms linear 75ms;
     -o-transition: all 150ms linear 75ms;
     transition: all 150ms linear 75ms; }
-    /* line 57, sass/template/base.scss */
+    /* line 61, sass/template/base.scss */
     .frame #primary #main {
       width: 750px;
       min-height: 200px;
@@ -1924,16 +1928,16 @@ a {
       -ms-transform: translate3d(-75px, 0, 0);
       -o-transform: translate3d(-75px, 0, 0);
       transform: translate3d(-75px, 0, 0); }
-    /* line 65, sass/template/base.scss */
+    /* line 69, sass/template/base.scss */
     .frame #primary article {
       font-weight: 100;
       font-size: 24px; }
-      /* line 68, sass/template/base.scss */
+      /* line 72, sass/template/base.scss */
       .frame #primary article p, .frame #primary article span {
         font-family: 'Merriweather', serif; }
-      /* line 69, sass/template/base.scss */
+      /* line 73, sass/template/base.scss */
       .frame #primary article h1 {
-        font-family: 'Helvetica','Open Sans', serif !important;
+        font-family: 'league-gothic', 'Helvetica','Open Sans', serif;
         -webkit-transition: all 150ms linear;
         -webkit-transition-delay: 75ms;
         -moz-transition: all 150ms linear 75ms;
@@ -1947,12 +1951,16 @@ a {
         -webkit-text-fill-color: transparent;
         text-align: center;
         font-size: 90px;
-        font-weight: 600; }
-        /* line 82, sass/template/base.scss */
+        font-weight: 600;
+        text-transform: uppercase;
+        font-weight: 100; }
+        /* line 88, sass/template/base.scss */
         .frame #primary article h1 a {
           position: initial;
-          border: none; }
-  /* line 90, sass/template/base.scss */
+          border: none;
+          font-family: league-gothic, sans-serif;
+          font-weight: 100; }
+  /* line 98, sass/template/base.scss */
   .frame #secondary {
     position: fixed;
     left: 0;
@@ -1966,21 +1974,19 @@ a {
     -moz-transition: all 150ms linear 75ms;
     -o-transition: all 150ms linear 75ms;
     transition: all 150ms linear 75ms; }
-    /* line 100, sass/template/base.scss */
+    /* line 108, sass/template/base.scss */
     .frame #secondary h1 {
       position: relative;
       font-size: 0;
       line-height: 0;
       margin-bottom: 82px; }
-      /* line 106, sass/template/base.scss */
+      /* line 114, sass/template/base.scss */
       .frame #secondary h1 .logo {
         -webkit-transform-origin: center center;
         -moz-transform-origin: center center;
         -ms-transform-origin: center center;
         -o-transform-origin: center center;
         transform-origin: center center;
-        animation: spin 100s linear 0s infinite;
-        -webkit-animation: spin 100s linear 0s infinite;
         -webkit-transition: all 150ms linear;
         -webkit-transition-delay: 75ms;
         -moz-transition: all 150ms linear 75ms;
@@ -1995,7 +2001,7 @@ a {
         height: 75px;
         width: 75px;
         overflow: hidden; }
-        /* line 121, sass/template/base.scss */
+        /* line 127, sass/template/base.scss */
         .frame #secondary h1 .logo .stripe {
           -webkit-transition: all 150ms linear;
           -webkit-transition-delay: 75ms;
@@ -2005,44 +2011,44 @@ a {
           position: absolute;
           content: '';
           width: 100%;
-          height: 25%;
+          height: 26%;
           display: block; }
-          /* line 128, sass/template/base.scss */
+          /* line 134, sass/template/base.scss */
           .frame #secondary h1 .logo .stripe.orange {
             background-color: #de5b1e;
             top: 0; }
-          /* line 132, sass/template/base.scss */
+          /* line 138, sass/template/base.scss */
           .frame #secondary h1 .logo .stripe.yellow {
             background-color: #f0b747;
             top: 25%; }
-          /* line 136, sass/template/base.scss */
+          /* line 142, sass/template/base.scss */
           .frame #secondary h1 .logo .stripe.green {
             background-color: #6aa427;
             top: 50%; }
-          /* line 140, sass/template/base.scss */
+          /* line 146, sass/template/base.scss */
           .frame #secondary h1 .logo .stripe.blue {
             background-color: #9dd2b5;
             top: 75%; }
-    /* line 148, sass/template/base.scss */
+    /* line 154, sass/template/base.scss */
     .frame #secondary aside {
       width: 200px;
       color: #666666; }
-      /* line 152, sass/template/base.scss */
+      /* line 158, sass/template/base.scss */
       .frame #secondary aside:not(:first-child) {
         margin-top: 50px; }
-      /* line 156, sass/template/base.scss */
+      /* line 162, sass/template/base.scss */
       .frame #secondary aside h3 {
         padding-left: 50px;
         font-weight: 100;
         font-family: 'Open Sans';
         font-size: 18px; }
-      /* line 163, sass/template/base.scss */
+      /* line 169, sass/template/base.scss */
       .frame #secondary aside li {
         position: relative;
         text-align: left;
         border-bottom: 1px solid #454545;
         color: #999999; }
-        /* line 169, sass/template/base.scss */
+        /* line 175, sass/template/base.scss */
         .frame #secondary aside li a {
           padding-left: 55px;
           text-align: left;
@@ -2054,60 +2060,68 @@ a {
           -moz-transition: all 250ms linear 0ms;
           -o-transition: all 250ms linear 0ms;
           transition: all 250ms linear 0ms; }
-        /* line 178, sass/template/base.scss */
+        /* line 184, sass/template/base.scss */
         .frame #secondary aside li:first-child {
           border-top: 1px solid #454545; }
-        /* line 182, sass/template/base.scss */
+        /* line 188, sass/template/base.scss */
         .frame #secondary aside li:hover {
           background-color: rgba(0, 0, 0, 0.5); }
-          /* line 184, sass/template/base.scss */
+          /* line 190, sass/template/base.scss */
           .frame #secondary aside li:hover a {
             color: #dadada; }
-        /* line 189, sass/template/base.scss */
+        /* line 195, sass/template/base.scss */
         .frame #secondary aside li.active {
           background-color: white;
           border-color: rgba(255, 255, 255, 0.5);
           color: #3b3d43 !important; }
-          /* line 194, sass/template/base.scss */
+          /* line 200, sass/template/base.scss */
           .frame #secondary aside li.active a {
             color: #3b3d43 !important; }
-  /* line 203, sass/template/base.scss */
+  /* line 209, sass/template/base.scss */
   .frame.collapsed #primary {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
-    /* line 205, sass/template/base.scss */
+    /* line 211, sass/template/base.scss */
     .frame.collapsed #primary #main {
       -webkit-transform: translate3d(75px, 0, 0);
       -moz-transform: translate3d(75px, 0, 0);
       -ms-transform: translate3d(75px, 0, 0);
       -o-transform: translate3d(75px, 0, 0);
       transform: translate3d(75px, 0, 0); }
-  /* line 210, sass/template/base.scss */
+  /* line 216, sass/template/base.scss */
   .frame.collapsed #secondary {
     width: 50px; }
-    /* line 213, sass/template/base.scss */
+    /* line 219, sass/template/base.scss */
     .frame.collapsed #secondary h1 .logo {
       right: 155px;
       top: 10px;
       border: 2px solid #232323;
       width: 40px;
       height: 40px; }
-      /* line 219, sass/template/base.scss */
+      /* line 225, sass/template/base.scss */
       .frame.collapsed #secondary h1 .logo:after {
         top: -100px; }
-    /* line 226, sass/template/base.scss */
+    /* line 232, sass/template/base.scss */
     .frame.collapsed #secondary aside li a {
       color: #333333; }
 
 @media (max-width: 1178px) {
-  /* line 236, sass/template/base.scss */
+  /* line 242, sass/template/base.scss */
   .site-title {
     font-size: 75px;
     height: 68px; }
 
-  /* line 240, sass/template/base.scss */
+  /* line 246, sass/template/base.scss */
   .frame {
     margin-top: 68px; } }
+/* line 1, sass/template/footer.scss */
+#footer {
+  background-color: #3b3d43;
+  position: fixed;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+  display: block; }

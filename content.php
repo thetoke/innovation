@@ -6,7 +6,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<h1 class="entry-title animated fadeInUp"><a href="<?php the_permalink(); ?>" rel="bookmark" class="ajax"><?php the_title(); ?></a></h1>
+		<h1 class="entry-title" data-stellar-background-ratio=".9"><a href="<?php the_permalink(); ?>" rel="bookmark" class="ajax"><?php the_title(); ?></a></h1>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">

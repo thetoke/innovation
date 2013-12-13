@@ -35,6 +35,7 @@ function ajaxify(href){
 						e.preventDefault();
 						ajaxify($(this).attr('href'));
 					});
+
 				});
 			});
 

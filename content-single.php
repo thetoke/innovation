@@ -6,7 +6,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<h1 class="entry-title" data-stellar-background-ratio=".9"><?php the_title(); ?></h1>
 
 		<div class="entry-meta">
 			<?php innovation_ajax_posted_on(); ?>

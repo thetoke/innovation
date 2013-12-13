@@ -10,7 +10,7 @@
 
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php _e( 'Nothing Found', 'innovation_ajax' ); ?></h1>
+		<h1 class="page-title" data-stellar-background-ratio=".9"><?php _e( 'Nothing Found', 'innovation_ajax' ); ?></h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
