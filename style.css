@@ -134,7 +134,7 @@ and Blueprint http://www.blueprintcss.org/
 
 /* line 67, sass/mixins/fonts.scss */
 .mtk-heart-empty:before,
-.mtk-about:before {
+.mtk-story:before {
   content: "\2a"; }
 
 /* line 68, sass/mixins/fonts.scss */
@@ -157,181 +157,186 @@ and Blueprint http://www.blueprintcss.org/
 .mtk-ellipsis-vertical:before {
   content: "\e607"; }
 
-/* line 73, sass/mixins/fonts.scss */
-.mtk-calendar-empty:before {
+/* line 74, sass/mixins/fonts.scss */
+.mtk-calendar-empty:before,
+.mtk-workshops:before {
   content: "\e608"; }
 
-/* line 74, sass/mixins/fonts.scss */
+/* line 75, sass/mixins/fonts.scss */
 .mtk-calendar:before {
   content: "\e609"; }
 
-/* line 75, sass/mixins/fonts.scss */
+/* line 76, sass/mixins/fonts.scss */
 .mtk-linkedin:before {
   content: "\2f"; }
 
-/* line 76, sass/mixins/fonts.scss */
+/* line 77, sass/mixins/fonts.scss */
 .mtk-soundcloud:before {
   content: "\30"; }
 
-/* line 77, sass/mixins/fonts.scss */
+/* line 78, sass/mixins/fonts.scss */
 .mtk-github:before {
   content: "\31"; }
 
-/* line 78, sass/mixins/fonts.scss */
+/* line 79, sass/mixins/fonts.scss */
 .mtk-google-plus:before {
   content: "\32"; }
 
-/* line 79, sass/mixins/fonts.scss */
+/* line 80, sass/mixins/fonts.scss */
 .mtk-facebook:before {
   content: "\33"; }
 
-/* line 80, sass/mixins/fonts.scss */
+/* line 81, sass/mixins/fonts.scss */
 .mtk-twitter:before {
   content: "\34"; }
 
-/* line 81, sass/mixins/fonts.scss */
+/* line 82, sass/mixins/fonts.scss */
 .mtk-feed:before {
   content: "\35"; }
 
-/* line 82, sass/mixins/fonts.scss */
+/* line 83, sass/mixins/fonts.scss */
 .mtk-deviantart:before {
   content: "\36"; }
 
-/* line 83, sass/mixins/fonts.scss */
+/* line 84, sass/mixins/fonts.scss */
 .mtk-steam:before {
   content: "\37"; }
 
-/* line 84, sass/mixins/fonts.scss */
+/* line 85, sass/mixins/fonts.scss */
 .mtk-forrst:before {
   content: "\38"; }
 
-/* line 85, sass/mixins/fonts.scss */
+/* line 86, sass/mixins/fonts.scss */
 .mtk-dribbble:before {
   content: "\39"; }
 
-/* line 86, sass/mixins/fonts.scss */
+/* line 87, sass/mixins/fonts.scss */
 .mtk-vimeo:before {
   content: "\3a"; }
 
-/* line 87, sass/mixins/fonts.scss */
+/* line 88, sass/mixins/fonts.scss */
 .mtk-foursquare:before {
   content: "\3b"; }
 
-/* line 88, sass/mixins/fonts.scss */
+/* line 89, sass/mixins/fonts.scss */
 .mtk-lastfm:before {
   content: "\3c"; }
 
-/* line 89, sass/mixins/fonts.scss */
+/* line 90, sass/mixins/fonts.scss */
 .mtk-tumblr:before {
   content: "\3d"; }
 
-/* line 90, sass/mixins/fonts.scss */
+/* line 91, sass/mixins/fonts.scss */
 .mtk-blogger:before {
   content: "\3e"; }
 
-/* line 91, sass/mixins/fonts.scss */
+/* line 92, sass/mixins/fonts.scss */
 .mtk-wordpress:before {
   content: "\3f"; }
 
-/* line 92, sass/mixins/fonts.scss */
+/* line 93, sass/mixins/fonts.scss */
 .mtk-flickr:before {
   content: "\40"; }
 
-/* line 93, sass/mixins/fonts.scss */
+/* line 94, sass/mixins/fonts.scss */
 .mtk-grid:before {
   content: "\41"; }
 
-/* line 95, sass/mixins/fonts.scss */
+/* line 96, sass/mixins/fonts.scss */
 .mtk-drawer:before,
 .mtk-portfolio:before {
   content: "\42"; }
 
-/* line 96, sass/mixins/fonts.scss */
+/* line 97, sass/mixins/fonts.scss */
 .mtk-drawer2:before {
   content: "\43"; }
 
-/* line 98, sass/mixins/fonts.scss */
+/* line 99, sass/mixins/fonts.scss */
 .mtk-earth:before,
 .mtk-clients:before {
   content: "\44"; }
 
-/* line 100, sass/mixins/fonts.scss */
+/* line 101, sass/mixins/fonts.scss */
 .mtk-uniF7E4:before,
 .mtk-products:before {
   content: "\45"; }
 
-/* line 101, sass/mixins/fonts.scss */
+/* line 102, sass/mixins/fonts.scss */
 .mtk-uniF7E5:before {
   content: "\46"; }
 
-/* line 102, sass/mixins/fonts.scss */
+/* line 103, sass/mixins/fonts.scss */
 .mtk-uniF7E6:before {
   content: "\47"; }
 
-/* line 104, sass/mixins/fonts.scss */
+/* line 105, sass/mixins/fonts.scss */
 .mtk-location:before,
 .mtk-seo:before {
   content: "\e0a6"; }
 
-/* line 105, sass/mixins/fonts.scss */
+/* line 106, sass/mixins/fonts.scss */
 .mtk-location2:before {
   content: "\e0a8"; }
 
-/* line 107, sass/mixins/fonts.scss */
+/* line 108, sass/mixins/fonts.scss */
 .mtk-bubbles:before,
 .mtk-social.discovery:before {
   content: "\e0e4"; }
 
-/* line 108, sass/mixins/fonts.scss */
+/* line 109, sass/mixins/fonts.scss */
 .mtk-bubbles2:before {
   content: "\e0e6"; }
 
-/* line 109, sass/mixins/fonts.scss */
+/* line 110, sass/mixins/fonts.scss */
 .mtk-bubbles3:before {
   content: "\e0e7"; }
 
-/* line 111, sass/mixins/fonts.scss */
+/* line 112, sass/mixins/fonts.scss */
 .mtk-meter-slow:before,
 .mtk-engineering:before {
   content: "\e182"; }
 
-/* line 112, sass/mixins/fonts.scss */
+/* line 113, sass/mixins/fonts.scss */
 .mtk-meter-fast:before {
   content: "\e184"; }
 
-/* line 113, sass/mixins/fonts.scss */
+/* line 114, sass/mixins/fonts.scss */
 .mtk-meter-medium:before {
   content: "\e183"; }
 
-/* line 116, sass/mixins/fonts.scss */
+/* line 117, sass/mixins/fonts.scss */
 li:active .mtk-products:before {
   content: "\47"; }
-/* line 117, sass/mixins/fonts.scss */
+/* line 118, sass/mixins/fonts.scss */
 li:active .mtk-engineering:before {
   content: "\e183";
   top: 4px; }
 
-/* line 122, sass/mixins/fonts.scss */
+/* line 123, sass/mixins/fonts.scss */
 .active [class^="mtk-"]:before, .active [class*=" mtk-"]:before {
   color: #3b3d43;
   left: 2px;
   top: 0px;
   font-size: 35px; }
-/* line 130, sass/mixins/fonts.scss */
-.active .mtk-about:before {
-  content: "\29"; }
 /* line 131, sass/mixins/fonts.scss */
+.active .mtk-story:before {
+  content: "\29"; }
+/* line 132, sass/mixins/fonts.scss */
 .active .mtk-portfolio:before {
   content: "\43"; }
-/* line 132, sass/mixins/fonts.scss */
+/* line 133, sass/mixins/fonts.scss */
 .active .mtk-products:before {
   content: "\46"; }
-/* line 133, sass/mixins/fonts.scss */
+/* line 134, sass/mixins/fonts.scss */
 .active .mtk-seo:before {
   content: "\e0a8"; }
-/* line 134, sass/mixins/fonts.scss */
+/* line 135, sass/mixins/fonts.scss */
 .active .mtk-engineering:before {
   content: "\e184";
+  top: -2px !important; }
+/* line 136, sass/mixins/fonts.scss */
+.active .mtk-workshops:before {
+  content: "\e609";
   top: -2px !important; }
 
 @-moz-keyframes spin {
@@ -1883,21 +1888,24 @@ a {
   margin: 0 auto;
   position: fixed;
   top: 0;
-  height: 115px;
-  font-size: 125px;
+  height: 100%;
+  font-size: 135px;
   line-height: 107px;
   z-index: 0;
   text-transform: uppercase;
-  font-family: league-gothic, sans-serif; }
+  font-weight: 100;
+  font-family: "futura-pt", sans-serif;
+  text-shadow: 0px 1px 1px #555555; }
 
-/* line 47, sass/template/base.scss */
+/* line 49, sass/template/base.scss */
 #page {
   overflow: hidden; }
 
-/* line 51, sass/template/base.scss */
+/* line 53, sass/template/base.scss */
 .frame {
-  margin-top: 102px; }
-  /* line 53, sass/template/base.scss */
+  margin-top: 102px;
+  margin-bottom: 102px; }
+  /* line 56, sass/template/base.scss */
   .frame #primary {
     padding-top: 50px;
     background-color: white;
@@ -1913,7 +1921,7 @@ a {
     -moz-transition: all 150ms linear 75ms;
     -o-transition: all 150ms linear 75ms;
     transition: all 150ms linear 75ms; }
-    /* line 61, sass/template/base.scss */
+    /* line 64, sass/template/base.scss */
     .frame #primary #main {
       width: 750px;
       min-height: 200px;
@@ -1928,16 +1936,31 @@ a {
       -ms-transform: translate3d(-75px, 0, 0);
       -o-transform: translate3d(-75px, 0, 0);
       transform: translate3d(-75px, 0, 0); }
-    /* line 69, sass/template/base.scss */
+    /* line 72, sass/template/base.scss */
     .frame #primary article {
       font-weight: 100;
       font-size: 24px; }
-      /* line 72, sass/template/base.scss */
-      .frame #primary article p, .frame #primary article span {
-        font-family: 'Merriweather', serif; }
-      /* line 73, sass/template/base.scss */
-      .frame #primary article h1 {
-        font-family: 'league-gothic', 'Helvetica','Open Sans', serif;
+      /* line 75, sass/template/base.scss */
+      .frame #primary article h2, .frame #primary article h3, .frame #primary article h4, .frame #primary article h5, .frame #primary article h6, .frame #primary article p, .frame #primary article span {
+        font-family: "freight-text-pro",sans-serif;
+        line-height: 175%;
+        margin-bottom: 50px; }
+      /* line 76, sass/template/base.scss */
+      .frame #primary article p {
+        letter-spacing: .01rem;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 22px;
+        line-height: 1.5; }
+      /* line 77, sass/template/base.scss */
+      .frame #primary article blockquote {
+        margin: 0 0px 0 -25px; }
+        /* line 79, sass/template/base.scss */
+        .frame #primary article blockquote p {
+          margin-bottom: 0; }
+      /* line 81, sass/template/base.scss */
+      .frame #primary article h1.entry-title {
+        font-family: 'futura-pt', 'Helvetica','Open Sans', serif;
         -webkit-transition: all 150ms linear;
         -webkit-transition-delay: 75ms;
         -moz-transition: all 150ms linear 75ms;
@@ -1953,16 +1976,78 @@ a {
         font-size: 90px;
         font-weight: 600;
         text-transform: uppercase;
-        font-weight: 100; }
-        /* line 88, sass/template/base.scss */
-        .frame #primary article h1 a {
+        font-weight: 100;
+        top: -10px;
+        position: relative;
+        margin: 0; }
+        /* line 99, sass/template/base.scss */
+        .frame #primary article h1.entry-title a {
           position: initial;
           border: none;
           font-family: league-gothic, sans-serif;
           font-weight: 100; }
-  /* line 98, sass/template/base.scss */
+      /* line 106, sass/template/base.scss */
+      .frame #primary article h2.entry-subtitle {
+        font-size: 75px;
+        line-height: 125%;
+        font-family: "freight-text-pro",sans-serif;
+        color: #3b3d43;
+        font-weight: 100;
+        width: 150%;
+        margin-left: -25%;
+        text-align: center; }
+      /* line 116, sass/template/base.scss */
+      .frame #primary article h2 {
+        font-size: 45px;
+        line-height: 150%;
+        font-family: "freight-text-pro",sans-serif;
+        color: #3b3d43;
+        font-weight: 100;
+        width: 125%;
+        margin-left: -12.5%;
+        text-align: center; }
+      /* line 126, sass/template/base.scss */
+      .frame #primary article .entry-meta {
+        height: 100px;
+        padding-top: 25px; }
+    /* line 132, sass/template/base.scss */
+    .frame #primary .post-preview {
+      width: 220px;
+      height: 220px;
+      margin: 15px;
+      margin-right: .3333%;
+      float: left;
+      display: block;
+      margin-top: 15px; }
+      /* line 139, sass/template/base.scss */
+      .frame #primary .post-preview a {
+        display: block;
+        color: #3b3d43;
+        z-index: 0; }
+        /* line 143, sass/template/base.scss */
+        .frame #primary .post-preview a * {
+          position: relative;
+          z-index: 1; }
+        /* line 144, sass/template/base.scss */
+        .frame #primary .post-preview a img {
+          width: 100%;
+          height: 100%;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 0;
+          opacity: .25;
+          -webkit-filter: blur(5px); }
+        /* line 146, sass/template/base.scss */
+        .frame #primary .post-preview a section {
+          font-size: 18px; }
+  /* line 152, sass/template/base.scss */
   .frame #secondary {
     position: fixed;
+    z-index: 1000;
     left: 0;
     top: 0;
     height: 100%;
@@ -1974,13 +2059,13 @@ a {
     -moz-transition: all 150ms linear 75ms;
     -o-transition: all 150ms linear 75ms;
     transition: all 150ms linear 75ms; }
-    /* line 108, sass/template/base.scss */
+    /* line 163, sass/template/base.scss */
     .frame #secondary h1 {
       position: relative;
       font-size: 0;
       line-height: 0;
       margin-bottom: 82px; }
-      /* line 114, sass/template/base.scss */
+      /* line 169, sass/template/base.scss */
       .frame #secondary h1 .logo {
         -webkit-transform-origin: center center;
         -moz-transform-origin: center center;
@@ -2001,7 +2086,7 @@ a {
         height: 75px;
         width: 75px;
         overflow: hidden; }
-        /* line 127, sass/template/base.scss */
+        /* line 182, sass/template/base.scss */
         .frame #secondary h1 .logo .stripe {
           -webkit-transition: all 150ms linear;
           -webkit-transition-delay: 75ms;
@@ -2013,42 +2098,42 @@ a {
           width: 100%;
           height: 26%;
           display: block; }
-          /* line 134, sass/template/base.scss */
+          /* line 189, sass/template/base.scss */
           .frame #secondary h1 .logo .stripe.orange {
             background-color: #de5b1e;
             top: 0; }
-          /* line 138, sass/template/base.scss */
+          /* line 193, sass/template/base.scss */
           .frame #secondary h1 .logo .stripe.yellow {
             background-color: #f0b747;
             top: 25%; }
-          /* line 142, sass/template/base.scss */
+          /* line 197, sass/template/base.scss */
           .frame #secondary h1 .logo .stripe.green {
             background-color: #6aa427;
             top: 50%; }
-          /* line 146, sass/template/base.scss */
+          /* line 201, sass/template/base.scss */
           .frame #secondary h1 .logo .stripe.blue {
             background-color: #9dd2b5;
             top: 75%; }
-    /* line 154, sass/template/base.scss */
+    /* line 209, sass/template/base.scss */
     .frame #secondary aside {
       width: 200px;
       color: #666666; }
-      /* line 158, sass/template/base.scss */
+      /* line 213, sass/template/base.scss */
       .frame #secondary aside:not(:first-child) {
         margin-top: 50px; }
-      /* line 162, sass/template/base.scss */
+      /* line 217, sass/template/base.scss */
       .frame #secondary aside h3 {
         padding-left: 50px;
         font-weight: 100;
         font-family: 'Open Sans';
         font-size: 18px; }
-      /* line 169, sass/template/base.scss */
+      /* line 224, sass/template/base.scss */
       .frame #secondary aside li {
         position: relative;
         text-align: left;
         border-bottom: 1px solid #454545;
         color: #999999; }
-        /* line 175, sass/template/base.scss */
+        /* line 230, sass/template/base.scss */
         .frame #secondary aside li a {
           padding-left: 55px;
           text-align: left;
@@ -2060,68 +2145,85 @@ a {
           -moz-transition: all 250ms linear 0ms;
           -o-transition: all 250ms linear 0ms;
           transition: all 250ms linear 0ms; }
-        /* line 184, sass/template/base.scss */
+        /* line 239, sass/template/base.scss */
         .frame #secondary aside li:first-child {
           border-top: 1px solid #454545; }
-        /* line 188, sass/template/base.scss */
+        /* line 243, sass/template/base.scss */
         .frame #secondary aside li:hover {
           background-color: rgba(0, 0, 0, 0.5); }
-          /* line 190, sass/template/base.scss */
+          /* line 245, sass/template/base.scss */
           .frame #secondary aside li:hover a {
             color: #dadada; }
-        /* line 195, sass/template/base.scss */
+        /* line 250, sass/template/base.scss */
         .frame #secondary aside li.active {
           background-color: white;
           border-color: rgba(255, 255, 255, 0.5);
           color: #3b3d43 !important; }
-          /* line 200, sass/template/base.scss */
+          /* line 255, sass/template/base.scss */
           .frame #secondary aside li.active a {
             color: #3b3d43 !important; }
-  /* line 209, sass/template/base.scss */
+  /* line 264, sass/template/base.scss */
   .frame.collapsed #primary {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
-    /* line 211, sass/template/base.scss */
+    /* line 266, sass/template/base.scss */
     .frame.collapsed #primary #main {
       -webkit-transform: translate3d(75px, 0, 0);
       -moz-transform: translate3d(75px, 0, 0);
       -ms-transform: translate3d(75px, 0, 0);
       -o-transform: translate3d(75px, 0, 0);
       transform: translate3d(75px, 0, 0); }
-  /* line 216, sass/template/base.scss */
+  /* line 271, sass/template/base.scss */
   .frame.collapsed #secondary {
     width: 50px; }
-    /* line 219, sass/template/base.scss */
+    /* line 274, sass/template/base.scss */
     .frame.collapsed #secondary h1 .logo {
       right: 155px;
       top: 10px;
       border: 2px solid #232323;
       width: 40px;
       height: 40px; }
-      /* line 225, sass/template/base.scss */
+      /* line 280, sass/template/base.scss */
       .frame.collapsed #secondary h1 .logo:after {
         top: -100px; }
-    /* line 232, sass/template/base.scss */
+    /* line 287, sass/template/base.scss */
     .frame.collapsed #secondary aside li a {
       color: #333333; }
 
 @media (max-width: 1178px) {
-  /* line 242, sass/template/base.scss */
+  /* line 297, sass/template/base.scss */
   .site-title {
     font-size: 75px;
     height: 68px; }
 
-  /* line 246, sass/template/base.scss */
+  /* line 301, sass/template/base.scss */
   .frame {
     margin-top: 68px; } }
 /* line 1, sass/template/footer.scss */
-#footer {
-  background-color: #3b3d43;
+.site-footer {
+  background: rgba(59, 61, 67, 0.2) no-repeat;
   position: fixed;
   bottom: 0;
-  height: 150px;
+  height: 100px;
   width: 100%;
-  display: block; }
+  display: block;
+  color: white;
+  background-size: 100%; }
+  /* line 12, sass/template/footer.scss */
+  .site-footer .site-info {
+    width: 100%; }
+    /* line 15, sass/template/footer.scss */
+    .site-footer .site-info .section {
+      width: 33.333333333%;
+      float: left; }
+      /* line 19, sass/template/footer.scss */
+      .site-footer .site-info .section h1 {
+        font-family: "futura-pt", sans-serif;
+        text-align: center;
+        font-size: 90px;
+        text-transform: uppercase;
+        margin: -8px;
+        font-weight: 100; }

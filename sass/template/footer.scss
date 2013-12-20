@@ -1,12 +1,29 @@
-#footer {
-	background-color: $base;
+.site-footer {
+	background: transparentize($base, .8) no-repeat;
 	position: fixed;
 	bottom: 0;
-	height: 150px;
+	height: 100px;
 	width: 100%;
 	display: block;
+	color: white;
+	background-size: 100%;
+
 
 	.site-info {
+		width:100%;
 
+		.section {
+			width: 33.333333333%;
+			float: left;
+
+			h1 {
+				font-family: "futura-pt", sans-serif;
+				text-align: center;
+				font-size: 90px;
+				text-transform: uppercase;
+				margin: -8px;
+				font-weight: 100
+			}
+		}
 	}
 }

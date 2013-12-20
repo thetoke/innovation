@@ -72,6 +72,30 @@ function innovation_ajax_widgets_init() {
 }
 add_action( 'widgets_init', 'innovation_ajax_widgets_init' );
 
+if ( ! function_exists( 'prevent_widows' ) )
+{
+	/**
+	 * Replaces the last white space in $str with a no break space.
+	 *
+	 * @param  string $str
+	 * @return $str
+	 */
+	function prevent_widows( $str, $last_words_max_length = 11 )
+	{
+			$pos = strrpos( $str, ' ' );
+
+			if ( $pos === FALSE || strlen( $str ) - $pos > $last_words_max_length )
+			{ // Nothing to do.
+					return $str;
+			}
+			// U+00A0 NO-BREAK SPACE == C2 A0 in UTF-8
+			// @see http://www.fileformat.info/info/unicode/char/00a0/index.htm
+			return substr_replace( $str, "\xC2\xA0", $pos, 1 );
+	}
+}
+add_filter( 'the_title', 'prevent_widows' );
+
+
 /**
  * Enqueue scripts and styles.
  */

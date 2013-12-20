@@ -44,7 +44,7 @@
 	}
 }
 
-.mtk-behance:before { content: "\21";}
+.mtk-behance:before { content: "\21"; }
 .mtk-skype:before { content: "\22";}
 .mtk-instagram:before { content: "\23";}
 .mtk-spotify:before { content: "\24";}
@@ -64,13 +64,14 @@
 .mtk-team:before { content: "\28";}
 .mtk-heart:before { content: "\29";}
 .mtk-heart-empty:before,
-.mtk-about:before { content: "\2a";}
+.mtk-story:before { content: "\2a";}
 .mtk-mobile:before { content: "\2b";}
 .mtk-tablet:before { content: "\2c";}
 .mtk-laptop:before { content: "\2d";}
 .mtk-desktop:before { content: "\2e";}
 .mtk-ellipsis-vertical:before { content: "\e607";}
-.mtk-calendar-empty:before { content: "\e608";}
+.mtk-calendar-empty:before,
+.mtk-workshops:before { content: "\e608";}
 .mtk-calendar:before { content: "\e609";}
 .mtk-linkedin:before { content: "\2f";}
 .mtk-soundcloud:before { content: "\30";}
@@ -127,10 +128,11 @@ li:active {
 		}
 	}
 
-	.mtk-about:before { content: "\29"; }
+	.mtk-story:before { content: "\29"; }
 	.mtk-portfolio:before { content: "\43"; }
 	.mtk-products:before { content: "\46"; }
 	.mtk-seo:before { content: "\e0a8"; }
 	.mtk-engineering:before { content: "\e184"; top:-2px !important; }
+	.mtk-workshops:before { content: "\e609"; top:-2px !important; }
 }
 

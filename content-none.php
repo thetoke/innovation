@@ -10,7 +10,7 @@
 
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title" data-stellar-background-ratio=".9"><?php _e( 'Nothing Found', 'innovation_ajax' ); ?></h1>
+		<h1 class="page-title" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>)"><?php _e( 'Nothing Found', 'innovation_ajax' ); ?></h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">

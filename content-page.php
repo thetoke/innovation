@@ -8,7 +8,8 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<h1 class="entry-title" data-stellar-background-ratio=".9"><?php the_title(); ?></h1>
+		<h1 class="entry-title" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>)"><?php the_title(); ?></h1>
+		<h2 class="entry-subtitle"><?php the_subtitle(); ?></h2>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

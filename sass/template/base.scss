@@ -36,12 +36,14 @@ a {
 	margin: 0 auto;
 	position: fixed;
 	top: 0;
-	height: 115px;
-	font-size: 125px;
+	height: 100%;
+	font-size: 135px;
 	line-height: 107px;
 	z-index: 0;
 	text-transform: uppercase;
-	font-family: league-gothic, sans-serif;
+	font-weight:100;
+	font-family: "futura-pt", sans-serif;
+	@include text-shadow(0px 1px 1px #555);
 }
 
 #page {
@@ -50,6 +52,7 @@ a {
 
 .frame {
 	margin-top: 102px;
+	margin-bottom: 102px;
 	#primary {
 		padding-top: 50px;
 		background-color: white;
@@ -67,11 +70,16 @@ a {
 		}
 
 		article {
-			font-weight:100;
+			font-weight: 100;
 			font-size: 24px;
-			p, span {font-family: 'Merriweather', serif;}
-			h1 {
-				font-family: 'league-gothic', 'Helvetica','Open Sans', serif;
+			h2, h3, h4, h5, h6, p, span { font-family: "freight-text-pro",sans-serif; line-height: 175%; margin-bottom: 50px;  }
+			p { letter-spacing: .01rem; font-weight: 400; font-style: normal; font-size: 22px; line-height: 1.5; }
+			blockquote {
+				margin: 0 0px 0 -25px;
+				p { margin-bottom: 0; }
+			}
+			h1.entry-title {
+				font-family: 'futura-pt', 'Helvetica','Open Sans', serif;
 				@include single-transition(all, 150ms, linear, 75ms);
 				background: url(http://mtk.local/wp-content/uploads/2013/11/STV_BG.png) no-repeat;
 				background-size: 100%;
@@ -84,19 +92,66 @@ a {
 				font-weight: 600;
 				text-transform: uppercase;
 				font-weight: 100;
+				top: -10px;
+				position: relative;
+				margin: 0;
 
 				a {
 					position: initial;
 					border:none;
 					font-family: league-gothic, sans-serif;
-					font-weight: 100
+					font-weight: 100;
 				}
 			}
+			h2.entry-subtitle {
+				font-size: 75px;
+				line-height: 125%;
+				font-family: "freight-text-pro",sans-serif;
+				color: $base;
+				font-weight: 100;
+				width: 150%;
+				margin-left:-25%;
+				text-align: center;
+			}
+			h2 {
+				font-size: 45px;
+				line-height: 150%;
+				font-family: "freight-text-pro",sans-serif;
+				color: $base;
+				font-weight: 100;
+				width: 125%;
+				margin-left:-12.5%;
+				text-align: center;
+			}
+			.entry-meta {
+				height: 100px;
+				padding-top: 25px;
+			}
+		}
+
+		.post-preview {
+			width: 220px; height: 220px;
+			margin: 15px;
+			margin-right:.3333%;
+			float: left;
+			display: block;
+			margin-top: 15px;
+				a {
+					display: block;
+					color: $base;
+					z-index: 0;
+					* { position: relative; z-index: 1 }
+					img { width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 0; opacity: .25; -webkit-filter: blur(5px) }
+					header {  }
+					section { font-size: 18px; }
+					footer {  }
+				}
 		}
 	}
 
 	#secondary {
 		position: fixed;
+		z-index: 1000;
 		left: 0;
 		top: 0;
 		height: 100%;
@@ -174,7 +229,7 @@ a {
 
 				a {
 					padding-left: 55px;
-					text-align:left;
+					text-align: left;
 					color: #999999;
 					border: 0;
 					background-color: rgba(0, 0, 0, 0);

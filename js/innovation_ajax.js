@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 
-	$('#secondary, .site-title').hover(function(){
+	$('#secondary, .site-title, .site-footer').hover(function(){
 		$('.frame').removeClass('collapsed');
 	}, function() {
 		$('.frame').addClass('collapsed');
@@ -14,6 +14,7 @@ $(document).ready(function() {
 		ajaxify($(this).attr('href'));
 	});
 
+	$('.site-title').css('background-image', $('h1:first-child', '#main').css('background-image'));
 });
 
 
@@ -31,9 +32,11 @@ function ajaxify(href){
 
 			$('#main').fadeOut(500, function(){
 				$('#main').empty().append(data).fadeIn(500, function(){
+					$('.site-title').css('background-image', $('h1:first-child', '#main').css('background-image'));
 					$('a.ajax', '#main').on('click', function(e) {
 						e.preventDefault();
 						ajaxify($(this).attr('href'));
+
 					});
 
 				});

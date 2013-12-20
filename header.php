@@ -14,7 +14,8 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<script src="//use.edgefonts.net/bree-serif;league-gothic;neuton;merriweather;open-sans.js"></script>
+<script type="text/javascript" src="//use.typekit.net/kpv3ocl.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 <?php wp_head(); ?>
 </head>
@@ -23,4 +24,4 @@
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<div id="content" class="site-content">
-		<h1 class="site-title animated fadeInRight delay500">mtk</h1>
+		<h1 class="site-title">Mash the Keyboard</h1>

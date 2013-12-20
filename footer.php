@@ -12,10 +12,15 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<?php do_action( 'innovation_ajax_credits' ); ?>
-			<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s', 'innovation_ajax' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'innovation_ajax' ), 'innovation_ajax', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			<div class="section">
+				<h1>Privacy</h1>
+			</div>
+			<div class="section">
+				<h1>Legal</h1>
+			</div>
+			<div class="section">
+				<h1>712&#8209;314&#8209;4963</h1>
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
