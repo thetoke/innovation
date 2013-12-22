@@ -92,18 +92,24 @@ a {
 			background-color: $green;
 			-webkit-animation-delay: -1.0s;
 			animation-delay: -1.0s;
+			-webkit-animation-duration: -1.0s;
+			animation-duration: -1.0s;
 		}
 
 		.dot3 {
 			background-color: $orange;
 			-webkit-animation-delay: -2.0s;
 			animation-delay: -2.0s;
+			-webkit-animation-duration: -1.5s;
+			animation-duration: -1.5s;
 		}
 
 		.dot4 {
 			background-color: $yellow;
 			-webkit-animation-delay: -3s;
 			animation-delay: -3s;
+			-webkit-animation-duration: -3.0s;
+			animation-duration: -3.0s;
 		}
 	}
 }
@@ -246,6 +252,8 @@ a {
 				height: 75px;
 				width: 75px;
 				overflow: hidden;
+				-webkit-animation: spin 120s infinite linear;
+				animation: spin 120s infinite linear;
 
 				.stripe {
 					@include single-transition(all, 150ms, linear, 75ms);
@@ -347,9 +355,6 @@ a {
 					border: 2px solid #232323;
 					width: 40px;
 					height: 40px;
-					&:after {
-						top:-100px;
-					}
 				}
 			}
 			aside {
@@ -377,6 +382,7 @@ a {
 	}
 	.frame {
 		margin-top: 0;
+		margin-bottom: 300px;
 
 		#primary {
 			@include translate3d(0, 0, 0);
@@ -389,14 +395,16 @@ a {
 
 				.entry-title {
 					font-size: 95px;
-					line-height: 95px;
+					line-height: 115px;
 					background-clip: initial;
 					text-fill-color: initial;
 					-webkit-background-clip: initial;
 					-webkit-text-fill-color: initial;
 					color: white;
-					height: 250px;
-					padding-top: 75px;
+					height: 111px;
+					padding-top: 5px;
+					padding-right: 5px;
+					text-align: right;
 				}
 				.entry-content, .entry-meta, #disqus_thread {
 					padding: 5px 15px;
@@ -416,16 +424,51 @@ a {
 				text-transform: uppercase;
 				width: 220px;
 				position: fixed;
-				left: 5px;
+				padding-left: 5px;
+				padding-top: 5px;
+				top: 0;
+				left: 0;
 				height: 80px;
 				width: 100%;
 				margin: 0;
-				top: 5px;
 				color: white;
+				cursor: pointer;
 
 				.logo {
-					top: 5px;
-					right: 10px;
+					top: 13px;
+					right: 13px;
+					cursor: pointer;
+
+					&:after {
+						font-family: 'mtk';
+						speak: none;
+						font-style: normal;
+						font-weight: normal;
+						font-variant: normal;
+						text-transform: none;
+						line-height: 1;
+						-webkit-font-feature-settings: "liga";
+						-moz-font-feature-settings: "liga=1";
+						-moz-font-feature-settings: "liga";
+						-ms-font-feature-settings: "liga" 1;
+						-o-font-feature-settings: "liga";
+						font-feature-settings: "liga";
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+						content: "\27";
+						position: absolute;
+						color: white;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						top: 0;
+						-webkit-animation: spin 120s infinite linear reverse;
+						animation: spin 120s infinite linear reverse;
+						font-size: 75px;
+						text-align: center;
+						opacity: 0;
+						@include single-transition(all, 250ms, ease, 0ms);
+					}
 				}
 			}
 			aside {
@@ -448,14 +491,17 @@ a {
 				margin-left: -50px;
 
 				h1 {
-					color: black;
 					left: -100%;
 					.logo {
 						height: 85px;
 						width: 85px;
 						border-width:3px;
 						right: -100px;
-						cursor: pointer;
+						top: 7px;
+
+						&:after {
+							opacity: 1;
+						}
 					}
 				}
 				aside {
@@ -463,5 +509,123 @@ a {
 				}
 			}
 		}
+	}
+}
+
+@include respond-to(650px) {
+	.frame {
+		#primary {
+			#main {
+				.entry-title {
+					font-size: 55px;
+					line-height: 100px;
+					height: 85px;
+					padding-top: 0;
+					padding-right: 5px;
+					text-align: right;
+				}
+			}
+		}
+
+		#secondary {
+			padding-top: 25px;
+
+			h1 {
+				@include single-transition(all, 250ms, ease, 0ms);
+				font-size: 65px;
+				line-height: 65px;
+				text-transform: uppercase;
+				height: 65px;
+
+				.logo {
+					height: 50px;
+					width: 50px;
+					border-width: 2px;
+					top: 11px;
+					right: 11px;
+				}
+			}
+		}
+
+		&.collapsed {
+
+			#secondary {
+				overflow: initial;
+				margin-left: -50px;
+
+				h1 {
+					.logo {
+						height: 65px;
+						width: 65px;
+						border-width:3px;
+						right: -70px;
+						top: 5px;
+
+						&:after {
+							font-size: 56px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include respond-to(xs) {
+	.frame {
+
+		#primary {
+			#main {
+				.entry-title {
+					font-size: 36px;
+					line-height: 100px;
+					height: 85px;
+				}
+			}
+		}
+
+		#secondary {
+			padding-top: 25px;
+
+			h1 {
+				@include single-transition(all, 250ms, ease, 0ms);
+				font-size: 40px;
+				line-height: 67px;
+				text-transform: uppercase;
+				height: 67px;
+
+				.logo {
+					border-width: 2px;
+					top: 12px;
+					right: 12px;
+				}
+			}
+		}
+
+		&.collapsed {
+
+			#secondary {
+				overflow: initial;
+				margin-left: -50px;
+
+				h1 {
+					.logo {
+						height: 65px;
+						width: 65px;
+						border-width:3px;
+						right: -70px;
+						top: 5px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.konami {
+	position: fixed;
+
+	img {
+
 	}
 }

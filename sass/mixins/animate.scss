@@ -1979,23 +1979,22 @@
 	animation-name: bounceOutRight;
 }
 
-
 @-webkit-keyframes spinner-rotate { 100% { -webkit-transform: rotate(360deg) }}
 @keyframes spinner-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
 
 @-webkit-keyframes spinner-bounce {
-	0%, 100% { -webkit-transform: scale(0.0); z-index: 999 }
-	50% { -webkit-transform: scale(1.0); z-index: 0 }
+	0%, 100% { -webkit-transform: scale(0.0) skew(0deg,0deg); z-index: 999 }
+	50% { -webkit-transform: scale(1.0) skew(3deg, 3deg); z-index: 0 }
 }
 
 @keyframes spinner-bounce {
 	0%, 100% {
-		transform: scale(0.0);
-		-webkit-transform: scale(0.0);
+		transform: scale(0.0) skew(0deg,0deg);
+		-webkit-transform: scale(0.0) skew(0deg,0deg);
 		z-index: 999;
 	} 50% {
-		transform: scale(1.0);
-		-webkit-transform: scale(1.0);
+		transform: scale(1.0) skew(3deg,3deg);
+		-webkit-transform: scale(1.0) skew(3deg,3deg);
 		z-index: 0;
 	}
 }

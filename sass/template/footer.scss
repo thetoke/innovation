@@ -22,7 +22,41 @@
 				font-size: 90px;
 				text-transform: uppercase;
 				margin: -8px;
-				font-weight: 100
+				font-weight: 100;
+				@include respond-to(lg) {
+					font-size: 75px;
+				}
+			}
+
+			&:first-child {
+				h1 {
+					text-align: right
+				}
+			}
+			&:last-child {
+				h1 {
+					text-align: left
+				}
+			}
+		}
+	}
+
+	@include respond-to(md) {
+		height: 300px;
+		.site-info {
+			.section {
+				width: 100%;
+				float: none;
+				margin-top: 8px;
+
+				h1 {
+					height: 100px;
+					line-height: 100px;
+					text-align: center;
+					color:#999;
+					&:first-child, &:last-child  {text-align: center;}
+
+				}
 			}
 		}
 	}

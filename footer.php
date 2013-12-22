@@ -13,6 +13,9 @@
 		<div class="dot3"></div>
 		<div class="dot4"></div>
 	</div>
+	<div class="konami">
+		<img src="jerry.png" />
+	</div>
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">

@@ -40,7 +40,6 @@ if ($_GET['ajax'] == 1) : ?>
 					comments_template();
 				endif;
 			?>
-			NICE
 
 		<?php endwhile; // end of the loop. ?>
 
