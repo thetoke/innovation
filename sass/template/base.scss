@@ -1,8 +1,12 @@
+html {
+	width: 100%;
+	height: 100%;
+}
 body {
 	padding-left: 50px;
 	width: 100%;
 	height: 100%;
-	font-family: 'Open Sans', serif;
+	font-family: "myriad-pro", serif;
 }
 
 a {
@@ -37,23 +41,81 @@ a {
 	position: fixed;
 	top: 0;
 	height: 100%;
-	font-size: 135px;
+	font-size: 120px;
 	line-height: 107px;
 	z-index: 0;
 	text-transform: uppercase;
 	font-weight:100;
-	font-family: "futura-pt", sans-serif;
+	font-family: "league-gothic", sans-serif;
 	@include text-shadow(0px 1px 1px #555);
+}
+
+#content {
+	min-height: 100%;
 }
 
 #page {
 	overflow: hidden;
+
+	.spinner {
+		margin: 15% auto;
+		width: 150px;
+		height: 150px;
+		position: fixed;
+		text-align: center;
+		top: 0; left: 0; right: 0; bottom: 0;
+		z-index: 9;
+		@include apply-origin(center, center);
+		display: none;
+
+		&.animated {
+			display: block;
+		}
+
+
+		.dot1, .dot2, .dot3, .dot4 {
+			width: 150px;
+			height: 150px;
+			display: inline-block;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			background-color: $blue;
+			border-radius: 100%;
+			opacity: .9;
+			@include apply-origin(center, center);
+			-webkit-animation: spinner-bounce 4s infinite ease-in-out;
+			animation: spinner-bounce 4s infinite ease-in-out;
+		}
+
+		.dot2 {
+			background-color: $green;
+			-webkit-animation-delay: -1.0s;
+			animation-delay: -1.0s;
+		}
+
+		.dot3 {
+			background-color: $orange;
+			-webkit-animation-delay: -2.0s;
+			animation-delay: -2.0s;
+		}
+
+		.dot4 {
+			background-color: $yellow;
+			-webkit-animation-delay: -3s;
+			animation-delay: -3s;
+		}
+	}
 }
 
 .frame {
 	margin-top: 102px;
 	margin-bottom: 102px;
+	background-color: white !important;
+	display: block;
+
 	#primary {
+		min-height: 100%;
 		padding-top: 50px;
 		background-color: white;
 		position: relative;
@@ -63,10 +125,15 @@ a {
 
 		#main {
 			width: 750px;
-			min-height:200px;
+			min-height: 1000px;
+			padding-bottom: 150px;
 			margin: 0 auto;
 			@include single-transition(all, 150ms, linear, 75ms);
-			@include translate3d(-75px, 0, 0);
+			@include translate3d(-50px, 0, 0);
+
+			&.loading {
+
+			}
 		}
 
 		article {
@@ -79,7 +146,7 @@ a {
 				p { margin-bottom: 0; }
 			}
 			h1.entry-title {
-				font-family: 'futura-pt', 'Helvetica','Open Sans', serif;
+				font-family: "league-gothic", 'Helvetica','Open Sans', serif;
 				@include single-transition(all, 150ms, linear, 75ms);
 				background: url(http://mtk.local/wp-content/uploads/2013/11/STV_BG.png) no-repeat;
 				background-size: 100%;
@@ -99,7 +166,7 @@ a {
 				a {
 					position: initial;
 					border:none;
-					font-family: league-gothic, sans-serif;
+					font-family: "league-gothic", sans-serif;
 					font-weight: 100;
 				}
 			}
@@ -165,6 +232,7 @@ a {
 			font-size: 0;
 			line-height: 0;
 			margin-bottom: 82px;
+			font-family:"league-gothic", sans-serif;
 
 			.logo {
 				@include apply-origin(center center, false);
@@ -217,8 +285,10 @@ a {
 			h3 {
 				padding-left: 50px;
 				font-weight: 100;
-				font-family: 'Open Sans';
+				font-family: "myriad-pro";
 				font-size: 18px;
+				color: #cccccc;
+				@include single-transition(all, 150ms, linear, 0ms);
 			}
 
 			li {
@@ -264,7 +334,7 @@ a {
 		#primary {
 			@include translate3d(0, 0, 0);
 			#main {
-				@include translate3d(75px, 0, 0);
+				@include translate3d(25px, 0, 0);
 			}
 		}
 
@@ -272,7 +342,7 @@ a {
 			width: 50px;
 			h1 {
 				.logo {
-					right: 155px;
+					right: 5px;
 					top: 10px;
 					border: 2px solid #232323;
 					width: 40px;
@@ -283,6 +353,7 @@ a {
 				}
 			}
 			aside {
+				h3 { color: $base; padding-left: 60px; }
 				li {
 					a {
 						color: #333333;
@@ -293,12 +364,104 @@ a {
 	}
 }
 
-	@include respond-to(1178px){
-		.site-title{
-			font-size: 75px;
-			height: 68px;
+@include respond-to(md) {
+
+	.site-title { display: none; }
+
+	#page {
+		.spinner { z-index: 999999 }
+	}
+
+	body {
+		padding: 0;
+	}
+	.frame {
+		margin-top: 0;
+
+		#primary {
+			@include translate3d(0, 0, 0);
+			padding-top: 0;
+
+			#main {
+				@include translate3d(0, 0, 0);
+				width: 100%;
+
+
+				.entry-title {
+					font-size: 95px;
+					line-height: 95px;
+					background-clip: initial;
+					text-fill-color: initial;
+					-webkit-background-clip: initial;
+					-webkit-text-fill-color: initial;
+					color: white;
+					height: 250px;
+					padding-top: 75px;
+				}
+				.entry-content, .entry-meta, #disqus_thread {
+					padding: 5px 15px;
+				}
+			}
 		}
-		.frame {
-			margin-top: 68px;
+
+		#secondary {
+			width: 100%;
+			left: 0px;
+			padding-top: 50px;
+
+			h1 {
+				@include single-transition(all, 250ms, ease, 0ms);
+				font-size: 95px;
+				line-height: 95px;
+				text-transform: uppercase;
+				width: 220px;
+				position: fixed;
+				left: 5px;
+				height: 80px;
+				width: 100%;
+				margin: 0;
+				top: 5px;
+				color: white;
+
+				.logo {
+					top: 5px;
+					right: 10px;
+				}
+			}
+			aside {
+				width: 100%;
+				overflow: hidden;
+			}
+		}
+
+		&.collapsed {
+			#primary {
+				@include translate3d(0, 0, 0);
+
+				#main {
+					@include translate3d(0, 0, 0);
+				}
+			}
+
+			#secondary {
+				overflow: initial;
+				margin-left: -50px;
+
+				h1 {
+					color: black;
+					left: -100%;
+					.logo {
+						height: 85px;
+						width: 85px;
+						border-width:3px;
+						right: -100px;
+						cursor: pointer;
+					}
+				}
+				aside {
+					width: 0;
+				}
+			}
 		}
 	}
+}

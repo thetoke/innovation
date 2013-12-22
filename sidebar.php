@@ -26,8 +26,9 @@ $menu = array(
 
 ?>
 <div id="secondary" class="widget-area" role="complementary">
+	<h1 class="widget-title"><span class="logo"><span class="stripe blue"></span><span class="stripe green"></span><span class="stripe yellow"></span><span class="stripe orange"></span></span>Mash the Keyboard</h1>
+
 	<aside id="nav_menu-2" class="widget widget_nav_menu">
-		<h1 class="widget-title"><span class="logo"><span class="stripe blue"></span><span class="stripe green"></span><span class="stripe yellow"></span><span class="stripe orange"></span></span>Mash the Keyboard</h1>
 		<div class="menu-sidebar-container">
 			<?php wp_nav_menu( $menu ); ?>
 		</div>

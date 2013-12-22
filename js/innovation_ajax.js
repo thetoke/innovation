@@ -1,10 +1,50 @@
+function ajaxify(href){
+	$.ajax({
+		url: href,
+		data: {ajax: 1},
+		beforeSend: function() {
+			$('.spinner').removeClass('bounceOut').addClass('animated bounceIn');
+			$('#main').removeClass('fadeIn').addClass('fadeOut');
+			$('body, html').animate({
+				scrollTop: 0
+			}, 1000);
+		},
+		success: function(data) {
+			$('.spinner').removeClass('bounceIn').addClass('bounceOut');
+			$('#main').empty().append(data).delay(500).show(function(){
+				$(this).removeClass('fadeOut').addClass('fadeIn');
+				$('.site-title').css('background-image', $('h1:first-child', '#main').css('background-image'));
+				$('a.ajax', '#main').on('click', function(e) {
+					e.preventDefault();
+					ajaxify($(this).attr('href'));
+				});
+			});
+			$('.frame').addClass('collapsed');
+		},
+		error: function(){
+			// use old school redirection
+		}
+	});
+
+	history.pushState({}, "", href);
+}
 
 $(document).ready(function() {
 
 	$('#secondary, .site-title, .site-footer').hover(function(){
-		$('.frame').removeClass('collapsed');
+		if ($(window).innerWidth() > 992) {
+			$('.frame').removeClass('collapsed');
+		}
 	}, function() {
-		$('.frame').addClass('collapsed');
+		if ($(window).innerWidth() > 992) {
+			$('.frame').addClass('collapsed');
+		}
+	});
+
+	$('h1.widget-title').click(function(){
+		if ($(window).innerWidth() <= 992) {
+			$('.frame').toggleClass('collapsed');
+		}
 	});
 
 	$('a.ajax').on('click', function(e) {
@@ -16,37 +56,3 @@ $(document).ready(function() {
 
 	$('.site-title').css('background-image', $('h1:first-child', '#main').css('background-image'));
 });
-
-
-function ajaxify(href){
-	$.ajax({
-		url: href,
-		data: {ajax: 1},
-		beforeSend: function() {
-			$('.frame').addClass('collapsed');
-		},
-		success: function(data) {
-			$('body, html').animate({
-				scrollTop: 0
-			}, 1000);
-
-			$('#main').fadeOut(500, function(){
-				$('#main').empty().append(data).fadeIn(500, function(){
-					$('.site-title').css('background-image', $('h1:first-child', '#main').css('background-image'));
-					$('a.ajax', '#main').on('click', function(e) {
-						e.preventDefault();
-						ajaxify($(this).attr('href'));
-
-					});
-
-				});
-			});
-
-		},
-		error: function(){
-			// use old school redirection
-		}
-	});
-
-	history.pushState({}, "", href);
-}

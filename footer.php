@@ -7,7 +7,12 @@
  * @package innovation_ajax
  */
 ?>
-
+	<div class="spinner">
+		<div class="dot1"></div>
+		<div class="dot2"></div>
+		<div class="dot3"></div>
+		<div class="dot4"></div>
+	</div>
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">

@@ -16,7 +16,7 @@ Template Name: How We Help page designs
 <div class="frame">
 	<?php get_sidebar(); ?>
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main animated" role="main">
 			<?php get_template_part( 'content', 'page' ); ?>
 			<?php get_template_part( 'content', 'howwehelp' ); ?>
 		</main>

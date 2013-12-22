@@ -6,7 +6,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<h1 class="entry-title" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>)"><?php the_title(); ?></h1>
+		<h1 class="entry-title" style="background-image: url(<?php echo (get_post_thumbnail_id( $post->ID )) ? wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ) : print_backup_image_url() ; ?>)"><?php the_title(); ?></h1>
 
 		<div class="entry-meta">
 			<?php innovation_ajax_posted_on(); ?>
