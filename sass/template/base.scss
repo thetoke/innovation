@@ -434,13 +434,14 @@ a {
 				padding-top: 5px;
 				top: 0;
 				left: 0;
-				height: 80px;
+				height: 101px;
 				width: 100%;
 				margin: 0;
 				color: white;
 				cursor: pointer;
 				background-color: $base;
 				z-index: 999;
+				border-bottom: 1px solid #454545;
 
 				.logo {
 					top: 13px;
@@ -548,7 +549,7 @@ a {
 				font-size: 65px;
 				line-height: 65px;
 				text-transform: uppercase;
-				height: 65px;
+				height: 76px;
 
 				.logo {
 					height: 50px;
@@ -604,7 +605,7 @@ a {
 				font-size: 40px;
 				line-height: 67px;
 				text-transform: uppercase;
-				height: 67px;
+				height: 76px;
 
 				.logo {
 					border-width: 2px;
