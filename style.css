@@ -3089,11 +3089,15 @@ a {
   body {
     padding: 0; }
 
-  /* line 383, sass/template/base.scss */
+  /* line 384, sass/template/base.scss */
+  body.overflow-fix {
+    overflow: hidden; }
+
+  /* line 388, sass/template/base.scss */
   .frame {
     margin-top: 0;
     margin-bottom: 300px; }
-    /* line 387, sass/template/base.scss */
+    /* line 392, sass/template/base.scss */
     .frame #primary {
       -webkit-transform: translate3d(0, 0, 0);
       -moz-transform: translate3d(0, 0, 0);
@@ -3101,7 +3105,7 @@ a {
       -o-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
       padding-top: 0; }
-      /* line 391, sass/template/base.scss */
+      /* line 396, sass/template/base.scss */
       .frame #primary #main {
         -webkit-transform: translate3d(0, 0, 0);
         -moz-transform: translate3d(0, 0, 0);
@@ -3109,7 +3113,7 @@ a {
         -o-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
         width: 100%; }
-        /* line 396, sass/template/base.scss */
+        /* line 401, sass/template/base.scss */
         .frame #primary #main .entry-title {
           font-size: 95px;
           line-height: 115px;
@@ -3122,15 +3126,16 @@ a {
           padding-top: 5px;
           padding-right: 5px;
           text-align: right; }
-        /* line 409, sass/template/base.scss */
+        /* line 414, sass/template/base.scss */
         .frame #primary #main .entry-content, .frame #primary #main .entry-meta, .frame #primary #main #disqus_thread {
           padding: 5px 15px; }
-    /* line 415, sass/template/base.scss */
+    /* line 420, sass/template/base.scss */
     .frame #secondary {
       width: 100%;
       left: 0px;
-      padding-top: 50px; }
-      /* line 420, sass/template/base.scss */
+      padding-top: 50px;
+      overflow: scroll; }
+      /* line 426, sass/template/base.scss */
       .frame #secondary h1 {
         -webkit-transition: all 250ms ease;
         -webkit-transition-delay: 0ms;
@@ -3150,13 +3155,15 @@ a {
         width: 100%;
         margin: 0;
         color: white;
-        cursor: pointer; }
-        /* line 437, sass/template/base.scss */
+        cursor: pointer;
+        background-color: #3b3d43;
+        z-index: 999; }
+        /* line 445, sass/template/base.scss */
         .frame #secondary h1 .logo {
           top: 13px;
           right: 13px;
           cursor: pointer; }
-          /* line 442, sass/template/base.scss */
+          /* line 450, sass/template/base.scss */
           .frame #secondary h1 .logo:after {
             font-family: 'mtk';
             speak: none;
@@ -3190,46 +3197,49 @@ a {
             -moz-transition: all 250ms ease 0ms;
             -o-transition: all 250ms ease 0ms;
             transition: all 250ms ease 0ms; }
-      /* line 474, sass/template/base.scss */
+      /* line 482, sass/template/base.scss */
       .frame #secondary aside {
         width: 100%;
         overflow: hidden; }
-    /* line 481, sass/template/base.scss */
+        /* line 486, sass/template/base.scss */
+        .frame #secondary aside.widget_categories {
+          margin-top: 0px !important; }
+    /* line 493, sass/template/base.scss */
     .frame.collapsed #primary {
       -webkit-transform: translate3d(0, 0, 0);
       -moz-transform: translate3d(0, 0, 0);
       -ms-transform: translate3d(0, 0, 0);
       -o-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0); }
-      /* line 484, sass/template/base.scss */
+      /* line 496, sass/template/base.scss */
       .frame.collapsed #primary #main {
         -webkit-transform: translate3d(0, 0, 0);
         -moz-transform: translate3d(0, 0, 0);
         -ms-transform: translate3d(0, 0, 0);
         -o-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0); }
-    /* line 489, sass/template/base.scss */
+    /* line 501, sass/template/base.scss */
     .frame.collapsed #secondary {
-      overflow: initial;
-      margin-left: -50px; }
-      /* line 493, sass/template/base.scss */
+      margin-left: -50px;
+      position: fixed; }
+      /* line 505, sass/template/base.scss */
       .frame.collapsed #secondary h1 {
         left: -100%; }
-        /* line 495, sass/template/base.scss */
+        /* line 507, sass/template/base.scss */
         .frame.collapsed #secondary h1 .logo {
           height: 85px;
           width: 85px;
           border-width: 3px;
           right: -100px;
           top: 7px; }
-          /* line 502, sass/template/base.scss */
+          /* line 514, sass/template/base.scss */
           .frame.collapsed #secondary h1 .logo:after {
             opacity: 1; }
-      /* line 507, sass/template/base.scss */
+      /* line 519, sass/template/base.scss */
       .frame.collapsed #secondary aside {
         width: 0; } }
 @media (max-width: 650px) {
-  /* line 519, sass/template/base.scss */
+  /* line 531, sass/template/base.scss */
   .frame #primary #main .entry-title {
     font-size: 55px;
     line-height: 100px;
@@ -3237,10 +3247,10 @@ a {
     padding-top: 0;
     padding-right: 5px;
     text-align: right; }
-  /* line 530, sass/template/base.scss */
+  /* line 542, sass/template/base.scss */
   .frame #secondary {
     padding-top: 25px; }
-    /* line 533, sass/template/base.scss */
+    /* line 545, sass/template/base.scss */
     .frame #secondary h1 {
       -webkit-transition: all 250ms ease;
       -webkit-transition-delay: 0ms;
@@ -3251,37 +3261,37 @@ a {
       line-height: 65px;
       text-transform: uppercase;
       height: 65px; }
-      /* line 540, sass/template/base.scss */
+      /* line 552, sass/template/base.scss */
       .frame #secondary h1 .logo {
         height: 50px;
         width: 50px;
         border-width: 2px;
         top: 11px;
         right: 11px; }
-  /* line 552, sass/template/base.scss */
+  /* line 564, sass/template/base.scss */
   .frame.collapsed #secondary {
     overflow: initial;
     margin-left: -50px; }
-    /* line 557, sass/template/base.scss */
+    /* line 569, sass/template/base.scss */
     .frame.collapsed #secondary h1 .logo {
       height: 65px;
       width: 65px;
       border-width: 3px;
       right: -70px;
       top: 5px; }
-      /* line 564, sass/template/base.scss */
+      /* line 576, sass/template/base.scss */
       .frame.collapsed #secondary h1 .logo:after {
         font-size: 56px; } }
 @media (max-width: 480px) {
-  /* line 579, sass/template/base.scss */
+  /* line 591, sass/template/base.scss */
   .frame #primary #main .entry-title {
     font-size: 36px;
     line-height: 100px;
     height: 85px; }
-  /* line 587, sass/template/base.scss */
+  /* line 599, sass/template/base.scss */
   .frame #secondary {
     padding-top: 25px; }
-    /* line 590, sass/template/base.scss */
+    /* line 602, sass/template/base.scss */
     .frame #secondary h1 {
       -webkit-transition: all 250ms ease;
       -webkit-transition-delay: 0ms;
@@ -3292,23 +3302,23 @@ a {
       line-height: 67px;
       text-transform: uppercase;
       height: 67px; }
-      /* line 597, sass/template/base.scss */
+      /* line 609, sass/template/base.scss */
       .frame #secondary h1 .logo {
         border-width: 2px;
         top: 12px;
         right: 12px; }
-  /* line 607, sass/template/base.scss */
+  /* line 619, sass/template/base.scss */
   .frame.collapsed #secondary {
     overflow: initial;
     margin-left: -50px; }
-    /* line 612, sass/template/base.scss */
+    /* line 624, sass/template/base.scss */
     .frame.collapsed #secondary h1 .logo {
       height: 65px;
       width: 65px;
       border-width: 3px;
       right: -70px;
       top: 5px; } }
-/* line 625, sass/template/base.scss */
+/* line 637, sass/template/base.scss */
 .konami {
   position: fixed; }
 

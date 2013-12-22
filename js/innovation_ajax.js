@@ -99,9 +99,11 @@ function ajaxify(href){
 		beforeSend: function() {
 			$('.spinner').removeClass('bounceOut').addClass('animated bounceIn');
 			$('#main').removeClass('fadeIn').addClass('fadeOut');
-			$('body, html').animate({
-				scrollTop: 0
-			}, 1000);
+			if ($(window).scrollTop() !== 0){
+				$('body, html').animate({
+					scrollTop: 0
+				}, 1000);
+			}
 		},
 		success: function(data) {
 			$('.spinner').removeClass('bounceIn').addClass('bounceOut');
@@ -130,6 +132,10 @@ easter_egg.load();
 
 $(document).ready(function() {
 
+	if ($(window).innerWidth() <= 992) {
+		$('body').addClass('overflow-fix');
+	}
+
 	$('#secondary, .site-title, .site-footer').hover(function(){
 		if ($(window).innerWidth() > 992) {
 			$('.frame').removeClass('collapsed');
@@ -142,6 +148,7 @@ $(document).ready(function() {
 
 	$('h1.widget-title').click(function(){
 		if ($(window).innerWidth() <= 992) {
+			$('body').toggleClass('overflow-fix');
 			$('.frame').toggleClass('collapsed');
 		}
 	});
@@ -149,6 +156,9 @@ $(document).ready(function() {
 	$('a.ajax').on('click', function(e) {
 		e.preventDefault();
 		$('li', '#secondary').removeClass('active');
+		if ($(window).innerWidth() <= 992) {
+			$('body').removeClass('overflow-fix');
+		}
 		$(this).parent().addClass('active');
 		ajaxify($(this).attr('href'));
 	});

@@ -380,6 +380,11 @@ a {
 	body {
 		padding: 0;
 	}
+
+	body.overflow-fix {
+		overflow: hidden;
+	}
+
 	.frame {
 		margin-top: 0;
 		margin-bottom: 300px;
@@ -416,6 +421,7 @@ a {
 			width: 100%;
 			left: 0px;
 			padding-top: 50px;
+			overflow: scroll;
 
 			h1 {
 				@include single-transition(all, 250ms, ease, 0ms);
@@ -433,6 +439,8 @@ a {
 				margin: 0;
 				color: white;
 				cursor: pointer;
+				background-color: $base;
+				z-index: 999;
 
 				.logo {
 					top: 13px;
@@ -474,6 +482,10 @@ a {
 			aside {
 				width: 100%;
 				overflow: hidden;
+
+				&.widget_categories {
+					margin-top: 0px !important;
+				}
 			}
 		}
 
@@ -487,8 +499,8 @@ a {
 			}
 
 			#secondary {
-				overflow: initial;
 				margin-left: -50px;
+				position: fixed;
 
 				h1 {
 					left: -100%;
