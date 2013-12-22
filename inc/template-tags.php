@@ -92,7 +92,7 @@ function innovation_ajax_comment( $comment, $args, $depth ) {
 				</div><!-- .comment-author -->
 
 				<div class="comment-metadata">
-					<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">
+					<a class="ajax" href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">
 						<time datetime="<?php comment_time( 'c' ); ?>">
 							<?php printf( _x( '%1$s at %2$s', '1: date, 2: time', 'innovation_ajax' ), get_comment_date(), get_comment_time() ); ?>
 						</time>
@@ -143,11 +143,11 @@ function innovation_ajax_posted_on() {
 	);
 
 	printf( __( '<span class="posted-on">Posted on %1$s</span><span class="byline"> by %2$s</span>', 'innovation_ajax' ),
-		sprintf( '<a href="%1$s" rel="bookmark">%2$s</a>',
+		sprintf( '<a href="%1$s" class="ajax" rel="bookmark">%2$s</a>',
 			esc_url( get_permalink() ),
 			$time_string
 		),
-		sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s">%2$s</a></span>',
+		sprintf( '<span class="author vcard"><a class="url fn n ajax" href="%1$s">%2$s</a></span>',
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			esc_html( get_the_author() )
 		)

@@ -7,6 +7,8 @@ body {
 	width: 100%;
 	height: 100%;
 	font-family: "myriad-pro", serif;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -32,7 +34,7 @@ a {
 .site-title {
 	background: $base url(http://mtk.local/wp-content/uploads/2013/11/STV_BG.png) no-repeat;
 	color: white;
-	background-size: 100%;
+	background-size: cover;
 	text-align: right;
 	padding-right: 50px;
 	padding-bottom: 10px;
@@ -145,6 +147,8 @@ a {
 		article {
 			font-weight: 100;
 			font-size: 24px;
+			font-family: "freight-text-pro",sans-serif;
+
 			h2, h3, h4, h5, h6, p, span { font-family: "freight-text-pro",sans-serif; line-height: 175%; margin-bottom: 50px;  }
 			p { letter-spacing: .01rem; font-weight: 400; font-style: normal; font-size: 22px; line-height: 1.5; }
 			blockquote {
@@ -209,6 +213,14 @@ a {
 			float: left;
 			display: block;
 			margin-top: 15px;
+
+				p {
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					overflow: hidden;
+					margin-bottom: 5px;
+				}
+
 				a {
 					display: block;
 					color: $base;
@@ -367,6 +379,11 @@ a {
 			}
 		}
 	}
+
+	@include respond-to(lg) {
+		margin-bottom: 80px;
+	}
+
 }
 
 @include respond-to(md) {
