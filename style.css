@@ -3221,25 +3221,26 @@ a {
     /* line 501, sass/template/base.scss */
     .frame.collapsed #secondary {
       margin-left: -50px;
-      position: fixed; }
-      /* line 505, sass/template/base.scss */
+      position: fixed;
+      overflow: initial; }
+      /* line 506, sass/template/base.scss */
       .frame.collapsed #secondary h1 {
         left: -100%; }
-        /* line 507, sass/template/base.scss */
+        /* line 508, sass/template/base.scss */
         .frame.collapsed #secondary h1 .logo {
           height: 85px;
           width: 85px;
           border-width: 3px;
           right: -100px;
           top: 7px; }
-          /* line 514, sass/template/base.scss */
+          /* line 515, sass/template/base.scss */
           .frame.collapsed #secondary h1 .logo:after {
             opacity: 1; }
-      /* line 519, sass/template/base.scss */
+      /* line 520, sass/template/base.scss */
       .frame.collapsed #secondary aside {
         width: 0; } }
 @media (max-width: 650px) {
-  /* line 531, sass/template/base.scss */
+  /* line 532, sass/template/base.scss */
   .frame #primary #main .entry-title {
     font-size: 55px;
     line-height: 100px;
@@ -3247,10 +3248,10 @@ a {
     padding-top: 0;
     padding-right: 5px;
     text-align: right; }
-  /* line 542, sass/template/base.scss */
+  /* line 543, sass/template/base.scss */
   .frame #secondary {
     padding-top: 25px; }
-    /* line 545, sass/template/base.scss */
+    /* line 546, sass/template/base.scss */
     .frame #secondary h1 {
       -webkit-transition: all 250ms ease;
       -webkit-transition-delay: 0ms;
@@ -3261,16 +3262,15 @@ a {
       line-height: 65px;
       text-transform: uppercase;
       height: 65px; }
-      /* line 552, sass/template/base.scss */
+      /* line 553, sass/template/base.scss */
       .frame #secondary h1 .logo {
         height: 50px;
         width: 50px;
         border-width: 2px;
         top: 11px;
         right: 11px; }
-  /* line 564, sass/template/base.scss */
+  /* line 565, sass/template/base.scss */
   .frame.collapsed #secondary {
-    overflow: initial;
     margin-left: -50px; }
     /* line 569, sass/template/base.scss */
     .frame.collapsed #secondary h1 .logo {

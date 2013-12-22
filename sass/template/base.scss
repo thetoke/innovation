@@ -501,6 +501,7 @@ a {
 			#secondary {
 				margin-left: -50px;
 				position: fixed;
+				overflow: initial;
 
 				h1 {
 					left: -100%;
@@ -562,7 +563,6 @@ a {
 		&.collapsed {
 
 			#secondary {
-				overflow: initial;
 				margin-left: -50px;
 
 				h1 {
