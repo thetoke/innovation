@@ -92,6 +92,8 @@ var Konami = function (callback) {
 	return konami;
 };
 
+function setTitle(value) { $('title', 'head').text(value); }
+
 function ajaxify(href){
 	$.ajax({
 		url: href,

@@ -5,7 +5,7 @@
  * @package innovation_ajax
  */
 if ($_GET['ajax'] == 1) : ?>
-
+	<script>setTitle("<?php wp_title( '|', true, 'right' ); ?>");</script>
 	<?php while ( have_posts() ) : the_post(); ?>
 
 		<?php get_template_part( 'content', 'single' ); ?>
