@@ -1,14 +1,15 @@
 var Konami = function (callback) {
 	var konami = {
 		addEvent: function (obj, type, fn, ref_obj) {
-			if (obj.addEventListener)
+			if (obj.addEventListener) {
 				obj.addEventListener(type, fn, false);
+			}
 			else if (obj.attachEvent) {
 				// IE
 				obj["e" + type + fn] = fn;
 				obj[type + fn] = function () {
 					obj["e" + type + fn](window.event, ref_obj);
-				}
+				};
 				obj.attachEvent("on" + type, obj[type + fn]);
 			}
 		},
@@ -16,11 +17,12 @@ var Konami = function (callback) {
 		pattern: "38384040373937396665",
 		load: function (link) {
 			this.addEvent(document, "keydown", function (e, ref_obj) {
-				if (ref_obj) konami = ref_obj; // IE
+				if (ref_obj) { konami = ref_obj; }
 				konami.input += e ? e.keyCode : event.keyCode;
-				if (konami.input.length > konami.pattern.length)
+				if (konami.input.length > konami.pattern.length){
 					konami.input = konami.input.substr((konami.input.length - konami.pattern.length));
-				if (konami.input == konami.pattern) {
+				}
+				if (konami.input === konami.pattern) {
 					konami.code(link);
 					konami.input = "";
 					e.preventDefault();
@@ -30,7 +32,7 @@ var Konami = function (callback) {
 			this.iphone.load(link);
 		},
 		code: function (link) {
-			window.location = link
+			window.location = link;
 		},
 		iphone: {
 			start_x: 0,
@@ -47,7 +49,7 @@ var Konami = function (callback) {
 			load: function (link) {
 				this.orig_keys = this.keys;
 				konami.addEvent(document, "touchmove", function (e) {
-					if (e.touches.length == 1 && konami.iphone.capture == true) {
+					if (e.touches.length === 1 && konami.iphone.capture === true) {
 						var touch = e.touches[0];
 						konami.iphone.stop_x = touch.pageX;
 						konami.iphone.stop_y = touch.pageY;
@@ -56,8 +58,8 @@ var Konami = function (callback) {
 						konami.iphone.check_direction();
 					}
 				});
-				konami.addEvent(document, "touchend", function (evt) {
-					if (konami.iphone.tap == true) konami.iphone.check_direction(link);
+				konami.addEvent(document, "touchend", function () {
+					if (konami.iphone.tap === true) { konami.iphone.check_direction(link); }
 				}, false);
 				konami.addEvent(document, "touchstart", function (evt) {
 					konami.iphone.start_x = evt.changedTouches[0].pageX;
@@ -67,21 +69,21 @@ var Konami = function (callback) {
 				});
 			},
 			check_direction: function (link) {
-				x_magnitude = Math.abs(this.start_x - this.stop_x);
-				y_magnitude = Math.abs(this.start_y - this.stop_y);
-				x = ((this.start_x - this.stop_x) < 0) ? "RIGHT" : "LEFT";
-				y = ((this.start_y - this.stop_y) < 0) ? "DOWN" : "UP";
+				var x_magnitude = Math.abs(this.start_x - this.stop_x),
+				y_magnitude = Math.abs(this.start_y - this.stop_y),
+				x = ((this.start_x - this.stop_x) < 0) ? "RIGHT" : "LEFT",
+				y = ((this.start_y - this.stop_y) < 0) ? "DOWN" : "UP",
 				result = (x_magnitude > y_magnitude) ? x : y;
-				result = (this.tap == true) ? "TAP" : result;
+				result = (this.tap === true) ? "TAP" : result;
 
-				if (result == this.keys[0]) this.keys = this.keys.slice(1, this.keys.length);
-				if (this.keys.length == 0) {
+				if (result === this.keys[0]) { this.keys = this.keys.slice(1, this.keys.length); }
+				if (this.keys.length === 0) {
 					this.keys = this.orig_keys;
 					this.code(link);
 				}
 			}
 		}
-	}
+	};
 
 	typeof callback === "string" && konami.load(callback);
 	if (typeof callback === "function") {
@@ -92,8 +94,10 @@ var Konami = function (callback) {
 	return konami;
 };
 
-function setTitle(value) { $('title', 'head').text(value); }
+// Title bug for ajax
+var setTitle = function(value) { $('title', 'head').text(value); };
 
+// ajaxification (if the browser supports history.pushState)
 function ajaxify(href){
 	$.ajax({
 		url: href,
@@ -113,11 +117,11 @@ function ajaxify(href){
 				$(this).removeClass('fadeOut').addClass('fadeIn');
 				$('.site-title').css('background-image', "url("+$('h1:first-child', '#main').attr('data-bgi')+")");
 				$('.spinner').removeClass('animated');
-					$("a", ".post-navigation").each(function(){
+				$("a", ".post-navigation").each(function(){
 					$(this).addClass('ajax');
 				});
 				$("a", ".entry-meta").each(function(){
-					if (!$(this).hasClass('post-edit-link')) $(this).addClass('ajax');
+					if (!$(this).hasClass('post-edit-link')) { $(this).addClass('ajax'); }
 				});
 				$('a.ajax', '#main').on('click', function(e) {
 					e.preventDefault();
@@ -131,9 +135,10 @@ function ajaxify(href){
 		}
 	});
 
-	history.pushState({}, "", href);
+history.pushState({}, "", href);
 }
 
+// Konami
 var easter_egg = new Konami(),
 konamighost,
 konamisound;
@@ -150,15 +155,23 @@ easter_egg.code = function() {
 		$('.konami').append(node.clone(true));
 	}
 	konamisound.play();
-}
+};
 easter_egg.load();
 
 $(document).ready(function() {
 
+	// parallax header
+	$(window).scroll(function() {
+		var scroll = $(window).scrollTop(), slowScroll = scroll/2;
+		$('.site-title').css({ transform: "translateY(-" + slowScroll + "px)" });
+	});
+
+	// Mobile fixes for fixed position navigation
 	if ($(window).innerWidth() <= 992) {
 		$('body').addClass('overflow-fix');
 	}
 
+	// Toggles collapsed class to nav (desktop)
 	$('#secondary, .site-title, .site-footer').hover(function(){
 		if ($(window).innerWidth() > 992) {
 			$('.frame').removeClass('collapsed');
@@ -169,6 +182,7 @@ $(document).ready(function() {
 		}
 	});
 
+	// Toggles collapsed class to nav (mobile)
 	$('h1.widget-title').click(function(){
 		if ($(window).innerWidth() <= 992) {
 			$('body').toggleClass('overflow-fix');
@@ -176,14 +190,17 @@ $(document).ready(function() {
 		}
 	});
 
+	// adds ajax class to links after content and before comments (@TODO: Add this on the server instead of client)
 	$("a", ".post-navigation").each(function(){
 		$(this).addClass('ajax');
 	});
 
+	// adds ajax class to links after content and before comments (@TODO: Add this on the server instead of client)
 	$("a", ".entry-meta").each(function(){
-		if (!$(this).hasClass('post-edit-link')) $(this).addClass('ajax');
+		if (!$(this).hasClass('post-edit-link')) { $(this).addClass('ajax'); }
 	});
 
+	// Make ajax request
 	$('a.ajax').on('click', function(e) {
 		e.preventDefault();
 		$('li', '#secondary').removeClass('active');
@@ -194,8 +211,10 @@ $(document).ready(function() {
 		ajaxify($(this).attr('href'));
 	});
 
+	// update BG image on site
 	$('.site-title').css('background-image', "url("+$('h1:first-child', '#main').attr('data-bgi')+")");
 
+	// preload konami sound
 	konamisound = soundManager.createSound({
 		id: 'boo',
 		url: $("audio", ".konami").attr("src"),
