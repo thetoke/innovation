@@ -2851,11 +2851,6 @@ a {
       /* line 172, sass/template/base.scss */
       .frame #primary article h1.entry-title {
         font-family: "league-gothic", 'Helvetica','Open Sans', serif;
-        -webkit-transition: all 150ms linear;
-        -webkit-transition-delay: 75ms;
-        -moz-transition: all 150ms linear 75ms;
-        -o-transition: all 150ms linear 75ms;
-        transition: all 150ms linear 75ms;
         text-align: center;
         font-size: 90px;
         font-weight: 600;
@@ -2872,13 +2867,13 @@ a {
             text-fill-color: transparent;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent; } }
-        /* line 193, sass/template/base.scss */
+        /* line 192, sass/template/base.scss */
         .frame #primary article h1.entry-title a {
           position: initial;
           border: none;
           font-family: "league-gothic", sans-serif;
           font-weight: 100; }
-      /* line 200, sass/template/base.scss */
+      /* line 199, sass/template/base.scss */
       .frame #primary article h2.entry-subtitle {
         font-size: 75px;
         line-height: 125%;
@@ -2888,7 +2883,7 @@ a {
         width: 150%;
         margin-left: -25%;
         text-align: center; }
-      /* line 210, sass/template/base.scss */
+      /* line 209, sass/template/base.scss */
       .frame #primary article h2 {
         font-size: 45px;
         line-height: 150%;
@@ -2898,11 +2893,11 @@ a {
         width: 125%;
         margin-left: -12.5%;
         text-align: center; }
-      /* line 220, sass/template/base.scss */
+      /* line 219, sass/template/base.scss */
       .frame #primary article .entry-meta {
         height: 100px;
         padding-top: 25px; }
-    /* line 226, sass/template/base.scss */
+    /* line 225, sass/template/base.scss */
     .frame #primary .post-preview {
       width: 220px;
       height: 220px;
@@ -2912,23 +2907,23 @@ a {
       display: block;
       margin-top: 15px;
       background-size: contain !important; }
-      /* line 235, sass/template/base.scss */
+      /* line 234, sass/template/base.scss */
       .frame #primary .post-preview p {
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
         margin-bottom: 5px; }
-      /* line 242, sass/template/base.scss */
+      /* line 241, sass/template/base.scss */
       .frame #primary .post-preview a {
         display: block;
         color: #3b3d43;
         z-index: 0;
         overflow: hidden; }
-        /* line 247, sass/template/base.scss */
+        /* line 246, sass/template/base.scss */
         .frame #primary .post-preview a * {
           position: relative;
           z-index: 1; }
-        /* line 248, sass/template/base.scss */
+        /* line 247, sass/template/base.scss */
         .frame #primary .post-preview a img {
           width: 100%;
           height: auto;
@@ -2941,10 +2936,10 @@ a {
           z-index: 0;
           opacity: .25;
           -webkit-filter: blur(5px); }
-        /* line 250, sass/template/base.scss */
+        /* line 249, sass/template/base.scss */
         .frame #primary .post-preview a section {
           font-size: 18px; }
-  /* line 256, sass/template/base.scss */
+  /* line 255, sass/template/base.scss */
   .frame #secondary {
     position: fixed;
     z-index: 1000;
@@ -2959,14 +2954,14 @@ a {
     -moz-transition: all 150ms linear 75ms;
     -o-transition: all 150ms linear 75ms;
     transition: all 150ms linear 75ms; }
-    /* line 267, sass/template/base.scss */
+    /* line 266, sass/template/base.scss */
     .frame #secondary h1 {
       position: relative;
       font-size: 0;
       line-height: 0;
       margin-bottom: 82px;
       font-family: "league-gothic", sans-serif; }
-      /* line 274, sass/template/base.scss */
+      /* line 273, sass/template/base.scss */
       .frame #secondary h1 .logo {
         -webkit-transform-origin: center center;
         -moz-transform-origin: center center;
@@ -2989,7 +2984,7 @@ a {
         overflow: hidden;
         -webkit-animation: spin 120s infinite linear;
         animation: spin 120s infinite linear; }
-        /* line 289, sass/template/base.scss */
+        /* line 288, sass/template/base.scss */
         .frame #secondary h1 .logo .stripe {
           -webkit-transition: all 150ms linear;
           -webkit-transition-delay: 75ms;
@@ -3001,30 +2996,30 @@ a {
           width: 100%;
           height: 26%;
           display: block; }
-          /* line 296, sass/template/base.scss */
+          /* line 295, sass/template/base.scss */
           .frame #secondary h1 .logo .stripe.orange {
             background-color: #de5b1e;
             top: 0; }
-          /* line 300, sass/template/base.scss */
+          /* line 299, sass/template/base.scss */
           .frame #secondary h1 .logo .stripe.yellow {
             background-color: #f0b747;
             top: 25%; }
-          /* line 304, sass/template/base.scss */
+          /* line 303, sass/template/base.scss */
           .frame #secondary h1 .logo .stripe.green {
             background-color: #6aa427;
             top: 50%; }
-          /* line 308, sass/template/base.scss */
+          /* line 307, sass/template/base.scss */
           .frame #secondary h1 .logo .stripe.blue {
             background-color: #9dd2b5;
             top: 75%; }
-    /* line 316, sass/template/base.scss */
+    /* line 315, sass/template/base.scss */
     .frame #secondary aside {
       width: 200px;
       color: #666666; }
-      /* line 320, sass/template/base.scss */
+      /* line 319, sass/template/base.scss */
       .frame #secondary aside:not(:first-child) {
         margin-top: 50px; }
-      /* line 324, sass/template/base.scss */
+      /* line 323, sass/template/base.scss */
       .frame #secondary aside h3 {
         padding-left: 50px;
         font-weight: 100;
@@ -3036,13 +3031,13 @@ a {
         -moz-transition: all 150ms linear 0ms;
         -o-transition: all 150ms linear 0ms;
         transition: all 150ms linear 0ms; }
-      /* line 333, sass/template/base.scss */
+      /* line 332, sass/template/base.scss */
       .frame #secondary aside li {
         position: relative;
         text-align: left;
         border-bottom: 1px solid #454545;
         color: #999999; }
-        /* line 339, sass/template/base.scss */
+        /* line 338, sass/template/base.scss */
         .frame #secondary aside li a {
           padding-left: 55px;
           text-align: left;
@@ -3054,52 +3049,52 @@ a {
           -moz-transition: all 250ms linear 0ms;
           -o-transition: all 250ms linear 0ms;
           transition: all 250ms linear 0ms; }
-        /* line 348, sass/template/base.scss */
+        /* line 347, sass/template/base.scss */
         .frame #secondary aside li:first-child {
           border-top: 1px solid #454545; }
-        /* line 352, sass/template/base.scss */
+        /* line 351, sass/template/base.scss */
         .frame #secondary aside li:hover {
           background-color: rgba(0, 0, 0, 0.5); }
-          /* line 354, sass/template/base.scss */
+          /* line 353, sass/template/base.scss */
           .frame #secondary aside li:hover a {
             color: #dadada; }
-        /* line 359, sass/template/base.scss */
+        /* line 358, sass/template/base.scss */
         .frame #secondary aside li.active {
           background-color: white;
           border-color: rgba(255, 255, 255, 0.5);
           color: #3b3d43 !important; }
-          /* line 364, sass/template/base.scss */
+          /* line 363, sass/template/base.scss */
           .frame #secondary aside li.active a {
             color: #3b3d43 !important; }
-  /* line 373, sass/template/base.scss */
+  /* line 372, sass/template/base.scss */
   .frame.collapsed #primary {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
-    /* line 375, sass/template/base.scss */
+    /* line 374, sass/template/base.scss */
     .frame.collapsed #primary #main {
       -webkit-transform: translate3d(25px, 0, 0);
       -moz-transform: translate3d(25px, 0, 0);
       -ms-transform: translate3d(25px, 0, 0);
       -o-transform: translate3d(25px, 0, 0);
       transform: translate3d(25px, 0, 0); }
-  /* line 380, sass/template/base.scss */
+  /* line 379, sass/template/base.scss */
   .frame.collapsed #secondary {
     width: 50px; }
-    /* line 383, sass/template/base.scss */
+    /* line 382, sass/template/base.scss */
     .frame.collapsed #secondary h1 .logo {
       right: 5px;
       top: 10px;
       border: 2px solid #232323;
       width: 40px;
       height: 40px; }
-    /* line 392, sass/template/base.scss */
+    /* line 391, sass/template/base.scss */
     .frame.collapsed #secondary aside h3 {
       color: #3b3d43;
       padding-left: 60px; }
-    /* line 394, sass/template/base.scss */
+    /* line 393, sass/template/base.scss */
     .frame.collapsed #secondary aside li a {
       color: #333333; }
   @media (max-width: 1200px) {
@@ -3108,32 +3103,32 @@ a {
       margin-bottom: 80px; } }
 
 @-moz-document url-prefix() {
-  /* line 410, sass/template/base.scss */
+  /* line 409, sass/template/base.scss */
   .frame #primary article h1.entry-title {
     background-image: none !important; } }
 
 @media (max-width: 992px) {
-  /* line 417, sass/template/base.scss */
+  /* line 416, sass/template/base.scss */
   .site-title {
     display: none; }
 
-  /* line 420, sass/template/base.scss */
+  /* line 419, sass/template/base.scss */
   #page .spinner {
     z-index: 999999; }
 
-  /* line 423, sass/template/base.scss */
+  /* line 422, sass/template/base.scss */
   body {
     padding: 0; }
 
-  /* line 427, sass/template/base.scss */
+  /* line 426, sass/template/base.scss */
   body.overflow-fix {
     overflow: hidden; }
 
-  /* line 431, sass/template/base.scss */
+  /* line 430, sass/template/base.scss */
   .frame {
     margin-top: 0;
     margin-bottom: 300px; }
-    /* line 435, sass/template/base.scss */
+    /* line 434, sass/template/base.scss */
     .frame #primary {
       -webkit-transform: translate3d(0, 0, 0);
       -moz-transform: translate3d(0, 0, 0);
@@ -3141,7 +3136,7 @@ a {
       -o-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
       padding-top: 0; }
-      /* line 439, sass/template/base.scss */
+      /* line 438, sass/template/base.scss */
       .frame #primary #main {
         -webkit-transform: translate3d(0, 0, 0);
         -moz-transform: translate3d(0, 0, 0);
@@ -3149,7 +3144,7 @@ a {
         -o-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
         width: 100%; }
-        /* line 444, sass/template/base.scss */
+        /* line 443, sass/template/base.scss */
         .frame #primary #main .entry-title {
           font-size: 95px;
           line-height: 115px;
@@ -3165,16 +3160,16 @@ a {
           padding-right: 5px;
           text-align: right;
           text-shadow: 0px 1px 1px #555555; }
-        /* line 460, sass/template/base.scss */
+        /* line 459, sass/template/base.scss */
         .frame #primary #main .entry-content, .frame #primary #main .entry-meta, .frame #primary #main #disqus_thread {
           padding: 5px 15px; }
-    /* line 466, sass/template/base.scss */
+    /* line 465, sass/template/base.scss */
     .frame #secondary {
       width: 100%;
       left: 0px;
       padding-top: 50px;
       overflow: scroll; }
-      /* line 472, sass/template/base.scss */
+      /* line 471, sass/template/base.scss */
       .frame #secondary h1 {
         -webkit-transition: all 250ms ease;
         -webkit-transition-delay: 0ms;
@@ -3199,12 +3194,12 @@ a {
         z-index: 999;
         border-bottom: 1px solid #454545;
         text-shadow: 0px 1px 1px #555555; }
-        /* line 493, sass/template/base.scss */
+        /* line 492, sass/template/base.scss */
         .frame #secondary h1 .logo {
           top: 13px;
           right: 13px;
           cursor: pointer; }
-          /* line 498, sass/template/base.scss */
+          /* line 497, sass/template/base.scss */
           .frame #secondary h1 .logo:after {
             font-family: 'mtk';
             speak: none;
@@ -3238,50 +3233,50 @@ a {
             -moz-transition: all 250ms ease 0ms;
             -o-transition: all 250ms ease 0ms;
             transition: all 250ms ease 0ms; }
-      /* line 530, sass/template/base.scss */
+      /* line 529, sass/template/base.scss */
       .frame #secondary aside {
         width: 100%;
         overflow: hidden; }
-        /* line 534, sass/template/base.scss */
+        /* line 533, sass/template/base.scss */
         .frame #secondary aside.widget_categories {
           margin-top: 0px !important; }
-    /* line 541, sass/template/base.scss */
+    /* line 540, sass/template/base.scss */
     .frame.collapsed #primary {
       -webkit-transform: translate3d(0, 0, 0);
       -moz-transform: translate3d(0, 0, 0);
       -ms-transform: translate3d(0, 0, 0);
       -o-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0); }
-      /* line 544, sass/template/base.scss */
+      /* line 543, sass/template/base.scss */
       .frame.collapsed #primary #main {
         -webkit-transform: translate3d(0, 0, 0);
         -moz-transform: translate3d(0, 0, 0);
         -ms-transform: translate3d(0, 0, 0);
         -o-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0); }
-    /* line 549, sass/template/base.scss */
+    /* line 548, sass/template/base.scss */
     .frame.collapsed #secondary {
       margin-left: -50px;
       position: fixed;
       overflow: initial; }
-      /* line 554, sass/template/base.scss */
+      /* line 553, sass/template/base.scss */
       .frame.collapsed #secondary h1 {
         left: -100%; }
-        /* line 556, sass/template/base.scss */
+        /* line 555, sass/template/base.scss */
         .frame.collapsed #secondary h1 .logo {
           height: 85px;
           width: 85px;
           border-width: 3px;
           right: -100px;
           top: 7px; }
-          /* line 563, sass/template/base.scss */
+          /* line 562, sass/template/base.scss */
           .frame.collapsed #secondary h1 .logo:after {
             opacity: 1; }
-      /* line 568, sass/template/base.scss */
+      /* line 567, sass/template/base.scss */
       .frame.collapsed #secondary aside {
         width: 0; } }
 @media (max-width: 650px) {
-  /* line 580, sass/template/base.scss */
+  /* line 579, sass/template/base.scss */
   .frame #primary #main .entry-title {
     font-size: 55px;
     line-height: 100px;
@@ -3289,10 +3284,10 @@ a {
     padding-top: 0;
     padding-right: 5px;
     text-align: right; }
-  /* line 591, sass/template/base.scss */
+  /* line 590, sass/template/base.scss */
   .frame #secondary {
     padding-top: 25px; }
-    /* line 594, sass/template/base.scss */
+    /* line 593, sass/template/base.scss */
     .frame #secondary h1 {
       -webkit-transition: all 250ms ease;
       -webkit-transition-delay: 0ms;
@@ -3303,36 +3298,36 @@ a {
       line-height: 65px;
       text-transform: uppercase;
       height: 76px; }
-      /* line 601, sass/template/base.scss */
+      /* line 600, sass/template/base.scss */
       .frame #secondary h1 .logo {
         height: 50px;
         width: 50px;
         border-width: 2px;
         top: 11px;
         right: 11px; }
-  /* line 613, sass/template/base.scss */
+  /* line 612, sass/template/base.scss */
   .frame.collapsed #secondary {
     margin-left: -50px; }
-    /* line 617, sass/template/base.scss */
+    /* line 616, sass/template/base.scss */
     .frame.collapsed #secondary h1 .logo {
       height: 65px;
       width: 65px;
       border-width: 3px;
       right: -70px;
       top: 5px; }
-      /* line 624, sass/template/base.scss */
+      /* line 623, sass/template/base.scss */
       .frame.collapsed #secondary h1 .logo:after {
         font-size: 56px; } }
 @media (max-width: 480px) {
-  /* line 639, sass/template/base.scss */
+  /* line 638, sass/template/base.scss */
   .frame #primary #main .entry-title {
     font-size: 36px;
     line-height: 100px;
     height: 85px; }
-  /* line 647, sass/template/base.scss */
+  /* line 646, sass/template/base.scss */
   .frame #secondary {
     padding-top: 25px; }
-    /* line 650, sass/template/base.scss */
+    /* line 649, sass/template/base.scss */
     .frame #secondary h1 {
       -webkit-transition: all 250ms ease;
       -webkit-transition-delay: 0ms;
@@ -3343,16 +3338,16 @@ a {
       line-height: 67px;
       text-transform: uppercase;
       height: 76px; }
-      /* line 657, sass/template/base.scss */
+      /* line 656, sass/template/base.scss */
       .frame #secondary h1 .logo {
         border-width: 2px;
         top: 12px;
         right: 12px; }
-  /* line 667, sass/template/base.scss */
+  /* line 666, sass/template/base.scss */
   .frame.collapsed #secondary {
     overflow: initial;
     margin-left: -50px; }
-    /* line 672, sass/template/base.scss */
+    /* line 671, sass/template/base.scss */
     .frame.collapsed #secondary h1 .logo {
       height: 65px;
       width: 65px;

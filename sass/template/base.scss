@@ -171,7 +171,6 @@ a {
 			}
 			h1.entry-title {
 				font-family: "league-gothic", 'Helvetica','Open Sans', serif;
-				@include single-transition(all, 150ms, linear, 75ms);
 
 				@media screen and (-webkit-min-device-pixel-ratio: 0) {
 					background-size: 100%;

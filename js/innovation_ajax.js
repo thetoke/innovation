@@ -164,6 +164,7 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		var scroll = $(window).scrollTop(), slowScroll = scroll/2;
 		$('.site-title').css({ transform: "translateY(-" + slowScroll + "px)" });
+		$('.entry-title').css("background-position", "0 -" + slowScroll + "px");
 	});
 
 	// Mobile fixes for fixed position navigation
