@@ -22,6 +22,7 @@
 				<div class="eye left"></div>
 				<div class="eye right"></div>
 			</div>
+			<audio src="<?php echo get_template_directory_uri(); ?>/audio/boo_laugh.mp3" preload="auto" />
 		</div>
 	</div><!-- #content -->
 
@@ -40,7 +41,7 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<script src="<?php echo get_template_directory_uri(); ?>/js/soundmanager.js"></script>
 <?php wp_footer(); ?>
-
 </body>
 </html>

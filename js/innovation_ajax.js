@@ -135,7 +135,8 @@ function ajaxify(href){
 }
 
 var easter_egg = new Konami(),
-konamighost;
+konamighost,
+konamisound;
 easter_egg.code = function() {
 	if (!$('.konami').hasClass('active')) {
 		$('.konami').addClass('active');
@@ -144,11 +145,11 @@ easter_egg.code = function() {
 		}, 500);
 	}
 	else {
-		console.log('cool');
-		var node = $('.ghost', '.konami').first();
-		node.css("top", Math.ceil((Math.random() * 100))+"%");
+		var node = $('.ghost', '.konami').first().clone();
+		node.css("top", (Math.ceil(Math.random() * 90) + 5)+"%");
 		$('.konami').append(node.clone(true));
 	}
+	konamisound.play();
 }
 easter_egg.load();
 
@@ -194,4 +195,15 @@ $(document).ready(function() {
 	});
 
 	$('.site-title').css('background-image', "url("+$('h1:first-child', '#main').attr('data-bgi')+")");
+
+	konamisound = soundManager.createSound({
+		id: 'boo',
+		url: $("audio", ".konami").attr("src"),
+		autoLoad: true,
+		autoPlay: false,
+		onload: function() {
+			// move konami stuff below up
+		},
+		volume: 75
+	});
 });
