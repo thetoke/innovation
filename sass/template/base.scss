@@ -158,12 +158,15 @@ a {
 			h1.entry-title {
 				font-family: "league-gothic", 'Helvetica','Open Sans', serif;
 				@include single-transition(all, 150ms, linear, 75ms);
-				background: url(http://mtk.local/wp-content/uploads/2013/11/STV_BG.png) no-repeat;
-				background-size: 100%;
-				background-clip: text;
-				text-fill-color: transparent;
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
+
+				@media screen and (-webkit-min-device-pixel-ratio: 0) {
+					background-size: 100%;
+					background-clip: text;
+					text-fill-color: transparent;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+
 				text-align: center;
 				font-size: 90px;
 				font-weight: 600;
@@ -213,6 +216,7 @@ a {
 			float: left;
 			display: block;
 			margin-top: 15px;
+			background-size: contain !important;
 
 				p {
 					white-space: nowrap;
@@ -225,8 +229,9 @@ a {
 					display: block;
 					color: $base;
 					z-index: 0;
+					overflow: hidden;
 					* { position: relative; z-index: 1 }
-					img { width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 0; opacity: .25; -webkit-filter: blur(5px) }
+					img { width: 100%; height: auto; display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 0; opacity: .25; -webkit-filter: blur(5px) }
 					header {  }
 					section { font-size: 18px; }
 					footer {  }
@@ -386,6 +391,13 @@ a {
 
 }
 
+
+@-moz-document url-prefix() {
+	.frame #primary article h1.entry-title {
+		background-image: none !important;
+	}
+}
+
 @include respond-to(md) {
 
 	.site-title { display: none; }
@@ -420,6 +432,8 @@ a {
 					line-height: 115px;
 					background-clip: initial;
 					text-fill-color: initial;
+					-moz-background-clip: text;
+					-moz-text-fill-color: transparent;
 					-webkit-background-clip: initial;
 					-webkit-text-fill-color: initial;
 					color: white;
@@ -427,6 +441,7 @@ a {
 					padding-top: 5px;
 					padding-right: 5px;
 					text-align: right;
+					text-shadow: 0px 1px 1px #555555;
 				}
 				.entry-content, .entry-meta, #disqus_thread {
 					padding: 5px 15px;
@@ -459,6 +474,7 @@ a {
 				background-color: $base;
 				z-index: 999;
 				border-bottom: 1px solid #454545;
+				text-shadow: 0px 1px 1px #555555;
 
 				.logo {
 					top: 13px;

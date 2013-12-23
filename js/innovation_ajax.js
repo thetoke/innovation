@@ -109,9 +109,9 @@ function ajaxify(href){
 			$('.spinner').removeClass('bounceIn').addClass('bounceOut');
 			$('#main').empty().append(data).show(function(){
 				$(this).removeClass('fadeOut').addClass('fadeIn');
-				$('.site-title').css('background-image', $('h1:first-child', '#main').css('background-image'));
+				$('.site-title').css('background-image', "url("+$('h1:first-child', '#main').attr('data-bgi')+")");
 				$('.spinner').removeClass('animated');
-				$("a", ".post-navigation").each(function(){
+					$("a", ".post-navigation").each(function(){
 					$(this).addClass('ajax');
 				});
 				$("a", ".entry-meta").each(function(){
@@ -133,7 +133,7 @@ function ajaxify(href){
 }
 
 var easter_egg = new Konami();
-easter_egg.code = function() {  }
+easter_egg.code = function() { console.log('Seinfeld logic here!'); }
 easter_egg.load();
 
 $(document).ready(function() {
@@ -177,5 +177,5 @@ $(document).ready(function() {
 		ajaxify($(this).attr('href'));
 	});
 
-	$('.site-title').css('background-image', $('h1:first-child', '#main').css('background-image'));
+	$('.site-title').css('background-image', "url("+$('h1:first-child', '#main').attr('data-bgi')+")");
 });
