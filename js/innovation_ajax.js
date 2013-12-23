@@ -132,8 +132,22 @@ function ajaxify(href){
 	history.pushState({}, "", href);
 }
 
-var easter_egg = new Konami();
-easter_egg.code = function() { console.log('Seinfeld logic here!'); }
+var easter_egg = new Konami(),
+konamighost;
+easter_egg.code = function() {
+	if (!$('.konami').hasClass('active')) {
+		$('.konami').addClass('active');
+		konamighost = setInterval(function () {
+			$('.ghost').toggleClass('step2');
+		}, 500);
+	}
+	else {
+		console.log('cool');
+		var node = $('.ghost', '.konami').first();
+		node.css("top", Math.ceil((Math.random() * 100))+"%");
+		$('.konami').append(node.clone(true));
+	}
+}
 easter_egg.load();
 
 $(document).ready(function() {

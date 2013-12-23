@@ -14,7 +14,14 @@
 			<div class="dot4"></div>
 		</div>
 		<div class="konami">
-			<img src="jerry.png" />
+			<div class="ghost">
+				<div class="tail"></div>
+				<div class="mouth"><div class="corners"></div></div>
+				<div class="hand left"></div>
+				<div class="hand right"></div>
+				<div class="eye left"></div>
+				<div class="eye right"></div>
+			</div>
 		</div>
 	</div><!-- #content -->
 
