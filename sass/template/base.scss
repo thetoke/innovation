@@ -2,6 +2,7 @@ html {
 	width: 100%;
 	height: 100%;
 }
+
 body {
 	padding-left: 50px;
 	width: 100%;
@@ -9,6 +10,10 @@ body {
 	font-family: "myriad-pro", serif;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
+}
+
+.screen-reader-text {
+	@include hide-text(left);
 }
 
 a {
@@ -22,17 +27,12 @@ a {
 
 	&:hover {
 		background-color:rgba(0,0,0,.025);
-		color: darken($cta, 15%)
-	}
-
-	&:active {
-		top: 1px;
-		border-bottom: 1px solid;
+		color: darken($cta, 15%);
 	}
 }
 
 .site-title {
-	background: $base url(http://mtk.local/wp-content/uploads/2013/11/STV_BG.png) no-repeat;
+	background: $base 0 0 no-repeat;
 	color: white;
 	background-size: cover;
 	text-align: right;
@@ -161,21 +161,28 @@ a {
 		.nav-links {
 			height: 150px;
 			margin: 0 25px;
+
 			a {
-				display: block;
 				width: 50%;
 				height: 100%;
-				text-align: center;
-				line-height: 150px;
 				font-size: 34px;
 				border: 0px;
 				position: relative;
 				overflow: hidden;
-				text-indent: -200%;
 				float: right;
 				@include single-transition(all, 300ms, ease, 0ms);
+				display: table;
 
-				span {
+				.preview-title {
+					display: table-cell;
+					vertical-align: middle;
+					text-align: center;
+					opacity: 0;
+					@include single-transition(all, 150ms, ease, 75ms);
+				}
+
+				span.mtk-arrow-left,
+				span.mtk-arrow-right {
 					position: absolute;
 					top: 0;
 					left: 0;
@@ -184,7 +191,7 @@ a {
 					width: 100%;
 					height: 100%;
 					text-indent: 0%;
-					@include single-transition(all, 300ms, ease, 0ms);
+					@include single-transition(all, 150ms, ease, 250ms);
 
 					&:before {
 						position: absolute;
@@ -206,26 +213,19 @@ a {
 				}
 
 				&[rel="prev"] {
-					text-indent: 200%;
-					float:left;
+					float: left;
 				}
 
 				&:hover {
-					text-indent: 0%;
 					background-color: white;
 
 					span {
-						text-indent: -200%;
+						opacity: 1;
 					}
 				}
 
 				&[rel="next"]:hover {
-					text-indent: 0%;
 					background-color: white;
-
-					span {
-						text-indent: 200%;
-					}
 				}
 			}
 			@include respond-to(md) {
@@ -353,7 +353,7 @@ a {
 					z-index: 0;
 					overflow: hidden;
 					* { position: relative; z-index: 1 }
-					img { width: 100%; height: auto; display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 0; opacity: .25; -webkit-filter: blur(5px) }
+					img { width: 150%; height: auto; display: block; position: absolute; top: 0; left: -25%; right: 0; bottom: 0; z-index: 0; opacity: .25; -webkit-filter: blur(5px) }
 					header {  }
 					section { font-size: 18px; }
 					footer {  }

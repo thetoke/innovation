@@ -56,8 +56,8 @@ function innovation_ajax_post_nav() {
 		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'innovation_ajax' ); ?></h1>
 		<div class="nav-links">
 
-			<?php previous_post_link( '%link', _x( '<span class="mtk-arrow-left"></span> %title', 'Previous post link', 'innovation_ajax' ) ); ?>
-			<?php next_post_link(     '%link', _x( '%title <span class="mtk-arrow-right"></span>', 'Next post link',     'innovation_ajax' ) ); ?>
+			<?php previous_post_link( '%link', _x( '<span class="mtk-arrow-left"></span> <span class="preview-title">%title</span>', 'Previous post link', 'innovation_ajax' ) ); ?>
+			<?php next_post_link(     '%link', _x( '<span class="preview-title">%title</span> <span class="mtk-arrow-right"></span>', 'Next post link',     'innovation_ajax' ) ); ?>
 
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
