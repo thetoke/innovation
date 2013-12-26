@@ -172,7 +172,7 @@ a {
 				position: relative;
 				overflow: hidden;
 				text-indent: -200%;
-				float: left;
+				float: right;
 				@include single-transition(all, 300ms, ease, 0ms);
 
 				span {
@@ -207,6 +207,7 @@ a {
 
 				&[rel="prev"] {
 					text-indent: 200%;
+					float:left;
 				}
 
 				&:hover {
@@ -594,6 +595,8 @@ a {
 					top: 13px;
 					right: 13px;
 					cursor: pointer;
+					text-shadow: none;
+					border-width: 3px;
 
 					&:after {
 						font-family: 'mtk';
@@ -611,7 +614,7 @@ a {
 						font-feature-settings: "liga";
 						-webkit-font-smoothing: antialiased;
 						-moz-osx-font-smoothing: grayscale;
-						content: "\27";
+						content: "\e607";
 						position: absolute;
 						color: white;
 						left: 0;
@@ -619,11 +622,17 @@ a {
 						bottom: 0;
 						top: 0;
 						-webkit-animation: spin 120s infinite linear reverse;
+						-moz-animation: spin 120s infinite linear reverse;
+						-ms-animation: spin 120s infinite linear reverse;
+						-o-animation: spin 120s infinite linear reverse;
 						animation: spin 120s infinite linear reverse;
-						font-size: 75px;
+						font-size: 85px;
 						text-align: center;
 						opacity: 0;
 						@include single-transition(all, 250ms, ease, 0ms);
+					}
+					&:active {
+
 					}
 				}
 			}
