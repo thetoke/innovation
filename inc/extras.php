@@ -70,3 +70,8 @@ add_filter( 'wp_title', 'innovation_ajax_wp_title', 10, 2 );
 function print_backup_image_url(  ) {
 	return "";
 }
+
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 20 );
