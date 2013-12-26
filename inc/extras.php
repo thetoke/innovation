@@ -68,5 +68,5 @@ function innovation_ajax_wp_title( $title, $sep ) {
 add_filter( 'wp_title', 'innovation_ajax_wp_title', 10, 2 );
 
 function print_backup_image_url(  ) {
-	return "http://placekitten.com/500";
+	return "";
 }
