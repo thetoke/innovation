@@ -94,6 +94,10 @@ var Konami = function (callback) {
 	return konami;
 };
 
+var scrollBottom = function(){
+	return $(document).height() - $(window).height() - $(window).scrollTop();
+}
+
 // Title bug for ajax
 var setTitle = function(value) { $('title', 'head').text(value); };
 
@@ -165,6 +169,11 @@ $(document).ready(function() {
 		var scroll = $(window).scrollTop(), slowScroll = scroll/2;
 		$('.site-title').css({ transform: "translateY(-" + slowScroll + "px)" });
 		$('.entry-title').css("background-position", "0 -" + slowScroll + "px");
+	});
+
+	$(window).scroll(function() {
+		var scroll = scrollBottom(), slowScroll = scroll/2;
+		$('.site-footer').css({ transform: "translateY(" + slowScroll + "px)" });
 	});
 
 	// Mobile fixes for fixed position navigation
