@@ -158,6 +158,85 @@ a {
 			}
 		}
 
+		.nav-links {
+			height: 150px;
+			margin: 0 25px;
+			a {
+				display: block;
+				width: 50%;
+				height: 100%;
+				text-align: center;
+				line-height: 150px;
+				font-size: 34px;
+				border: 0px;
+				position: relative;
+				overflow: hidden;
+				text-indent: -200%;
+				float: left;
+				@include single-transition(all, 300ms, ease, 0ms);
+
+				span {
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					width: 100%;
+					height: 100%;
+					text-indent: 0%;
+					@include single-transition(all, 300ms, ease, 0ms);
+
+					&:before {
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						width: 100%;
+						height: 100%;
+						color: $base;
+						z-index: -1;
+						font-size: 260px;
+						font-weight: 900;
+						width: 100%;
+						height: 100%;
+						text-align: center;
+						line-height: 150px;
+					}
+				}
+
+				&[rel="prev"] {
+					text-indent: 200%;
+				}
+
+				&:hover {
+					text-indent: 0%;
+					background-color: white;
+
+					span {
+						text-indent: -200%;
+					}
+				}
+
+				&[rel="next"]:hover {
+					text-indent: 0%;
+					background-color: white;
+
+					span {
+						text-indent: 200%;
+					}
+				}
+			}
+			@include respond-to(md) {
+				height: auto;
+				a {
+					width: 100%;
+					float: none;
+					border-bottom: 1px solid #f1f1f2;
+				}
+			}
+		}
+
 		article {
 			font-weight: 100;
 			font-size: 24px;

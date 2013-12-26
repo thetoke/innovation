@@ -24,11 +24,11 @@ function innovation_ajax_paging_nav() {
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'innovation_ajax' ) ); ?></div>
+			<div class="nav-previous"><?php next_posts_link( __( '<span class="mtk-arrow-left"></span> Older posts', 'innovation_ajax' ) ); ?></div>
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'innovation_ajax' ) ); ?></div>
+			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="mtk-arrow-right"></span>', 'innovation_ajax' ) ); ?></div>
 			<?php endif; ?>
 
 		</div><!-- .nav-links -->
@@ -56,8 +56,8 @@ function innovation_ajax_post_nav() {
 		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'innovation_ajax' ); ?></h1>
 		<div class="nav-links">
 
-			<?php previous_post_link( '%link', _x( '<span class="meta-nav">&larr;</span> %title', 'Previous post link', 'innovation_ajax' ) ); ?>
-			<?php next_post_link(     '%link', _x( '%title <span class="meta-nav">&rarr;</span>', 'Next post link',     'innovation_ajax' ) ); ?>
+			<?php previous_post_link( '%link', _x( '<span class="mtk-arrow-left"></span> %title', 'Previous post link', 'innovation_ajax' ) ); ?>
+			<?php next_post_link(     '%link', _x( '%title <span class="mtk-arrow-right"></span>', 'Next post link',     'innovation_ajax' ) ); ?>
 
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
