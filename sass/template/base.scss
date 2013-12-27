@@ -302,6 +302,11 @@ a {
 				width: 135%;
 				margin-left: -17.5%;
 
+				@include respond-to(md) {
+					width: 100%;
+					margin-left: 0;
+				}
+
 				a {
 					position: initial;
 					border:none;
