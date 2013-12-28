@@ -53,6 +53,9 @@ function innovation_ajax_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	add_image_size( 'full-blurred', 9999, 9999 );
+	add_image_size( 'medium-blurred', 300, 300 );
 }
 endif; // innovation_ajax_setup
 add_action( 'after_setup_theme', 'innovation_ajax_setup' );
