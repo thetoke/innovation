@@ -1,0 +1,73 @@
+
+#page {
+	overflow: hidden;
+
+	.spinner {
+		margin: 15% auto;
+		width: 150px;
+		height: 150px;
+		position: fixed;
+		text-align: center;
+		top: 0; left: 0; right: 0; bottom: 0;
+		z-index: 9;
+		@include apply-origin(center, center);
+		display: none;
+
+		&.animated {
+			display: block;
+		}
+
+		.dot1, .dot2, .dot3, .dot4 {
+			width: 150px;
+			height: 150px;
+			display: inline-block;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			background-color: $blue;
+			border-radius: 100%;
+			opacity: .9;
+			@include apply-origin(center, center);
+			-webkit-animation: spinner-bounce 4s infinite ease-in-out;
+			-moz-animation: spinner-bounce 4s infinite ease-in-out;
+			-ms-animation: spinner-bounce 4s infinite ease-in-out;
+			animation: spinner-bounce 4s infinite ease-in-out;
+		}
+
+		.dot2 {
+			background-color: $green;
+			-webkit-animation-delay: -1.0s;
+			-moz-animation-delay: -1.0s;
+			-ms-animation-delay: -1.0s;
+			animation-delay: -1.0s;
+			-webkit-animation-duration: -1.0s;
+			-moz-animation-duration: -1.0s;
+			-ms-animation-duration: -1.0s;
+			animation-duration: -1.0s;
+		}
+
+		.dot3 {
+			background-color: $orange;
+			-webkit-animation-delay: -2.0s;
+			-moz-animation-delay: -2.0s;
+			-ms-animation-delay: -2.0s;
+			animation-delay: -2.0s;
+			-webkit-animation-duration: -1.5s;
+			-moz-animation-duration: -1.5s;
+			-ms-animation-duration: -1.5s;
+			animation-duration: -1.5s;
+		}
+
+		.dot4 {
+			background-color: $yellow;
+			-webkit-animation-delay: -3s;
+			-moz-animation-delay: -3s;
+			-ms-animation-delay: -3s;
+			animation-delay: -3s;
+			-webkit-animation-duration: -3.0s;
+			-moz-animation-duration: -3.0s;
+			-ms-animation-duration: -3.0s;
+			animation-duration: -3.0s;
+		}
+	}
+}

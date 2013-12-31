@@ -30,11 +30,12 @@ $cta: #5FACFF;
 @import "mixins/fonts.scss";
 @import "mixins/animate.scss";
 
-@import "template/base.scss";
 @import "template/index.scss";
+@import "template/primary.scss";
+@import "template/secondary.scss";
 @import "template/page.scss";
 @import "template/search.scss";
 @import "template/single.scss";
-@import "template/sidebar.scss";
 @import "template/footer.scss";
 @import "template/konami.scss";
+@import "template/legacy.scss";

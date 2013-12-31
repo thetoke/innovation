@@ -1,0 +1,339 @@
+.frame {
+	#secondary {
+		position: fixed;
+		z-index: 1000;
+		left: 0;
+		top: 0;
+		height: 100%;
+		overflow: hidden;
+		width: 200px;
+		background-color: $base;
+		@include single-transition(all, 150ms, linear, 75ms);
+
+		h1 {
+			position: relative;
+			font-size: 0;
+			line-height: 0;
+			margin-bottom: 82px;
+			font-family:"league-gothic", sans-serif;
+
+			.logo {
+				@include apply-origin(center center, false);
+				@include single-transition(all, 150ms, linear, 75ms);
+				position: absolute;
+				border: 4px solid #232323;
+				display: block;
+				border-radius: 50%;
+				top: -10px;
+				right: 65px;
+				height: 75px;
+				width: 75px;
+				overflow: hidden;
+				-webkit-animation: spin 120s infinite linear;
+				animation: spin 120s infinite linear;
+
+				.stripe {
+					@include single-transition(all, 150ms, linear, 75ms);
+					position: absolute;
+					content: '';
+					width: 100%;
+					height: 26%;
+					display: block;
+					&.orange {
+						background-color: $orange;
+						top: 0
+					}
+					&.yellow {
+						background-color: $yellow;
+						top: 25%
+					}
+					&.green {
+						background-color: $green;
+						top: 50%
+					}
+					&.blue {
+						background-color: $blue;
+						top: 75%
+					}
+				}
+			}
+		}
+
+		aside {
+			width: 200px;
+			color: #666666;
+
+			&:not(:first-child){
+				margin-top: 50px;
+			}
+
+			h3 {
+				padding-left: 50px;
+				font-weight: 100;
+				font-family: "myriad-pro";
+				font-size: 18px;
+				color: #cccccc;
+				@include single-transition(all, 150ms, linear, 0ms);
+			}
+
+			li {
+				position: relative;
+				text-align: left;
+				border-bottom: 1px solid #454545;
+				color: #999999;
+
+				a {
+					padding-left: 55px;
+					text-align: left;
+					color: #999999;
+					border: 0;
+					background-color: rgba(0, 0, 0, 0);
+					@include single-transition(all, 250ms, linear, 0ms);
+				}
+
+				&:first-child {
+					border-top: 1px solid #454545;
+				}
+
+				&:hover {
+					background-color: rgba(0,0,0,.5);
+					a {
+						color: #dadada;
+					}
+				}
+
+				&.active {
+					background-color: white;
+					border-color: rgba(255, 255, 255, 0.5);
+					color: $base !important;
+
+					a {
+						color: $base !important;
+					}
+				}
+			}
+		}
+	}
+
+
+	&.collapsed {
+		#secondary {
+			width: 50px;
+			h1 {
+				.logo {
+					right: 5px;
+					top: 10px;
+					border: 2px solid #232323;
+					width: 40px;
+					height: 40px;
+				}
+			}
+			aside {
+				h3 { color: $base; padding-left: 60px; }
+				li {
+					a {
+						color: #333333;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include respond-to(md) {
+	.frame {
+		#secondary {
+			width: 100%;
+			left: 0px;
+			padding-top: 50px;
+			overflow: scroll;
+
+			h1 {
+				@include single-transition(all, 250ms, ease, 0ms);
+				font-size: 95px;
+				line-height: 95px;
+				text-transform: uppercase;
+				width: 220px;
+				position: fixed;
+				padding-left: 5px;
+				padding-top: 5px;
+				top: 0;
+				left: 0;
+				height: 101px;
+				width: 100%;
+				margin: 0;
+				color: white;
+				cursor: pointer;
+				background-color: $base;
+				z-index: 999;
+				border-bottom: 1px solid #454545;
+				text-shadow: 0px 1px 1px #555555;
+
+				.logo {
+					top: 13px;
+					right: 13px;
+					cursor: pointer;
+					text-shadow: none;
+					border-width: 3px;
+
+					&:after {
+						font-family: 'mtk';
+						speak: none;
+						font-style: normal;
+						font-weight: normal;
+						font-variant: normal;
+						text-transform: none;
+						line-height: 1;
+						-webkit-font-feature-settings: "liga";
+						-moz-font-feature-settings: "liga=1";
+						-moz-font-feature-settings: "liga";
+						-ms-font-feature-settings: "liga" 1;
+						-o-font-feature-settings: "liga";
+						font-feature-settings: "liga";
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+						content: "\e607";
+						position: absolute;
+						color: white;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						top: 0;
+						-webkit-animation: spin 120s infinite linear reverse;
+						-moz-animation: spin 120s infinite linear reverse;
+						-ms-animation: spin 120s infinite linear reverse;
+						-o-animation: spin 120s infinite linear reverse;
+						animation: spin 120s infinite linear reverse;
+						font-size: 85px;
+						text-align: center;
+						opacity: 0;
+						@include single-transition(all, 250ms, ease, 0ms);
+					}
+					&:active {
+
+					}
+				}
+			}
+			aside {
+				width: 100%;
+				overflow: hidden;
+
+				&.widget_categories {
+					margin-top: 0px !important;
+				}
+			}
+		}
+
+		&.collapsed {
+			#secondary {
+				margin-left: -50px;
+				position: fixed;
+				overflow: initial;
+
+				h1 {
+					left: -100%;
+					.logo {
+						height: 85px;
+						width: 85px;
+						border-width:3px;
+						right: -100px;
+						top: 7px;
+
+						&:after {
+							opacity: 1;
+						}
+					}
+				}
+				aside {
+					width: 0;
+				}
+			}
+		}
+	}
+}
+
+@include respond-to(650px) {
+	.frame {
+		#secondary {
+			padding-top: 25px;
+
+			h1 {
+				@include single-transition(all, 250ms, ease, 0ms);
+				font-size: 65px;
+				line-height: 65px;
+				text-transform: uppercase;
+				height: 76px;
+
+				.logo {
+					height: 50px;
+					width: 50px;
+					border-width: 2px;
+					top: 11px;
+					right: 11px;
+				}
+			}
+		}
+
+		&.collapsed {
+
+			#secondary {
+				margin-left: -50px;
+
+				h1 {
+					.logo {
+						height: 65px;
+						width: 65px;
+						border-width:3px;
+						right: -70px;
+						top: 5px;
+
+						&:after {
+							font-size: 56px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@include respond-to(xs) {
+	.frame {
+		#secondary {
+			padding-top: 25px;
+
+			h1 {
+				@include single-transition(all, 250ms, ease, 0ms);
+				font-size: 40px;
+				line-height: 67px;
+				text-transform: uppercase;
+				height: 76px;
+
+				.logo {
+					border-width: 2px;
+					top: 12px;
+					right: 12px;
+				}
+			}
+		}
+
+		&.collapsed {
+
+			#secondary {
+				overflow: initial;
+				margin-left: -50px;
+
+				h1 {
+					.logo {
+						height: 65px;
+						width: 65px;
+						border-width:3px;
+						right: -70px;
+						top: 5px;
+					}
+				}
+			}
+		}
+	}
+}

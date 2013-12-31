@@ -1,0 +1,360 @@
+.frame {
+	margin-top: 102px;
+	margin-bottom: 102px;
+	background-color: white !important;
+	display: block;
+
+	#primary {
+		min-height: 100%;
+		padding-top: 50px;
+		background-color: white;
+		position: relative;
+		z-index: 2;
+		@include translate3d(150px, 0, 0);
+		@include single-transition(all, 150ms, linear, 75ms);
+
+		#main {
+			width: 750px;
+			min-height: 1000px;
+			padding-bottom: 150px;
+			margin: 0 auto;
+			@include single-transition(all, 150ms, linear, 75ms);
+			@include translate3d(-50px, 0, 0);
+
+			&.loading {
+
+			}
+		}
+
+		.nav-links {
+			height: 150px;
+			margin: 0 25px;
+
+			a {
+				font-family: "league-gothic";
+				text-transform: uppercase;
+				width: 50%;
+				height: 100%;
+				font-size: 34px;
+				border: 0px;
+				position: relative;
+				overflow: hidden;
+				float: right;
+				@include single-transition(all, 75ms, ease, 0ms);
+				display: table;
+
+				.preview-title {
+					display: table-cell;
+					vertical-align: middle;
+					text-align: center;
+					opacity: 0;
+					@include single-transition(all, 75ms, ease, 50ms);
+				}
+
+				span.mtk-arrow-left,
+				span.mtk-arrow-right {
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					width: 100%;
+					height: 100%;
+					text-indent: 0%;
+					@include single-transition(all, 75ms, ease, 50ms);
+
+					&:before {
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						width: 100%;
+						height: 100%;
+						color: $base;
+						z-index: -1;
+						font-size: 260px;
+						font-weight: 900;
+						width: 100%;
+						height: 100%;
+						text-align: center;
+						line-height: 150px;
+					}
+				}
+
+				&[rel="prev"] {
+					float: left;
+				}
+
+				&:hover {
+					background-color: white;
+
+					span {
+						opacity: 1;
+					}
+				}
+
+				&[rel="next"]:hover {
+					background-color: white;
+				}
+			}
+			@include respond-to(md) {
+				height: auto;
+				a {
+					width: 100%;
+					float: none;
+					border-bottom: 1px solid #f1f1f2;
+				}
+			}
+		}
+
+		article {
+			font-weight: 100;
+			font-size: 24px;
+			font-family: "freight-text-pro",sans-serif;
+
+			.pretty-embed {
+				position: relative;
+				padding-bottom: 56.25%;
+				padding-top: 30px;
+				height: 0;
+				overflow: hidden;
+				max-width: 100%;
+				height: auto;
+
+				iframe,
+				object,
+				embed {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			a {
+				color: $cta;
+				border: 3px solid #ffffff;
+				border-radius: 25px;
+				padding: 0 10px;
+				text-decoration: none !important;
+				position: relative;
+				background-color: white;
+				box-shadow: 0 0 0 3px lighten($base, 70%);
+				margin: 3px;
+
+				&:hover {
+					color: black;
+				}
+
+				&:active {
+					color: $base;
+					background-color: lighten($base, 70%);
+					box-shadow: 0 0 0 3px lighten($base, 70%);
+				}
+			}
+
+			h2, h3, h4, h5, h6, p, span { font-family: "freight-text-pro",sans-serif; line-height: 175%; margin-bottom: 50px;  }
+			p { letter-spacing: .01rem; font-weight: 400; font-style: normal; font-size: 22px; line-height: 1.5; }
+			blockquote {
+				margin: 0 0px 0 -25px;
+				p { margin-bottom: 4px; }
+			}
+			h1.entry-title {
+				font-family: "league-gothic", 'Helvetica','Open Sans', serif;
+
+				@media screen and (-webkit-min-device-pixel-ratio: 0) {
+					background-size: 100%;
+					background-clip: text;
+					text-fill-color: transparent;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+
+				text-align: center;
+				font-size: 90px;
+				font-weight: 600;
+				text-transform: uppercase;
+				font-weight: 100;
+				top: -10px;
+				position: relative;
+				margin: 0;
+				width: 135%;
+				margin-left: -17.5%;
+
+				@include respond-to(md) {
+					width: 100%;
+					margin-left: 0;
+				}
+
+				a {
+					position: initial;
+					border:none;
+					font-family: "league-gothic", sans-serif;
+					font-weight: 100;
+				}
+			}
+			h2.entry-subtitle {
+				font-size: 75px;
+				line-height: 125%;
+				font-family: "freight-text-pro",sans-serif;
+				color: $base;
+				font-weight: 100;
+				width: 150%;
+				margin-left:-25%;
+				text-align: center;
+			}
+			h2 {
+				font-size: 45px;
+				line-height: 150%;
+				font-family: "freight-text-pro",sans-serif;
+				color: $base;
+				font-weight: 100;
+				width: 125%;
+				margin-left:-12.5%;
+				text-align: center;
+			}
+			.entry-meta {
+				min-height: 100px;
+				padding-top: 25px;
+			}
+			.edit-link {
+				position: absolute;
+				top: -122px;
+				left: 0;
+				right: 0;
+				width: 70px;
+				margin: 0 auto;
+				display: block;
+			}
+		}
+
+		.post-preview {
+			width: 220px; height: 220px;
+			margin: 15px;
+			margin-right:.3333%;
+			float: left;
+			display: block;
+			margin-top: 15px;
+			background-size: contain !important;
+
+				p {
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					overflow: hidden;
+					margin-bottom: 5px;
+				}
+
+				a {
+					display: block;
+					color: $base;
+					z-index: 0;
+					overflow: hidden;
+					* { position: relative; z-index: 1 }
+					img { width: 150%; height: auto; display: block; position: absolute; top: 0; left: -25%; right: 0; bottom: 0; z-index: 0; opacity: .25; -webkit-filter: blur(5px) }
+					header {  }
+					section { font-size: 18px; }
+					footer {  }
+				}
+		}
+	}
+
+	&.collapsed {
+		#primary {
+			@include translate3d(0, 0, 0);
+			#main {
+				@include translate3d(25px, 0, 0);
+			}
+		}
+
+	}
+
+	@include respond-to(lg) {
+		margin-bottom: 80px;
+	}
+}
+
+@include respond-to(md) {
+	.frame {
+		margin-top: 0;
+		margin-bottom: 300px;
+
+		#primary {
+			@include translate3d(0, 0, 0);
+			padding-top: 0;
+
+			#main {
+				@include translate3d(0, 0, 0);
+				width: 100%;
+
+				.entry-title {
+					font-size: 95px;
+					line-height: 115px;
+					background-clip: initial;
+					text-fill-color: initial;
+					-moz-background-clip: text;
+					-moz-text-fill-color: transparent;
+					-webkit-background-clip: initial;
+					-webkit-text-fill-color: initial;
+					color: white;
+					height: 111px;
+					padding-top: 5px;
+					padding-right: 5px;
+					text-align: right;
+					text-shadow: 0px 1px 1px #555555;
+				}
+				.entry-content, .entry-meta, #disqus_thread {
+					padding: 5px 15px;
+				}
+				.entry-meta {
+					.edit-link {
+						position: absolute;
+						top: 0;
+					}
+				}
+			}
+		}
+
+		&.collapsed {
+			#primary {
+				@include translate3d(0, 0, 0);
+
+				#main {
+					@include translate3d(0, 0, 0);
+				}
+			}
+		}
+	}
+}
+
+@include respond-to(650px) {
+	.frame {
+		#primary {
+			#main {
+				.entry-title {
+					font-size: 55px;
+					line-height: 100px;
+					height: 85px;
+					padding-top: 0;
+					padding-right: 5px;
+					text-align: right;
+				}
+			}
+		}
+	}
+}
+
+@include respond-to(xs) {
+	.frame {
+		#primary {
+			#main {
+				.entry-title {
+					font-size: 36px;
+					line-height: 100px;
+					height: 85px;
+				}
+			}
+		}
+	}
+}
