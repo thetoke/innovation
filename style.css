@@ -3517,36 +3517,32 @@ a {
 /* line 7, sass/template/format-quote.scss */
 .single-format-quote #primary {
   background-color: transparent; }
-  /* line 10, sass/template/format-quote.scss */
-  .single-format-quote #primary #main {
-    width: 80%;
-    padding-left: 250px; }
-    /* line 14, sass/template/format-quote.scss */
-    .single-format-quote #primary #main .entry-content h1.entry-title {
-      margin-top: 140px;
-      color: white;
-      font-size: 150px;
-      background-clip: initial;
-      text-fill-color: initial;
-      -moz-background-clip: initial;
-      -moz-text-fill-color: initial;
-      -webkit-background-clip: initial;
-      -webkit-text-fill-color: initial;
-      text-align: left;
-      text-shadow: 0px 1px 1px #555555; }
-    /* line 27, sass/template/format-quote.scss */
-    .single-format-quote #primary #main .entry-content h2.entry-subtitle {
-      margin-top: 40px;
-      color: white;
-      font-size: 100px;
-      background-clip: initial;
-      text-fill-color: initial;
-      -moz-background-clip: initial;
-      -moz-text-fill-color: initial;
-      -webkit-background-clip: initial;
-      -webkit-text-fill-color: initial;
-      text-align: center;
-      text-shadow: 0px 1px 1px #555555; }
+  /* line 14, sass/template/format-quote.scss */
+  .single-format-quote #primary #main .entry-content h1.entry-title {
+    margin-top: 140px;
+    color: white;
+    font-size: 150px;
+    background-clip: initial;
+    text-fill-color: initial;
+    -moz-background-clip: initial;
+    -moz-text-fill-color: initial;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+    text-align: left;
+    text-shadow: 0px 1px 1px #555555; }
+  /* line 27, sass/template/format-quote.scss */
+  .single-format-quote #primary #main .entry-content h2.entry-subtitle {
+    margin-top: 40px;
+    color: white;
+    font-size: 100px;
+    background-clip: initial;
+    text-fill-color: initial;
+    -moz-background-clip: initial;
+    -moz-text-fill-color: initial;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+    text-align: center;
+    text-shadow: 0px 1px 1px #555555; }
 
 /* line 1, sass/template/footer.scss */
 .site-footer {

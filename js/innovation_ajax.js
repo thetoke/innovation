@@ -98,6 +98,17 @@ var scrollBottom = function(){
 	return $(document).height() - $(window).height() - $(window).scrollTop();
 }
 
+function uQSP(uri, key, value) {
+  var re = new RegExp("([?|&])" + key + "=.*?(&|$)", "i");
+  separator = uri.indexOf('?') !== -1 ? "&" : "?";
+  if (uri.match(re)) {
+    return uri.replace(re, '$1' + key + "=" + value + '$2');
+  }
+  else {
+    return uri + separator + key + "=" + value;
+  }
+}
+
 // Title bug for ajax
 var setTitle = function(value) { $('title', 'head').text(value); };
 
@@ -105,42 +116,30 @@ var setBodyClass = function(value) { console.log(value); $('body').removeClass()
 
 // ajaxification (if the browser supports history.pushState)
 function ajaxify(href){
-	$.ajax({
-		url: href,
-		data: {ajax: 1},
-		beforeSend: function() {
-			$('.spinner').removeClass('bounceOut').addClass('animated bounceIn');
 
-			if ($(window).scrollTop() !== 0){
-				$('body, html').animate({
-					scrollTop: 0
-				}, 1000);
-			}
-		},
-		success: function(data) {
-			$('.spinner').removeClass('bounceIn').addClass('bounceOut');
-			$('#main').html(data).show(function(){
-				$('.site-title').css('background-image', "url("+$('h1:first-child', '#main').attr('data-bgi')+")");
-				$('.spinner').removeClass('animated');
-				$("a", ".post-navigation").each(function(){
-					$(this).addClass('ajax');
-				});
-				$("a", ".entry-meta").each(function(){
-					if (!$(this).hasClass('post-edit-link')) { $(this).addClass('ajax'); }
-				});
-				$('a.ajax', '#main').on('click', function(e) {
-					e.preventDefault();
-					ajaxify($(this).attr('href'));
-				});
-			});
-			$('.frame').addClass('collapsed');
-		},
-		error: function(){
-			// use old school redirection
-		}
+	$('.spinner').removeClass('bounceOut').addClass('animated bounceIn');
+	if ($(window).scrollTop() !== 0){
+		$('body, html').animate({
+			scrollTop: 0
+		}, 1000);
+	}
+
+	$('.frame').addClass('collapsed');
+
+	$('#main').load(uQSP(href, "ajax", 1), {ajax: 1}, function(responseText, textStatus, XMLHttpRequest) {
+		$('.spinner').removeClass('bounceIn').addClass('bounceOut');
+		$('.site-title').css('background-image', "url("+$('h1:first-child', '#main').attr('data-bgi')+")");
+		$("a", ".post-navigation").each(function(){
+			$(this).addClass('ajax');
+		});
+
+		$('a.ajax', '#main').on('click', function(e) {
+			e.preventDefault();
+			ajaxify($(this).attr('href'));
+		});
+
+		history.pushState({}, "", href);
 	});
-
-history.pushState({}, "", href);
 }
 
 // Konami
