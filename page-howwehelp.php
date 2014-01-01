@@ -5,7 +5,7 @@ Template Name: How We Help page designs
 ?>
 
 <?php if ($_GET['ajax'] == 1) : ?>
-<script>setTitle("<?php wp_title( '|', true, 'right' ); ?>");</script>
+	<script>setTitle("<?php wp_title( '|', true, 'right' ); ?>"); setBodyClass('<?php echo implode(" ", get_body_class()); ?>');</script>
 <?php get_template_part( 'content', 'page' ); ?>
 <?php get_template_part( 'content', 'howwehelp' ); ?>
 

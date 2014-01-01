@@ -6,7 +6,7 @@
  */
 
 if ($_GET['ajax'] == 1) : ?>
-
+	<script>setTitle("<?php wp_title( '|', true, 'right' ); ?>"); setBodyClass('<?php echo implode(" ", get_body_class()); ?>');</script>
 	<section class="error-404 not-found">
 		<header class="page-header">
 			<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'innovation_ajax' ); ?></h1>

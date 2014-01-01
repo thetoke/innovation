@@ -11,7 +11,7 @@
  */
 
 if ($_GET['ajax'] == 1) : ?>
-	<script>setTitle("<?php wp_title( '|', true, 'right' ); ?>");</script>
+		<script>setTitle("<?php wp_title( '|', true, 'right' ); ?>"); setBodyClass('<?php echo implode(" ", get_body_class()); ?>');</script>
 	<?php while ( have_posts() ) : the_post(); ?>
 
 		<?php get_template_part( 'content', 'page' ); ?>

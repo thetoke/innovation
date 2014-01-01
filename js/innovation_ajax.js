@@ -101,6 +101,8 @@ var scrollBottom = function(){
 // Title bug for ajax
 var setTitle = function(value) { $('title', 'head').text(value); };
 
+var setBodyClass = function(value) { console.log(value); $('body').removeClass().addClass(value); };
+
 // ajaxification (if the browser supports history.pushState)
 function ajaxify(href){
 	$.ajax({
@@ -108,7 +110,7 @@ function ajaxify(href){
 		data: {ajax: 1},
 		beforeSend: function() {
 			$('.spinner').removeClass('bounceOut').addClass('animated bounceIn');
-			$('#main').removeClass('fadeIn').addClass('fadeOut');
+
 			if ($(window).scrollTop() !== 0){
 				$('body, html').animate({
 					scrollTop: 0
@@ -117,8 +119,7 @@ function ajaxify(href){
 		},
 		success: function(data) {
 			$('.spinner').removeClass('bounceIn').addClass('bounceOut');
-			$('#main').empty().append(data).show(function(){
-				$(this).removeClass('fadeOut').addClass('fadeIn');
+			$('#main').html(data).show(function(){
 				$('.site-title').css('background-image', "url("+$('h1:first-child', '#main').attr('data-bgi')+")");
 				$('.spinner').removeClass('animated');
 				$("a", ".post-navigation").each(function(){
