@@ -10,6 +10,7 @@ body {
 	font-family: "myriad-pro", serif;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
+	background-color: $base;
 }
 
 .screen-reader-text {
@@ -54,6 +55,7 @@ a {
 
 #content {
 	min-height: 100%;
+	background-color: $base;
 }
 
 

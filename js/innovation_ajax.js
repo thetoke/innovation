@@ -112,23 +112,27 @@ function uQSP(uri, key, value) {
 // Title bug for ajax
 var setTitle = function(value) { $('title', 'head').text(value); };
 
-var setBodyClass = function(value) { console.log(value); $('body').removeClass().addClass(value); };
+var setBodyClass = function(value) { $('body').removeClass().addClass(value); };
 
 // ajaxification (if the browser supports history.pushState)
-function ajaxify(href){
+function ajaxify(href) {
 
 	$('.spinner').removeClass('bounceOut').addClass('animated bounceIn');
+
+	$('.site-title').fadeOut();
+	$('#primary').removeClass('fadeInUpBig').addClass('animated fadeOutDownBig');
+
 	if ($(window).scrollTop() !== 0){
 		$('body, html').animate({
 			scrollTop: 0
 		}, 1000);
 	}
 
-	$('.frame').addClass('collapsed');
-
 	$('#main').load(uQSP(href, "ajax", 1), {ajax: 1}, function(responseText, textStatus, XMLHttpRequest) {
+		setTimeout(function(){$('#primary').removeClass('fadeOutDownBig').addClass('fadeInUpBig'); $('.site-footer').css({ transform: "translateY(" + scrollBottom()/2 + "px)" }); }, 600);
+
 		$('.spinner').removeClass('bounceIn').addClass('bounceOut');
-		$('.site-title').css('background-image', "url("+$('h1:first-child', '#main').attr('data-bgi')+")");
+
 		$("a", ".post-navigation").each(function(){
 			$(this).addClass('ajax');
 		});
@@ -137,6 +141,8 @@ function ajaxify(href){
 			e.preventDefault();
 			ajaxify($(this).attr('href'));
 		});
+
+		setTimeout(function(){$('.site-title').css('background-image', "url("+$('h1:first-child', '#main').attr('data-bgi')+")").fadeIn(150); }, 300);
 
 		history.pushState({}, "", href);
 	});
@@ -164,6 +170,8 @@ easter_egg.load();
 
 $(document).ready(function() {
 
+	$('.site-footer').css({ transform: "translateY(" + scrollBottom()/2 + "px)" });
+
 	// parallax header
 	$(window).scroll(function() {
 		var scroll = $(window).scrollTop(), slowScroll = scroll/2;
@@ -182,7 +190,7 @@ $(document).ready(function() {
 	}
 
 	// Toggles collapsed class to nav (desktop)
-	$('#secondary, .site-title, .site-footer').hover(function(){
+	$('#secondary').hover(function(){
 		if ($(window).innerWidth() > 992) {
 			$('.frame').removeClass('collapsed');
 		}
@@ -235,4 +243,5 @@ $(document).ready(function() {
 		},
 		volume: 75
 	});
+
 });

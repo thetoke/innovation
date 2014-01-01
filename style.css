@@ -2663,15 +2663,16 @@ body {
   height: 100%;
   font-family: "myriad-pro", serif;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  background-color: #3b3d43; }
 
-/* line 15, sass/template/index.scss */
+/* line 16, sass/template/index.scss */
 .screen-reader-text {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left; }
 
-/* line 19, sass/template/index.scss */
+/* line 20, sass/template/index.scss */
 a {
   color: #5facff;
   border: 1px solid #f1f1f2;
@@ -2680,12 +2681,12 @@ a {
   padding: 2px 10px;
   text-decoration: none !important;
   position: relative; }
-  /* line 28, sass/template/index.scss */
+  /* line 29, sass/template/index.scss */
   a:hover {
     background-color: rgba(0, 0, 0, 0.025);
     color: #1384ff; }
 
-/* line 34, sass/template/index.scss */
+/* line 35, sass/template/index.scss */
 .site-title {
   background: #3b3d43 0 0 no-repeat;
   color: white;
@@ -2706,31 +2707,32 @@ a {
   font-family: "league-gothic", sans-serif;
   text-shadow: 0px 1px 1px #555555; }
 
-/* line 55, sass/template/index.scss */
+/* line 56, sass/template/index.scss */
 #content {
-  min-height: 100%; }
+  min-height: 100%;
+  background-color: #3b3d43; }
 
 @media (max-width: 992px) {
-  /* line 62, sass/template/index.scss */
+  /* line 64, sass/template/index.scss */
   .site-title {
     display: none; }
 
-  /* line 65, sass/template/index.scss */
+  /* line 67, sass/template/index.scss */
   #page .spinner {
     z-index: 999999; }
 
-  /* line 68, sass/template/index.scss */
+  /* line 70, sass/template/index.scss */
   body {
     padding: 0; }
 
-  /* line 72, sass/template/index.scss */
+  /* line 74, sass/template/index.scss */
   body.overflow-fix {
     overflow: hidden; } }
 /* line 1, sass/template/primary.scss */
 .frame {
   margin-top: 102px;
   margin-bottom: 102px;
-  background-color: white !important;
+  background-color: #3b3d43;
   display: block; }
   /* line 7, sass/template/primary.scss */
   .frame #primary {
@@ -2894,25 +2896,32 @@ a {
           color: #3b3d43;
           background-color: #f1f1f2;
           box-shadow: 0 0 0 3px #f1f1f2; }
-      /* line 158, sass/template/primary.scss */
+        /* line 158, sass/template/primary.scss */
+        .frame #primary article a.btn {
+          color: white;
+          box-shadow: 0 0 15px -5px #3b3d43;
+          border: 0;
+          border-radius: 25%;
+          font-size: 18px; }
+      /* line 167, sass/template/primary.scss */
       .frame #primary article h2, .frame #primary article h3, .frame #primary article h4, .frame #primary article h5, .frame #primary article h6, .frame #primary article p, .frame #primary article span {
         font-family: "freight-text-pro",sans-serif;
         line-height: 175%;
         margin-bottom: 50px; }
-      /* line 159, sass/template/primary.scss */
+      /* line 168, sass/template/primary.scss */
       .frame #primary article p {
         letter-spacing: .01rem;
         font-weight: 400;
         font-style: normal;
         font-size: 22px;
         line-height: 1.5; }
-      /* line 160, sass/template/primary.scss */
+      /* line 169, sass/template/primary.scss */
       .frame #primary article blockquote {
         margin: 0 0px 0 -25px; }
-        /* line 162, sass/template/primary.scss */
+        /* line 171, sass/template/primary.scss */
         .frame #primary article blockquote p {
           margin-bottom: 4px; }
-      /* line 164, sass/template/primary.scss */
+      /* line 173, sass/template/primary.scss */
       .frame #primary article h1.entry-title {
         font-family: "league-gothic", 'Helvetica','Open Sans', serif;
         text-align: center;
@@ -2926,7 +2935,7 @@ a {
         width: 135%;
         margin-left: -17.5%; }
         @media screen and (-webkit-min-device-pixel-ratio: 0) {
-          /* line 164, sass/template/primary.scss */
+          /* line 173, sass/template/primary.scss */
           .frame #primary article h1.entry-title {
             background-size: 100%;
             background-clip: text;
@@ -2934,17 +2943,17 @@ a {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent; } }
         @media (max-width: 992px) {
-          /* line 164, sass/template/primary.scss */
+          /* line 173, sass/template/primary.scss */
           .frame #primary article h1.entry-title {
             width: 100%;
             margin-left: 0; } }
-        /* line 191, sass/template/primary.scss */
+        /* line 200, sass/template/primary.scss */
         .frame #primary article h1.entry-title a {
           position: initial;
           border: none;
           font-family: "league-gothic", sans-serif;
           font-weight: 100; }
-      /* line 198, sass/template/primary.scss */
+      /* line 207, sass/template/primary.scss */
       .frame #primary article h2.entry-subtitle {
         font-size: 75px;
         line-height: 125%;
@@ -2954,7 +2963,7 @@ a {
         width: 150%;
         margin-left: -25%;
         text-align: center; }
-      /* line 208, sass/template/primary.scss */
+      /* line 217, sass/template/primary.scss */
       .frame #primary article h2 {
         font-size: 45px;
         line-height: 150%;
@@ -2964,11 +2973,11 @@ a {
         width: 125%;
         margin-left: -12.5%;
         text-align: center; }
-      /* line 218, sass/template/primary.scss */
+      /* line 227, sass/template/primary.scss */
       .frame #primary article .entry-meta {
         min-height: 100px;
         padding-top: 25px; }
-      /* line 222, sass/template/primary.scss */
+      /* line 231, sass/template/primary.scss */
       .frame #primary article .edit-link {
         position: absolute;
         top: -122px;
@@ -2977,7 +2986,7 @@ a {
         width: 70px;
         margin: 0 auto;
         display: block; }
-    /* line 233, sass/template/primary.scss */
+    /* line 242, sass/template/primary.scss */
     .frame #primary .post-preview {
       width: 220px;
       height: 220px;
@@ -2987,23 +2996,23 @@ a {
       display: block;
       margin-top: 15px;
       background-size: contain !important; }
-      /* line 242, sass/template/primary.scss */
+      /* line 251, sass/template/primary.scss */
       .frame #primary .post-preview p {
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
         margin-bottom: 5px; }
-      /* line 249, sass/template/primary.scss */
+      /* line 258, sass/template/primary.scss */
       .frame #primary .post-preview a {
         display: block;
         color: #3b3d43;
         z-index: 0;
         overflow: hidden; }
-        /* line 254, sass/template/primary.scss */
+        /* line 263, sass/template/primary.scss */
         .frame #primary .post-preview a * {
           position: relative;
           z-index: 1; }
-        /* line 255, sass/template/primary.scss */
+        /* line 264, sass/template/primary.scss */
         .frame #primary .post-preview a img {
           width: 150%;
           height: auto;
@@ -3016,17 +3025,17 @@ a {
           z-index: 0;
           opacity: .25;
           -webkit-filter: blur(5px); }
-        /* line 257, sass/template/primary.scss */
+        /* line 266, sass/template/primary.scss */
         .frame #primary .post-preview a section {
           font-size: 18px; }
-  /* line 264, sass/template/primary.scss */
+  /* line 273, sass/template/primary.scss */
   .frame.collapsed #primary {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
-    /* line 266, sass/template/primary.scss */
+    /* line 275, sass/template/primary.scss */
     .frame.collapsed #primary #main {
       -webkit-transform: translate3d(25px, 0, 0);
       -moz-transform: translate3d(25px, 0, 0);
@@ -3039,11 +3048,11 @@ a {
       margin-bottom: 80px; } }
 
 @media (max-width: 992px) {
-  /* line 279, sass/template/primary.scss */
+  /* line 288, sass/template/primary.scss */
   .frame {
     margin-top: 0;
     margin-bottom: 300px; }
-    /* line 283, sass/template/primary.scss */
+    /* line 292, sass/template/primary.scss */
     .frame #primary {
       -webkit-transform: translate3d(0, 0, 0);
       -moz-transform: translate3d(0, 0, 0);
@@ -3051,7 +3060,7 @@ a {
       -o-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
       padding-top: 0; }
-      /* line 287, sass/template/primary.scss */
+      /* line 296, sass/template/primary.scss */
       .frame #primary #main {
         -webkit-transform: translate3d(0, 0, 0);
         -moz-transform: translate3d(0, 0, 0);
@@ -3059,7 +3068,7 @@ a {
         -o-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
         width: 100%; }
-        /* line 291, sass/template/primary.scss */
+        /* line 300, sass/template/primary.scss */
         .frame #primary #main .entry-title {
           font-size: 95px;
           line-height: 115px;
@@ -3075,21 +3084,21 @@ a {
           padding-right: 5px;
           text-align: right;
           text-shadow: 0px 1px 1px #555555; }
-        /* line 307, sass/template/primary.scss */
+        /* line 316, sass/template/primary.scss */
         .frame #primary #main .entry-content, .frame #primary #main .entry-meta, .frame #primary #main #disqus_thread {
           padding: 5px 15px; }
-        /* line 311, sass/template/primary.scss */
+        /* line 320, sass/template/primary.scss */
         .frame #primary #main .entry-meta .edit-link {
           position: absolute;
           top: 0; }
-    /* line 320, sass/template/primary.scss */
+    /* line 329, sass/template/primary.scss */
     .frame.collapsed #primary {
       -webkit-transform: translate3d(0, 0, 0);
       -moz-transform: translate3d(0, 0, 0);
       -ms-transform: translate3d(0, 0, 0);
       -o-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0); }
-      /* line 323, sass/template/primary.scss */
+      /* line 332, sass/template/primary.scss */
       .frame.collapsed #primary #main {
         -webkit-transform: translate3d(0, 0, 0);
         -moz-transform: translate3d(0, 0, 0);
@@ -3097,7 +3106,7 @@ a {
         -o-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0); } }
 @media (max-width: 650px) {
-  /* line 335, sass/template/primary.scss */
+  /* line 344, sass/template/primary.scss */
   .frame #primary #main .entry-title {
     font-size: 55px;
     line-height: 100px;
@@ -3106,7 +3115,7 @@ a {
     padding-right: 5px;
     text-align: right; } }
 @media (max-width: 480px) {
-  /* line 352, sass/template/primary.scss */
+  /* line 361, sass/template/primary.scss */
   .frame #primary #main .entry-title {
     font-size: 36px;
     line-height: 100px;
@@ -3519,7 +3528,6 @@ a {
   background-color: transparent; }
   /* line 14, sass/template/format-quote.scss */
   .single-format-quote #primary #main .entry-content h1.entry-title {
-    margin-top: 140px;
     color: white;
     font-size: 150px;
     background-clip: initial;
@@ -3530,7 +3538,7 @@ a {
     -webkit-text-fill-color: initial;
     text-align: left;
     text-shadow: 0px 1px 1px #555555; }
-  /* line 27, sass/template/format-quote.scss */
+  /* line 26, sass/template/format-quote.scss */
   .single-format-quote #primary #main .entry-content h2.entry-subtitle {
     margin-top: 40px;
     color: white;
@@ -3543,6 +3551,9 @@ a {
     -webkit-text-fill-color: initial;
     text-align: center;
     text-shadow: 0px 1px 1px #555555; }
+/* line 43, sass/template/format-quote.scss */
+.single-format-quote .site-footer {
+  position: fixed; }
 
 /* line 1, sass/template/footer.scss */
 .site-footer {
@@ -4005,3 +4016,90 @@ a {
   /* line 2, sass/template/legacy.scss */
   .frame #primary article h1.entry-title {
     background-image: none !important; } }
+
+/* line 1, sass/template/social-sharing.scss */
+.entry-social {
+  /*  Twitter */
+  /*  Facebook */
+  /*  Google */
+  /*  LinkedIn */
+  /*  Pinterest */
+  /*  GitHub */
+  /* VK */
+  /*  Xing */ }
+  /* line 3, sass/template/social-sharing.scss */
+  .entry-social .btn {
+    color: white;
+    border: 0; }
+  /* line 8, sass/template/social-sharing.scss */
+  .entry-social .btn-tweet {
+    background-color: #41b7d8 !important;
+    border-color: #41b7d8 !important; }
+  /* line 14, sass/template/social-sharing.scss */
+  .entry-social .btn-tweet:hover,
+  .entry-social a .btn-tweet:hover {
+    background-color: #238caa !important;
+    border-color: #238caa !important; }
+  /* line 20, sass/template/social-sharing.scss */
+  .entry-social .btn-facebook {
+    background-color: #3b5997 !important;
+    border-color: #3b5997 !important; }
+  /* line 26, sass/template/social-sharing.scss */
+  .entry-social .btn-facebook:hover,
+  .entry-social a .btn-facebook:hover {
+    background-color: #263960 !important;
+    border-color: #263960 !important; }
+  /* line 32, sass/template/social-sharing.scss */
+  .entry-social .btn-google {
+    background-color: #d64937 !important;
+    border-color: #d64937 !important; }
+  /* line 38, sass/template/social-sharing.scss */
+  .entry-social .btn-google:hover,
+  .entry-social a .btn-google:hover {
+    background-color: #a02f21 !important;
+    border-color: #a02f21 !important; }
+  /* line 44, sass/template/social-sharing.scss */
+  .entry-social .btn-linkedin {
+    background-color: #0073b2 !important;
+    border-color: #0073b2 !important; }
+  /* line 50, sass/template/social-sharing.scss */
+  .entry-social .btn-linkedin:hover,
+  .entry-social a .btn-linkedin:hover {
+    background-color: #004265 !important;
+    border-color: #004265 !important; }
+  /* line 56, sass/template/social-sharing.scss */
+  .entry-social .btn-pinterest {
+    background-color: #cb2027 !important;
+    border-color: #cb2027 !important; }
+  /* line 62, sass/template/social-sharing.scss */
+  .entry-social .btn-pinterest:hover,
+  .entry-social a .btn-pinterest:hover {
+    background-color: #89161a !important;
+    border-color: #89161a !important; }
+  /* line 68, sass/template/social-sharing.scss */
+  .entry-social .btn-github {
+    background-color: #3a3838 !important;
+    border-color: #3a3838 !important; }
+  /* line 74, sass/template/social-sharing.scss */
+  .entry-social .btn-github:hover,
+  .entry-social a .btn-github:hover {
+    background-color: #131212 !important;
+    border-color: #131212 !important; }
+  /* line 80, sass/template/social-sharing.scss */
+  .entry-social .btn-vk {
+    background-color: #5e82a8 !important;
+    border-color: #5e82a8 !important; }
+  /* line 86, sass/template/social-sharing.scss */
+  .entry-social .btn-vk:hover,
+  .entry-social a .btn-vk:hover {
+    background-color: #415c78 !important;
+    border-color: #415c78 !important; }
+  /* line 92, sass/template/social-sharing.scss */
+  .entry-social .btn-xing {
+    background-color: #175e60 !important;
+    border-color: #175e60 !important; }
+  /* line 98, sass/template/social-sharing.scss */
+  .entry-social .btn-xing:hover,
+  .entry-social a .btn-xing:hover {
+    background-color: #082222 !important;
+    border-color: #082222 !important; }

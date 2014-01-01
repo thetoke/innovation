@@ -12,7 +12,6 @@
 
 			.entry-content {
 				h1.entry-title {
-					margin-top:140px;
 					color: white;
 					font-size: 150px;
 					background-clip: initial;
@@ -39,5 +38,9 @@
 				}
 			}
 		}
+	}
+
+	.site-footer {
+		position: fixed;
 	}
 }

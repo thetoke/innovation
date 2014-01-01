@@ -21,3 +21,4 @@
 
 	<?php get_template_part( 'single', 'footer' ); ?>
 </article><!-- #post-## -->
+<?php innovation_ajax_post_nav(); ?>
