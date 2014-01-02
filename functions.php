@@ -46,7 +46,7 @@ function innovation_ajax_setup() {
 	) );
 
 	// Enable support for Post Formats.
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
+	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link', 'gallery' ) );
 
 	// Setup the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'innovation_ajax_custom_background_args', array(
