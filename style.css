@@ -24,7 +24,6 @@ Tags: simple, ajax, minimalist, minimal, modern, flat, responsive, red, blue, gr
   font-weight: normal;
   font-style: normal; }
 
-/* line 13, sass/mixins/fonts.scss */
 [class^="mtk-"], [class*=" mtk-"] {
   font-family: 'mtk';
   speak: none;
@@ -43,7 +42,6 @@ Tags: simple, ajax, minimalist, minimal, modern, flat, responsive, red, blue, gr
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-  /* line 34, sass/mixins/fonts.scss */
   [class^="mtk-"]:before, [class*=" mtk-"]:before {
     width: 44px;
     height: 39px;
@@ -55,335 +53,256 @@ Tags: simple, ajax, minimalist, minimal, modern, flat, responsive, red, blue, gr
     font-size: 25px;
     color: #FFF; }
 
-/* line 47, sass/mixins/fonts.scss */
 .mtk-behance:before {
   content: "\21"; }
 
-/* line 48, sass/mixins/fonts.scss */
 .mtk-skype:before {
   content: "\22"; }
 
-/* line 49, sass/mixins/fonts.scss */
 .mtk-instagram:before {
   content: "\23"; }
 
-/* line 50, sass/mixins/fonts.scss */
 .mtk-spotify:before {
   content: "\24"; }
 
-/* line 51, sass/mixins/fonts.scss */
 .mtk-pinterest:before {
   content: "\25"; }
 
-/* line 52, sass/mixins/fonts.scss */
 .mtk-arrow-left:before {
   content: "\e600"; }
 
-/* line 53, sass/mixins/fonts.scss */
 .mtk-arrow-down:before {
   content: "\e601"; }
 
-/* line 54, sass/mixins/fonts.scss */
 .mtk-arrow-up:before {
   content: "\e602"; }
 
-/* line 55, sass/mixins/fonts.scss */
 .mtk-arrow-right:before {
   content: "\e603"; }
 
-/* line 57, sass/mixins/fonts.scss */
 .mtk-keyboard:before,
 .mtk-development:before {
   content: "\e604"; }
 
-/* line 58, sass/mixins/fonts.scss */
 .mtk-erase:before {
   content: "\e605"; }
 
-/* line 60, sass/mixins/fonts.scss */
 .mtk-pencil:before,
 .mtk-design:before {
   content: "\e606"; }
 
-/* line 61, sass/mixins/fonts.scss */
 .mtk-youtube:before {
   content: "\26"; }
 
-/* line 62, sass/mixins/fonts.scss */
 .mtk-home:before {
   content: "\27"; }
 
-/* line 64, sass/mixins/fonts.scss */
 .mtk-group:before,
 .mtk-team:before {
   content: "\28"; }
 
-/* line 65, sass/mixins/fonts.scss */
 .mtk-heart:before {
   content: "\29"; }
 
-/* line 67, sass/mixins/fonts.scss */
 .mtk-heart-empty:before,
 .mtk-story:before {
   content: "\2a"; }
 
-/* line 68, sass/mixins/fonts.scss */
 .mtk-mobile:before {
   content: "\2b"; }
 
-/* line 69, sass/mixins/fonts.scss */
 .mtk-tablet:before {
   content: "\2c"; }
 
-/* line 70, sass/mixins/fonts.scss */
 .mtk-laptop:before {
   content: "\2d"; }
 
-/* line 71, sass/mixins/fonts.scss */
 .mtk-desktop:before {
   content: "\2e"; }
 
-/* line 72, sass/mixins/fonts.scss */
 .mtk-ellipsis-vertical:before {
   content: "\e607"; }
 
-/* line 74, sass/mixins/fonts.scss */
 .mtk-calendar-empty:before,
 .mtk-workshops:before {
   content: "\e608"; }
 
-/* line 75, sass/mixins/fonts.scss */
 .mtk-calendar:before {
   content: "\e609"; }
 
-/* line 76, sass/mixins/fonts.scss */
 .mtk-linkedin:before {
   content: "\2f"; }
 
-/* line 77, sass/mixins/fonts.scss */
 .mtk-soundcloud:before {
   content: "\30"; }
 
-/* line 78, sass/mixins/fonts.scss */
 .mtk-github:before {
   content: "\31"; }
 
-/* line 79, sass/mixins/fonts.scss */
 .mtk-google-plus:before {
   content: "\32"; }
 
-/* line 80, sass/mixins/fonts.scss */
 .mtk-facebook:before {
   content: "\33"; }
 
-/* line 81, sass/mixins/fonts.scss */
 .mtk-twitter:before {
   content: "\34"; }
 
-/* line 82, sass/mixins/fonts.scss */
 .mtk-feed:before {
   content: "\35"; }
 
-/* line 83, sass/mixins/fonts.scss */
 .mtk-deviantart:before {
   content: "\36"; }
 
-/* line 84, sass/mixins/fonts.scss */
 .mtk-steam:before {
   content: "\37"; }
 
-/* line 85, sass/mixins/fonts.scss */
 .mtk-forrst:before {
   content: "\38"; }
 
-/* line 86, sass/mixins/fonts.scss */
 .mtk-dribbble:before {
   content: "\39"; }
 
-/* line 87, sass/mixins/fonts.scss */
 .mtk-vimeo:before {
   content: "\3a"; }
 
-/* line 88, sass/mixins/fonts.scss */
 .mtk-foursquare:before {
   content: "\3b"; }
 
-/* line 89, sass/mixins/fonts.scss */
 .mtk-lastfm:before {
   content: "\3c"; }
 
-/* line 90, sass/mixins/fonts.scss */
 .mtk-tumblr:before {
   content: "\3d"; }
 
-/* line 91, sass/mixins/fonts.scss */
 .mtk-blogger:before {
   content: "\3e"; }
 
-/* line 92, sass/mixins/fonts.scss */
 .mtk-wordpress:before {
   content: "\3f"; }
 
-/* line 93, sass/mixins/fonts.scss */
 .mtk-flickr:before {
   content: "\40"; }
 
-/* line 94, sass/mixins/fonts.scss */
 .mtk-grid:before {
   content: "\41"; }
 
-/* line 96, sass/mixins/fonts.scss */
 .mtk-drawer:before,
 .mtk-portfolio:before {
   content: "\42"; }
 
-/* line 97, sass/mixins/fonts.scss */
 .mtk-drawer2:before {
   content: "\43"; }
 
-/* line 99, sass/mixins/fonts.scss */
 .mtk-earth:before,
 .mtk-clients:before {
   content: "\44"; }
 
-/* line 101, sass/mixins/fonts.scss */
 .mtk-uniF7E4:before,
 .mtk-products:before {
   content: "\45"; }
 
-/* line 102, sass/mixins/fonts.scss */
 .mtk-uniF7E5:before {
   content: "\46"; }
 
-/* line 103, sass/mixins/fonts.scss */
 .mtk-uniF7E6:before {
   content: "\47"; }
 
-/* line 105, sass/mixins/fonts.scss */
 .mtk-location:before,
 .mtk-seo:before {
   content: "\e0a6"; }
 
-/* line 106, sass/mixins/fonts.scss */
 .mtk-location2:before {
   content: "\e0a8"; }
 
-/* line 108, sass/mixins/fonts.scss */
 .mtk-bubbles:before,
 .mtk-social.discovery:before {
   content: "\e0e4"; }
 
-/* line 109, sass/mixins/fonts.scss */
 .mtk-bubbles2:before {
   content: "\e0e6"; }
 
-/* line 110, sass/mixins/fonts.scss */
 .mtk-bubbles3:before {
   content: "\e0e7"; }
 
-/* line 112, sass/mixins/fonts.scss */
 .mtk-meter-slow:before,
 .mtk-engineering:before {
   content: "\e182"; }
 
-/* line 113, sass/mixins/fonts.scss */
 .mtk-meter-fast:before {
   content: "\e184"; }
 
-/* line 114, sass/mixins/fonts.scss */
 .mtk-meter-medium:before {
   content: "\e183"; }
 
-/* line 117, sass/mixins/fonts.scss */
 li:active .mtk-products:before {
   content: "\47"; }
-/* line 118, sass/mixins/fonts.scss */
 li:active .mtk-engineering:before {
   content: "\e183";
   top: 4px; }
 
-/* line 123, sass/mixins/fonts.scss */
 .active [class^="mtk-"]:before, .active [class*=" mtk-"]:before {
   color: #3b3d43;
   left: 2px;
   top: 0px;
   font-size: 35px; }
-/* line 131, sass/mixins/fonts.scss */
 .active .mtk-story:before {
   content: "\29"; }
-/* line 132, sass/mixins/fonts.scss */
 .active .mtk-portfolio:before {
   content: "\43"; }
-/* line 133, sass/mixins/fonts.scss */
 .active .mtk-products:before {
   content: "\46"; }
-/* line 134, sass/mixins/fonts.scss */
 .active .mtk-seo:before {
   content: "\e0a8"; }
-/* line 135, sass/mixins/fonts.scss */
 .active .mtk-engineering:before {
   content: "\e184";
   top: -2px !important; }
-/* line 136, sass/mixins/fonts.scss */
 .active .mtk-workshops:before {
   content: "\e609";
   top: -2px !important; }
 
 @-moz-keyframes spin {
-  /* line 2, sass/mixins/animate.scss */
   0% {
     -moz-transform: rotate(0deg); }
 
-  /* line 3, sass/mixins/animate.scss */
   100% {
     -moz-transform: rotate(0deg); } }
 
 @-webkit-keyframes spin {
-  /* line 7, sass/mixins/animate.scss */
   0% {
     -webkit-transform: rotate(0deg); }
 
-  /* line 8, sass/mixins/animate.scss */
   100% {
     -webkit-transform: rotate(360deg); } }
 
 @keyframes spin {
-  /* line 12, sass/mixins/animate.scss */
   0% {
     transform: rotate(0deg); }
 
-  /* line 13, sass/mixins/animate.scss */
   100% {
     transform: rotate(360deg); } }
 
 @-moz-keyframes spin-collapsed {
-  /* line 17, sass/mixins/animate.scss */
   0% {
     -moz-transform: rotate(0deg); }
 
-  /* line 18, sass/mixins/animate.scss */
   100% {
     -moz-transform: rotate(360deg); } }
 
 @-webkit-keyframes spin-collapsed {
-  /* line 22, sass/mixins/animate.scss */
   0% {
     -webkit-transform: rotate(0deg); }
 
-  /* line 23, sass/mixins/animate.scss */
   100% {
     -webkit-transform: rotate(360deg); } }
 
 @keyframes spin-collapsed {
-  /* line 27, sass/mixins/animate.scss */
   0% {
     transform: rotate(0deg); }
 
-  /* line 28, sass/mixins/animate.scss */
   100% {
     transform: rotate(360deg); } }
 
-/* line 32, sass/mixins/animate.scss */
 .animated {
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
@@ -396,7 +315,6 @@ li:active .mtk-engineering:before {
   -o-animation-duration: .7s;
   animation-duration: .7s; }
 
-/* line 43, sass/mixins/animate.scss */
 .animated.hinge {
   -webkit-animation-duration: .7s;
   -moz-animation-duration: .7s;
@@ -404,7 +322,6 @@ li:active .mtk-engineering:before {
   -o-animation-duration: .7s;
   animation-duration: .7s; }
 
-/* line 51, sass/mixins/animate.scss */
 .animated.fadeIn, .animated.fadeOut {
   -webkit-animation-duration: .05s;
   -moz-animation-duration: .05s;
@@ -413,42 +330,33 @@ li:active .mtk-engineering:before {
   animation-duration: .05s; }
 
 @-webkit-keyframes flash {
-  /* line 56, sass/mixins/animate.scss */
   0%, 50%, 100% {
     opacity: 1; }
 
-  /* line 56, sass/mixins/animate.scss */
   25%, 75% {
     opacity: 0; } }
 
 @-moz-keyframes flash {
-  /* line 60, sass/mixins/animate.scss */
   0%, 50%, 100% {
     opacity: 1; }
 
-  /* line 61, sass/mixins/animate.scss */
   25%, 75% {
     opacity: 0; } }
 
 @-o-keyframes flash {
-  /* line 65, sass/mixins/animate.scss */
   0%, 50%, 100% {
     opacity: 1; }
 
-  /* line 66, sass/mixins/animate.scss */
   25%, 75% {
     opacity: 0; } }
 
 @keyframes flash {
-  /* line 70, sass/mixins/animate.scss */
   0%, 50%, 100% {
     opacity: 1; }
 
-  /* line 71, sass/mixins/animate.scss */
   25%, 75% {
     opacity: 0; } }
 
-/* line 74, sass/mixins/animate.scss */
 .flash {
   -webkit-animation-name: flash;
   -moz-animation-name: flash;
@@ -456,58 +364,45 @@ li:active .mtk-engineering:before {
   animation-name: flash; }
 
 @-webkit-keyframes shake {
-  /* line 81, sass/mixins/animate.scss */
   0%, 100% {
     -webkit-transform: translateX(0); }
 
-  /* line 82, sass/mixins/animate.scss */
   10%, 30%, 50%, 70%, 90% {
     -webkit-transform: translateX(-10px); }
 
-  /* line 83, sass/mixins/animate.scss */
   20%, 40%, 60%, 80% {
     -webkit-transform: translateX(10px); } }
 
 @-moz-keyframes shake {
-  /* line 87, sass/mixins/animate.scss */
   0%, 100% {
     -moz-transform: translateX(0); }
 
-  /* line 88, sass/mixins/animate.scss */
   10%, 30%, 50%, 70%, 90% {
     -moz-transform: translateX(-10px); }
 
-  /* line 89, sass/mixins/animate.scss */
   20%, 40%, 60%, 80% {
     -moz-transform: translateX(10px); } }
 
 @-o-keyframes shake {
-  /* line 93, sass/mixins/animate.scss */
   0%, 100% {
     -o-transform: translateX(0); }
 
-  /* line 94, sass/mixins/animate.scss */
   10%, 30%, 50%, 70%, 90% {
     -o-transform: translateX(-10px); }
 
-  /* line 95, sass/mixins/animate.scss */
   20%, 40%, 60%, 80% {
     -o-transform: translateX(10px); } }
 
 @keyframes shake {
-  /* line 99, sass/mixins/animate.scss */
   0%, 100% {
     transform: translateX(0); }
 
-  /* line 100, sass/mixins/animate.scss */
   10%, 30%, 50%, 70%, 90% {
     transform: translateX(-10px); }
 
-  /* line 101, sass/mixins/animate.scss */
   20%, 40%, 60%, 80% {
     transform: translateX(10px); } }
 
-/* line 104, sass/mixins/animate.scss */
 .shake {
   -webkit-animation-name: shake;
   -moz-animation-name: shake;
@@ -515,58 +410,45 @@ li:active .mtk-engineering:before {
   animation-name: shake; }
 
 @-webkit-keyframes bounce {
-  /* line 111, sass/mixins/animate.scss */
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0); }
 
-  /* line 112, sass/mixins/animate.scss */
   40% {
     -webkit-transform: translateY(-30px); }
 
-  /* line 113, sass/mixins/animate.scss */
   60% {
     -webkit-transform: translateY(-15px); } }
 
 @-moz-keyframes bounce {
-  /* line 117, sass/mixins/animate.scss */
   0%, 20%, 50%, 80%, 100% {
     -moz-transform: translateY(0); }
 
-  /* line 118, sass/mixins/animate.scss */
   40% {
     -moz-transform: translateY(-30px); }
 
-  /* line 119, sass/mixins/animate.scss */
   60% {
     -moz-transform: translateY(-15px); } }
 
 @-o-keyframes bounce {
-  /* line 123, sass/mixins/animate.scss */
   0%, 20%, 50%, 80%, 100% {
     -o-transform: translateY(0); }
 
-  /* line 124, sass/mixins/animate.scss */
   40% {
     -o-transform: translateY(-30px); }
 
-  /* line 125, sass/mixins/animate.scss */
   60% {
     -o-transform: translateY(-15px); } }
 
 @keyframes bounce {
-  /* line 128, sass/mixins/animate.scss */
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0); }
 
-  /* line 129, sass/mixins/animate.scss */
   40% {
     transform: translateY(-30px); }
 
-  /* line 130, sass/mixins/animate.scss */
   60% {
     transform: translateY(-15px); } }
 
-/* line 133, sass/mixins/animate.scss */
 .bounce {
   -webkit-animation-name: bounce;
   -moz-animation-name: bounce;
@@ -574,90 +456,69 @@ li:active .mtk-engineering:before {
   animation-name: bounce; }
 
 @-webkit-keyframes tada {
-  /* line 140, sass/mixins/animate.scss */
   0% {
     -webkit-transform: scale(1); }
 
-  /* line 141, sass/mixins/animate.scss */
   10%, 20% {
     -webkit-transform: scale(0.9) rotate(-3deg); }
 
-  /* line 142, sass/mixins/animate.scss */
   30%, 50%, 70%, 90% {
     -webkit-transform: scale(1.1) rotate(3deg); }
 
-  /* line 143, sass/mixins/animate.scss */
   40%, 60%, 80% {
     -webkit-transform: scale(1.1) rotate(-3deg); }
 
-  /* line 144, sass/mixins/animate.scss */
   100% {
     -webkit-transform: scale(1) rotate(0); } }
 
 @-moz-keyframes tada {
-  /* line 148, sass/mixins/animate.scss */
   0% {
     -moz-transform: scale(1); }
 
-  /* line 149, sass/mixins/animate.scss */
   10%, 20% {
     -moz-transform: scale(0.9) rotate(-3deg); }
 
-  /* line 150, sass/mixins/animate.scss */
   30%, 50%, 70%, 90% {
     -moz-transform: scale(1.1) rotate(3deg); }
 
-  /* line 151, sass/mixins/animate.scss */
   40%, 60%, 80% {
     -moz-transform: scale(1.1) rotate(-3deg); }
 
-  /* line 152, sass/mixins/animate.scss */
   100% {
     -moz-transform: scale(1) rotate(0); } }
 
 @-o-keyframes tada {
-  /* line 156, sass/mixins/animate.scss */
   0% {
     -o-transform: scale(1); }
 
-  /* line 157, sass/mixins/animate.scss */
   10%, 20% {
     -o-transform: scale(0.9) rotate(-3deg); }
 
-  /* line 158, sass/mixins/animate.scss */
   30%, 50%, 70%, 90% {
     -o-transform: scale(1.1) rotate(3deg); }
 
-  /* line 159, sass/mixins/animate.scss */
   40%, 60%, 80% {
     -o-transform: scale(1.1) rotate(-3deg); }
 
-  /* line 160, sass/mixins/animate.scss */
   100% {
     -o-transform: scale(1) rotate(0); } }
 
 @keyframes tada {
-  /* line 164, sass/mixins/animate.scss */
   0% {
     transform: scale(1); }
 
-  /* line 165, sass/mixins/animate.scss */
   10%, 20% {
     transform: scale(0.9) rotate(-3deg); }
 
-  /* line 166, sass/mixins/animate.scss */
   30%, 50%, 70%, 90% {
     transform: scale(1.1) rotate(3deg); }
 
-  /* line 167, sass/mixins/animate.scss */
   40%, 60%, 80% {
     transform: scale(1.1) rotate(-3deg); }
 
-  /* line 168, sass/mixins/animate.scss */
   100% {
     transform: scale(1) rotate(0); } }
 
-/* line 171, sass/mixins/animate.scss */
 .tada {
   -webkit-animation-name: tada;
   -moz-animation-name: tada;
@@ -665,94 +526,72 @@ li:active .mtk-engineering:before {
   animation-name: tada; }
 
 @-webkit-keyframes swing {
-  /* line 178, sass/mixins/animate.scss */
   20%, 40%, 60%, 80%, 100% {
     -webkit-transform-origin: top center; }
 
-  /* line 179, sass/mixins/animate.scss */
   20% {
     -webkit-transform: rotate(15deg); }
 
-  /* line 180, sass/mixins/animate.scss */
   40% {
     -webkit-transform: rotate(-10deg); }
 
-  /* line 181, sass/mixins/animate.scss */
   60% {
     -webkit-transform: rotate(5deg); }
 
-  /* line 182, sass/mixins/animate.scss */
   80% {
     -webkit-transform: rotate(-5deg); }
 
-  /* line 183, sass/mixins/animate.scss */
   100% {
     -webkit-transform: rotate(0deg); } }
 
 @-moz-keyframes swing {
-  /* line 187, sass/mixins/animate.scss */
   20% {
     -moz-transform: rotate(15deg); }
 
-  /* line 188, sass/mixins/animate.scss */
   40% {
     -moz-transform: rotate(-10deg); }
 
-  /* line 189, sass/mixins/animate.scss */
   60% {
     -moz-transform: rotate(5deg); }
 
-  /* line 190, sass/mixins/animate.scss */
   80% {
     -moz-transform: rotate(-5deg); }
 
-  /* line 191, sass/mixins/animate.scss */
   100% {
     -moz-transform: rotate(0deg); } }
 
 @-o-keyframes swing {
-  /* line 195, sass/mixins/animate.scss */
   20% {
     -o-transform: rotate(15deg); }
 
-  /* line 196, sass/mixins/animate.scss */
   40% {
     -o-transform: rotate(-10deg); }
 
-  /* line 197, sass/mixins/animate.scss */
   60% {
     -o-transform: rotate(5deg); }
 
-  /* line 198, sass/mixins/animate.scss */
   80% {
     -o-transform: rotate(-5deg); }
 
-  /* line 199, sass/mixins/animate.scss */
   100% {
     -o-transform: rotate(0deg); } }
 
 @keyframes swing {
-  /* line 203, sass/mixins/animate.scss */
   20% {
     transform: rotate(15deg); }
 
-  /* line 204, sass/mixins/animate.scss */
   40% {
     transform: rotate(-10deg); }
 
-  /* line 205, sass/mixins/animate.scss */
   60% {
     transform: rotate(5deg); }
 
-  /* line 206, sass/mixins/animate.scss */
   80% {
     transform: rotate(-5deg); }
 
-  /* line 207, sass/mixins/animate.scss */
   100% {
     transform: rotate(0deg); } }
 
-/* line 210, sass/mixins/animate.scss */
 .swing {
   -webkit-transform-origin: top center;
   -moz-transform-origin: top center;
@@ -765,122 +604,93 @@ li:active .mtk-engineering:before {
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 @-webkit-keyframes wobble {
-  /* line 223, sass/mixins/animate.scss */
   0% {
     -webkit-transform: translateX(0%); }
 
-  /* line 224, sass/mixins/animate.scss */
   15% {
     -webkit-transform: translateX(-25%) rotate(-5deg); }
 
-  /* line 225, sass/mixins/animate.scss */
   30% {
     -webkit-transform: translateX(20%) rotate(3deg); }
 
-  /* line 226, sass/mixins/animate.scss */
   45% {
     -webkit-transform: translateX(-15%) rotate(-3deg); }
 
-  /* line 227, sass/mixins/animate.scss */
   60% {
     -webkit-transform: translateX(10%) rotate(2deg); }
 
-  /* line 228, sass/mixins/animate.scss */
   75% {
     -webkit-transform: translateX(-5%) rotate(-1deg); }
 
-  /* line 229, sass/mixins/animate.scss */
   100% {
     -webkit-transform: translateX(0%); } }
 
 @-moz-keyframes wobble {
-  /* line 233, sass/mixins/animate.scss */
   0% {
     -moz-transform: translateX(0%); }
 
-  /* line 234, sass/mixins/animate.scss */
   15% {
     -moz-transform: translateX(-25%) rotate(-5deg); }
 
-  /* line 235, sass/mixins/animate.scss */
   30% {
     -moz-transform: translateX(20%) rotate(3deg); }
 
-  /* line 236, sass/mixins/animate.scss */
   45% {
     -moz-transform: translateX(-15%) rotate(-3deg); }
 
-  /* line 237, sass/mixins/animate.scss */
   60% {
     -moz-transform: translateX(10%) rotate(2deg); }
 
-  /* line 238, sass/mixins/animate.scss */
   75% {
     -moz-transform: translateX(-5%) rotate(-1deg); }
 
-  /* line 239, sass/mixins/animate.scss */
   100% {
     -moz-transform: translateX(0%); } }
 
 @-o-keyframes wobble {
-  /* line 243, sass/mixins/animate.scss */
   0% {
     -o-transform: translateX(0%); }
 
-  /* line 244, sass/mixins/animate.scss */
   15% {
     -o-transform: translateX(-25%) rotate(-5deg); }
 
-  /* line 245, sass/mixins/animate.scss */
   30% {
     -o-transform: translateX(20%) rotate(3deg); }
 
-  /* line 246, sass/mixins/animate.scss */
   45% {
     -o-transform: translateX(-15%) rotate(-3deg); }
 
-  /* line 247, sass/mixins/animate.scss */
   60% {
     -o-transform: translateX(10%) rotate(2deg); }
 
-  /* line 248, sass/mixins/animate.scss */
   75% {
     -o-transform: translateX(-5%) rotate(-1deg); }
 
-  /* line 249, sass/mixins/animate.scss */
   100% {
     -o-transform: translateX(0%); } }
 
 @keyframes wobble {
-  /* line 253, sass/mixins/animate.scss */
   0% {
     transform: translateX(0%); }
 
-  /* line 254, sass/mixins/animate.scss */
   15% {
     transform: translateX(-25%) rotate(-5deg); }
 
-  /* line 255, sass/mixins/animate.scss */
   30% {
     transform: translateX(20%) rotate(3deg); }
 
-  /* line 256, sass/mixins/animate.scss */
   45% {
     transform: translateX(-15%) rotate(-3deg); }
 
-  /* line 257, sass/mixins/animate.scss */
   60% {
     transform: translateX(10%) rotate(2deg); }
 
-  /* line 258, sass/mixins/animate.scss */
   75% {
     transform: translateX(-5%) rotate(-1deg); }
 
-  /* line 259, sass/mixins/animate.scss */
   100% {
     transform: translateX(0%); } }
 
-/* line 262, sass/mixins/animate.scss */
 .wobble {
   -webkit-animation-name: wobble;
   -moz-animation-name: wobble;
@@ -889,58 +699,45 @@ li:active .mtk-engineering:before {
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 @-webkit-keyframes pulse {
-  /* line 271, sass/mixins/animate.scss */
   0% {
     -webkit-transform: scale(1); }
 
-  /* line 272, sass/mixins/animate.scss */
   50% {
     -webkit-transform: scale(1.1); }
 
-  /* line 273, sass/mixins/animate.scss */
   100% {
     -webkit-transform: scale(1); } }
 
 @-moz-keyframes pulse {
-  /* line 276, sass/mixins/animate.scss */
   0% {
     -moz-transform: scale(1); }
 
-  /* line 277, sass/mixins/animate.scss */
   50% {
     -moz-transform: scale(1.1); }
 
-  /* line 278, sass/mixins/animate.scss */
   100% {
     -moz-transform: scale(1); } }
 
 @-o-keyframes pulse {
-  /* line 281, sass/mixins/animate.scss */
   0% {
     -o-transform: scale(1); }
 
-  /* line 282, sass/mixins/animate.scss */
   50% {
     -o-transform: scale(1.1); }
 
-  /* line 283, sass/mixins/animate.scss */
   100% {
     -o-transform: scale(1); } }
 
 @keyframes pulse {
-  /* line 286, sass/mixins/animate.scss */
   0% {
     transform: scale(1); }
 
-  /* line 287, sass/mixins/animate.scss */
   50% {
     transform: scale(1.1); }
 
-  /* line 288, sass/mixins/animate.scss */
   100% {
     transform: scale(1); } }
 
-/* line 291, sass/mixins/animate.scss */
 .pulse {
   -webkit-animation-name: pulse;
   -moz-animation-name: pulse;
@@ -948,42 +745,33 @@ li:active .mtk-engineering:before {
   animation-name: pulse; }
 
 @-webkit-keyframes fadeIn {
-  /* line 298, sass/mixins/animate.scss */
   0% {
     opacity: 0; }
 
-  /* line 299, sass/mixins/animate.scss */
   100% {
     opacity: 1; } }
 
 @-moz-keyframes fadeIn {
-  /* line 303, sass/mixins/animate.scss */
   0% {
     opacity: 0; }
 
-  /* line 304, sass/mixins/animate.scss */
   100% {
     opacity: 1; } }
 
 @-o-keyframes fadeIn {
-  /* line 308, sass/mixins/animate.scss */
   0% {
     opacity: 0; }
 
-  /* line 309, sass/mixins/animate.scss */
   100% {
     opacity: 1; } }
 
 @keyframes fadeIn {
-  /* line 313, sass/mixins/animate.scss */
   0% {
     opacity: 0; }
 
-  /* line 314, sass/mixins/animate.scss */
   100% {
     opacity: 1; } }
 
-/* line 317, sass/mixins/animate.scss */
 .fadeIn {
   -webkit-animation-name: fadeIn;
   -moz-animation-name: fadeIn;
@@ -991,50 +779,41 @@ li:active .mtk-engineering:before {
   animation-name: fadeIn; }
 
 @-webkit-keyframes fadeInUp {
-  /* line 324, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(20px); }
 
-  /* line 329, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0); } }
 
 @-moz-keyframes fadeInUp {
-  /* line 336, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -moz-transform: translateY(20px); }
 
-  /* line 341, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -moz-transform: translateY(0); } }
 
 @-o-keyframes fadeInUp {
-  /* line 348, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -o-transform: translateY(20px); }
 
-  /* line 353, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -o-transform: translateY(0); } }
 
 @keyframes fadeInUp {
-  /* line 360, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     transform: translateY(20px); }
 
-  /* line 365, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     transform: translateY(0); } }
 
-/* line 371, sass/mixins/animate.scss */
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   -moz-animation-name: fadeInUp;
@@ -1042,50 +821,41 @@ li:active .mtk-engineering:before {
   animation-name: fadeInUp; }
 
 @-webkit-keyframes fadeInDown {
-  /* line 378, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-20px); }
 
-  /* line 383, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0); } }
 
 @-moz-keyframes fadeInDown {
-  /* line 390, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -moz-transform: translateY(-20px); }
 
-  /* line 395, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -moz-transform: translateY(0); } }
 
 @-o-keyframes fadeInDown {
-  /* line 402, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -o-transform: translateY(-20px); }
 
-  /* line 407, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -o-transform: translateY(0); } }
 
 @keyframes fadeInDown {
-  /* line 414, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     transform: translateY(-20px); }
 
-  /* line 419, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     transform: translateY(0); } }
 
-/* line 425, sass/mixins/animate.scss */
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   -moz-animation-name: fadeInDown;
@@ -1093,50 +863,41 @@ li:active .mtk-engineering:before {
   animation-name: fadeInDown; }
 
 @-webkit-keyframes fadeInLeft {
-  /* line 432, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-20px); }
 
-  /* line 437, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0); } }
 
 @-moz-keyframes fadeInLeft {
-  /* line 444, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -moz-transform: translateX(-20px); }
 
-  /* line 449, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -moz-transform: translateX(0); } }
 
 @-o-keyframes fadeInLeft {
-  /* line 456, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -o-transform: translateX(-20px); }
 
-  /* line 461, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -o-transform: translateX(0); } }
 
 @keyframes fadeInLeft {
-  /* line 468, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     transform: translateX(-20px); }
 
-  /* line 473, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     transform: translateX(0); } }
 
-/* line 479, sass/mixins/animate.scss */
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   -moz-animation-name: fadeInLeft;
@@ -1144,50 +905,41 @@ li:active .mtk-engineering:before {
   animation-name: fadeInLeft; }
 
 @-webkit-keyframes fadeInRight {
-  /* line 486, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(20px); }
 
-  /* line 491, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0); } }
 
 @-moz-keyframes fadeInRight {
-  /* line 498, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -moz-transform: translateX(20px); }
 
-  /* line 503, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -moz-transform: translateX(0); } }
 
 @-o-keyframes fadeInRight {
-  /* line 510, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -o-transform: translateX(20px); }
 
-  /* line 515, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -o-transform: translateX(0); } }
 
 @keyframes fadeInRight {
-  /* line 522, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     transform: translateX(20px); }
 
-  /* line 527, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     transform: translateX(0); } }
 
-/* line 533, sass/mixins/animate.scss */
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   -moz-animation-name: fadeInRight;
@@ -1195,50 +947,41 @@ li:active .mtk-engineering:before {
   animation-name: fadeInRight; }
 
 @-webkit-keyframes fadeInUpBig {
-  /* line 540, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(2000px); }
 
-  /* line 545, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0); } }
 
 @-moz-keyframes fadeInUpBig {
-  /* line 552, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -moz-transform: translateY(2000px); }
 
-  /* line 557, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -moz-transform: translateY(0); } }
 
 @-o-keyframes fadeInUpBig {
-  /* line 564, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -o-transform: translateY(2000px); }
 
-  /* line 569, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -o-transform: translateY(0); } }
 
 @keyframes fadeInUpBig {
-  /* line 576, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     transform: translateY(2000px); }
 
-  /* line 581, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     transform: translateY(0); } }
 
-/* line 587, sass/mixins/animate.scss */
 .fadeInUpBig {
   -webkit-animation-name: fadeInUpBig;
   -moz-animation-name: fadeInUpBig;
@@ -1246,50 +989,41 @@ li:active .mtk-engineering:before {
   animation-name: fadeInUpBig; }
 
 @-webkit-keyframes fadeInDownBig {
-  /* line 594, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-2000px); }
 
-  /* line 599, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateY(0); } }
 
 @-moz-keyframes fadeInDownBig {
-  /* line 606, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -moz-transform: translateY(-2000px); }
 
-  /* line 611, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -moz-transform: translateY(0); } }
 
 @-o-keyframes fadeInDownBig {
-  /* line 618, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -o-transform: translateY(-2000px); }
 
-  /* line 623, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -o-transform: translateY(0); } }
 
 @keyframes fadeInDownBig {
-  /* line 630, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     transform: translateY(-2000px); }
 
-  /* line 635, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     transform: translateY(0); } }
 
-/* line 641, sass/mixins/animate.scss */
 .fadeInDownBig {
   -webkit-animation-name: fadeInDownBig;
   -moz-animation-name: fadeInDownBig;
@@ -1297,50 +1031,41 @@ li:active .mtk-engineering:before {
   animation-name: fadeInDownBig; }
 
 @-webkit-keyframes fadeInLeftBig {
-  /* line 648, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-2000px); }
 
-  /* line 653, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0); } }
 
 @-moz-keyframes fadeInLeftBig {
-  /* line 659, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -moz-transform: translateX(-2000px); }
 
-  /* line 664, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -moz-transform: translateX(0); } }
 
 @-o-keyframes fadeInLeftBig {
-  /* line 670, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -o-transform: translateX(-2000px); }
 
-  /* line 675, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -o-transform: translateX(0); } }
 
 @keyframes fadeInLeftBig {
-  /* line 681, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     transform: translateX(-2000px); }
 
-  /* line 686, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     transform: translateX(0); } }
 
-/* line 692, sass/mixins/animate.scss */
 .fadeInLeftBig {
   -webkit-animation-name: fadeInLeftBig;
   -moz-animation-name: fadeInLeftBig;
@@ -1348,50 +1073,41 @@ li:active .mtk-engineering:before {
   animation-name: fadeInLeftBig; }
 
 @-webkit-keyframes fadeInRightBig {
-  /* line 699, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(2000px); }
 
-  /* line 704, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateX(0); } }
 
 @-moz-keyframes fadeInRightBig {
-  /* line 711, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -moz-transform: translateX(2000px); }
 
-  /* line 716, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -moz-transform: translateX(0); } }
 
 @-o-keyframes fadeInRightBig {
-  /* line 723, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -o-transform: translateX(2000px); }
 
-  /* line 728, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     -o-transform: translateX(0); } }
 
 @keyframes fadeInRightBig {
-  /* line 735, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     transform: translateX(2000px); }
 
-  /* line 740, sass/mixins/animate.scss */
   100% {
     opacity: 1;
     transform: translateX(0); } }
 
-/* line 746, sass/mixins/animate.scss */
 .fadeInRightBig {
   -webkit-animation-name: fadeInRightBig;
   -moz-animation-name: fadeInRightBig;
@@ -1399,42 +1115,33 @@ li:active .mtk-engineering:before {
   animation-name: fadeInRightBig; }
 
 @-webkit-keyframes fadeOut {
-  /* line 753, sass/mixins/animate.scss */
   0% {
     opacity: 1; }
 
-  /* line 754, sass/mixins/animate.scss */
   100% {
     opacity: 0; } }
 
 @-moz-keyframes fadeOut {
-  /* line 758, sass/mixins/animate.scss */
   0% {
     opacity: 1; }
 
-  /* line 759, sass/mixins/animate.scss */
   100% {
     opacity: 0; } }
 
 @-o-keyframes fadeOut {
-  /* line 763, sass/mixins/animate.scss */
   0% {
     opacity: 1; }
 
-  /* line 764, sass/mixins/animate.scss */
   100% {
     opacity: 0; } }
 
 @keyframes fadeOut {
-  /* line 768, sass/mixins/animate.scss */
   0% {
     opacity: 1; }
 
-  /* line 769, sass/mixins/animate.scss */
   100% {
     opacity: 0; } }
 
-/* line 772, sass/mixins/animate.scss */
 .fadeOut {
   -webkit-animation-name: fadeOut;
   -moz-animation-name: fadeOut;
@@ -1442,50 +1149,41 @@ li:active .mtk-engineering:before {
   animation-name: fadeOut; }
 
 @-webkit-keyframes fadeOutUp {
-  /* line 779, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0); }
 
-  /* line 784, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(-20px); } }
 
 @-moz-keyframes fadeOutUp {
-  /* line 790, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -moz-transform: translateY(0); }
 
-  /* line 795, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -moz-transform: translateY(-20px); } }
 
 @-o-keyframes fadeOutUp {
-  /* line 801, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -o-transform: translateY(0); }
 
-  /* line 806, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -o-transform: translateY(-20px); } }
 
 @keyframes fadeOutUp {
-  /* line 812, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     transform: translateY(0); }
 
-  /* line 817, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     transform: translateY(-20px); } }
 
-/* line 823, sass/mixins/animate.scss */
 .fadeOutUp {
   -webkit-animation-name: fadeOutUp;
   -moz-animation-name: fadeOutUp;
@@ -1493,50 +1191,41 @@ li:active .mtk-engineering:before {
   animation-name: fadeOutUp; }
 
 @-webkit-keyframes fadeOutDown {
-  /* line 830, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0); }
 
-  /* line 835, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(20px); } }
 
 @-moz-keyframes fadeOutDown {
-  /* line 842, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -moz-transform: translateY(0); }
 
-  /* line 847, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -moz-transform: translateY(20px); } }
 
 @-o-keyframes fadeOutDown {
-  /* line 854, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -o-transform: translateY(0); }
 
-  /* line 859, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -o-transform: translateY(20px); } }
 
 @keyframes fadeOutDown {
-  /* line 866, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     transform: translateY(0); }
 
-  /* line 871, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     transform: translateY(20px); } }
 
-/* line 877, sass/mixins/animate.scss */
 .fadeOutDown {
   -webkit-animation-name: fadeOutDown;
   -moz-animation-name: fadeOutDown;
@@ -1544,50 +1233,41 @@ li:active .mtk-engineering:before {
   animation-name: fadeOutDown; }
 
 @-webkit-keyframes fadeOutLeft {
-  /* line 884, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0); }
 
-  /* line 889, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(-20px); } }
 
 @-moz-keyframes fadeOutLeft {
-  /* line 896, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -moz-transform: translateX(0); }
 
-  /* line 901, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -moz-transform: translateX(-20px); } }
 
 @-o-keyframes fadeOutLeft {
-  /* line 908, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -o-transform: translateX(0); }
 
-  /* line 913, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -o-transform: translateX(-20px); } }
 
 @keyframes fadeOutLeft {
-  /* line 920, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     transform: translateX(0); }
 
-  /* line 925, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     transform: translateX(-20px); } }
 
-/* line 931, sass/mixins/animate.scss */
 .fadeOutLeft {
   -webkit-animation-name: fadeOutLeft;
   -moz-animation-name: fadeOutLeft;
@@ -1595,50 +1275,41 @@ li:active .mtk-engineering:before {
   animation-name: fadeOutLeft; }
 
 @-webkit-keyframes fadeOutRight {
-  /* line 938, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0); }
 
-  /* line 943, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(20px); } }
 
 @-moz-keyframes fadeOutRight {
-  /* line 950, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -moz-transform: translateX(0); }
 
-  /* line 955, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -moz-transform: translateX(20px); } }
 
 @-o-keyframes fadeOutRight {
-  /* line 962, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -o-transform: translateX(0); }
 
-  /* line 967, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -o-transform: translateX(20px); } }
 
 @keyframes fadeOutRight {
-  /* line 974, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     transform: translateX(0); }
 
-  /* line 979, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     transform: translateX(20px); } }
 
-/* line 985, sass/mixins/animate.scss */
 .fadeOutRight {
   -webkit-animation-name: fadeOutRight;
   -moz-animation-name: fadeOutRight;
@@ -1646,50 +1317,41 @@ li:active .mtk-engineering:before {
   animation-name: fadeOutRight; }
 
 @-webkit-keyframes fadeOutUpBig {
-  /* line 992, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0); }
 
-  /* line 997, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(-2000px); } }
 
 @-moz-keyframes fadeOutUpBig {
-  /* line 1004, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -moz-transform: translateY(0); }
 
-  /* line 1009, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -moz-transform: translateY(-2000px); } }
 
 @-o-keyframes fadeOutUpBig {
-  /* line 1016, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -o-transform: translateY(0); }
 
-  /* line 1021, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -o-transform: translateY(-2000px); } }
 
 @keyframes fadeOutUpBig {
-  /* line 1028, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     transform: translateY(0); }
 
-  /* line 1033, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     transform: translateY(-2000px); } }
 
-/* line 1039, sass/mixins/animate.scss */
 .fadeOutUpBig {
   -webkit-animation-name: fadeOutUpBig;
   -moz-animation-name: fadeOutUpBig;
@@ -1697,50 +1359,41 @@ li:active .mtk-engineering:before {
   animation-name: fadeOutUpBig; }
 
 @-webkit-keyframes fadeOutDownBig {
-  /* line 1046, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateY(0); }
 
-  /* line 1051, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(2000px); } }
 
 @-moz-keyframes fadeOutDownBig {
-  /* line 1058, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -moz-transform: translateY(0); }
 
-  /* line 1063, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -moz-transform: translateY(2000px); } }
 
 @-o-keyframes fadeOutDownBig {
-  /* line 1070, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -o-transform: translateY(0); }
 
-  /* line 1075, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -o-transform: translateY(2000px); } }
 
 @keyframes fadeOutDownBig {
-  /* line 1082, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     transform: translateY(0); }
 
-  /* line 1087, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     transform: translateY(2000px); } }
 
-/* line 1093, sass/mixins/animate.scss */
 .fadeOutDownBig {
   -webkit-animation-name: fadeOutDownBig;
   -moz-animation-name: fadeOutDownBig;
@@ -1748,50 +1401,41 @@ li:active .mtk-engineering:before {
   animation-name: fadeOutDownBig; }
 
 @-webkit-keyframes fadeOutLeftBig {
-  /* line 1100, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0); }
 
-  /* line 1105, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(-2000px); } }
 
 @-moz-keyframes fadeOutLeftBig {
-  /* line 1112, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -moz-transform: translateX(0); }
 
-  /* line 1117, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -moz-transform: translateX(-2000px); } }
 
 @-o-keyframes fadeOutLeftBig {
-  /* line 1124, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -o-transform: translateX(0); }
 
-  /* line 1129, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -o-transform: translateX(-2000px); } }
 
 @keyframes fadeOutLeftBig {
-  /* line 1136, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     transform: translateX(0); }
 
-  /* line 1141, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     transform: translateX(-2000px); } }
 
-/* line 1147, sass/mixins/animate.scss */
 .fadeOutLeftBig {
   -webkit-animation-name: fadeOutLeftBig;
   -moz-animation-name: fadeOutLeftBig;
@@ -1799,50 +1443,41 @@ li:active .mtk-engineering:before {
   animation-name: fadeOutLeftBig; }
 
 @-webkit-keyframes fadeOutRightBig {
-  /* line 1154, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -webkit-transform: translateX(0); }
 
-  /* line 1159, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(2000px); } }
 
 @-moz-keyframes fadeOutRightBig {
-  /* line 1165, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -moz-transform: translateX(0); }
 
-  /* line 1170, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -moz-transform: translateX(2000px); } }
 
 @-o-keyframes fadeOutRightBig {
-  /* line 1176, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     -o-transform: translateX(0); }
 
-  /* line 1181, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -o-transform: translateX(2000px); } }
 
 @keyframes fadeOutRightBig {
-  /* line 1187, sass/mixins/animate.scss */
   0% {
     opacity: 1;
     transform: translateX(0); }
 
-  /* line 1192, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     transform: translateX(2000px); } }
 
-/* line 1198, sass/mixins/animate.scss */
 .fadeOutRightBig {
   -webkit-animation-name: fadeOutRightBig;
   -moz-animation-name: fadeOutRightBig;
@@ -1850,82 +1485,65 @@ li:active .mtk-engineering:before {
   animation-name: fadeOutRightBig; }
 
 @-webkit-keyframes bounceIn {
-  /* line 1206, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -webkit-transform: scale(0.3); }
 
-  /* line 1209, sass/mixins/animate.scss */
   50% {
     opacity: 1;
     -webkit-transform: scale(1.05); }
 
-  /* line 1214, sass/mixins/animate.scss */
   70% {
     -webkit-transform: scale(0.9); }
 
-  /* line 1218, sass/mixins/animate.scss */
   100% {
     -webkit-transform: scale(1); } }
 
 @-moz-keyframes bounceIn {
-  /* line 1224, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -moz-transform: scale(0.3); }
 
-  /* line 1229, sass/mixins/animate.scss */
   50% {
     opacity: 1;
     -moz-transform: scale(1.05); }
 
-  /* line 1234, sass/mixins/animate.scss */
   70% {
     -moz-transform: scale(0.9); }
 
-  /* line 1238, sass/mixins/animate.scss */
   100% {
     -moz-transform: scale(1); } }
 
 @-o-keyframes bounceIn {
-  /* line 1244, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -o-transform: scale(0.3); }
 
-  /* line 1249, sass/mixins/animate.scss */
   50% {
     opacity: 1;
     -o-transform: scale(1.05); }
 
-  /* line 1254, sass/mixins/animate.scss */
   70% {
     -o-transform: scale(0.9); }
 
-  /* line 1258, sass/mixins/animate.scss */
   100% {
     -o-transform: scale(1); } }
 
 @keyframes bounceIn {
-  /* line 1264, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     transform: scale(0.3); }
 
-  /* line 1269, sass/mixins/animate.scss */
   50% {
     opacity: 1;
     transform: scale(1.05); }
 
-  /* line 1274, sass/mixins/animate.scss */
   70% {
     transform: scale(0.9); }
 
-  /* line 1278, sass/mixins/animate.scss */
   100% {
     transform: scale(1); } }
 
-/* line 1283, sass/mixins/animate.scss */
 .bounceIn {
   -webkit-animation-name: bounceIn;
   -moz-animation-name: bounceIn;
@@ -1933,82 +1551,65 @@ li:active .mtk-engineering:before {
   animation-name: bounceIn; }
 
 @-webkit-keyframes bounceInUp {
-  /* line 1290, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(2000px); }
 
-  /* line 1295, sass/mixins/animate.scss */
   60% {
     opacity: 1;
     -webkit-transform: translateY(-30px); }
 
-  /* line 1300, sass/mixins/animate.scss */
   80% {
     -webkit-transform: translateY(10px); }
 
-  /* line 1304, sass/mixins/animate.scss */
   100% {
     -webkit-transform: translateY(0); } }
 
 @-moz-keyframes bounceInUp {
-  /* line 1309, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -moz-transform: translateY(2000px); }
 
-  /* line 1314, sass/mixins/animate.scss */
   60% {
     opacity: 1;
     -moz-transform: translateY(-30px); }
 
-  /* line 1319, sass/mixins/animate.scss */
   80% {
     -moz-transform: translateY(10px); }
 
-  /* line 1323, sass/mixins/animate.scss */
   100% {
     -moz-transform: translateY(0); } }
 
 @-o-keyframes bounceInUp {
-  /* line 1329, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -o-transform: translateY(2000px); }
 
-  /* line 1334, sass/mixins/animate.scss */
   60% {
     opacity: 1;
     -o-transform: translateY(-30px); }
 
-  /* line 1339, sass/mixins/animate.scss */
   80% {
     -o-transform: translateY(10px); }
 
-  /* line 1343, sass/mixins/animate.scss */
   100% {
     -o-transform: translateY(0); } }
 
 @keyframes bounceInUp {
-  /* line 1349, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     transform: translateY(2000px); }
 
-  /* line 1354, sass/mixins/animate.scss */
   60% {
     opacity: 1;
     transform: translateY(-30px); }
 
-  /* line 1359, sass/mixins/animate.scss */
   80% {
     transform: translateY(10px); }
 
-  /* line 1363, sass/mixins/animate.scss */
   100% {
     transform: translateY(0); } }
 
-/* line 1368, sass/mixins/animate.scss */
 .bounceInUp {
   -webkit-animation-name: bounceInUp;
   -moz-animation-name: bounceInUp;
@@ -2016,82 +1617,65 @@ li:active .mtk-engineering:before {
   animation-name: bounceInUp; }
 
 @-webkit-keyframes bounceInDown {
-  /* line 1375, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-2000px); }
 
-  /* line 1380, sass/mixins/animate.scss */
   60% {
     opacity: 1;
     -webkit-transform: translateY(30px); }
 
-  /* line 1385, sass/mixins/animate.scss */
   80% {
     -webkit-transform: translateY(-10px); }
 
-  /* line 1389, sass/mixins/animate.scss */
   100% {
     -webkit-transform: translateY(0); } }
 
 @-moz-keyframes bounceInDown {
-  /* line 1395, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -moz-transform: translateY(-2000px); }
 
-  /* line 1400, sass/mixins/animate.scss */
   60% {
     opacity: 1;
     -moz-transform: translateY(30px); }
 
-  /* line 1405, sass/mixins/animate.scss */
   80% {
     -moz-transform: translateY(-10px); }
 
-  /* line 1409, sass/mixins/animate.scss */
   100% {
     -moz-transform: translateY(0); } }
 
 @-o-keyframes bounceInDown {
-  /* line 1415, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -o-transform: translateY(-2000px); }
 
-  /* line 1420, sass/mixins/animate.scss */
   60% {
     opacity: 1;
     -o-transform: translateY(30px); }
 
-  /* line 1425, sass/mixins/animate.scss */
   80% {
     -o-transform: translateY(-10px); }
 
-  /* line 1429, sass/mixins/animate.scss */
   100% {
     -o-transform: translateY(0); } }
 
 @keyframes bounceInDown {
-  /* line 1435, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     transform: translateY(-2000px); }
 
-  /* line 1440, sass/mixins/animate.scss */
   60% {
     opacity: 1;
     transform: translateY(30px); }
 
-  /* line 1445, sass/mixins/animate.scss */
   80% {
     transform: translateY(-10px); }
 
-  /* line 1449, sass/mixins/animate.scss */
   100% {
     transform: translateY(0); } }
 
-/* line 1454, sass/mixins/animate.scss */
 .bounceInDown {
   -webkit-animation-name: bounceInDown;
   -moz-animation-name: bounceInDown;
@@ -2099,82 +1683,65 @@ li:active .mtk-engineering:before {
   animation-name: bounceInDown; }
 
 @-webkit-keyframes bounceInLeft {
-  /* line 1461, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(-2000px); }
 
-  /* line 1466, sass/mixins/animate.scss */
   60% {
     opacity: 1;
     -webkit-transform: translateX(30px); }
 
-  /* line 1471, sass/mixins/animate.scss */
   80% {
     -webkit-transform: translateX(-10px); }
 
-  /* line 1475, sass/mixins/animate.scss */
   100% {
     -webkit-transform: translateX(0); } }
 
 @-moz-keyframes bounceInLeft {
-  /* line 1481, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -moz-transform: translateX(-2000px); }
 
-  /* line 1486, sass/mixins/animate.scss */
   60% {
     opacity: 1;
     -moz-transform: translateX(30px); }
 
-  /* line 1491, sass/mixins/animate.scss */
   80% {
     -moz-transform: translateX(-10px); }
 
-  /* line 1495, sass/mixins/animate.scss */
   100% {
     -moz-transform: translateX(0); } }
 
 @-o-keyframes bounceInLeft {
-  /* line 1501, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -o-transform: translateX(-2000px); }
 
-  /* line 1506, sass/mixins/animate.scss */
   60% {
     opacity: 1;
     -o-transform: translateX(30px); }
 
-  /* line 1511, sass/mixins/animate.scss */
   80% {
     -o-transform: translateX(-10px); }
 
-  /* line 1515, sass/mixins/animate.scss */
   100% {
     -o-transform: translateX(0); } }
 
 @keyframes bounceInLeft {
-  /* line 1521, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     transform: translateX(-2000px); }
 
-  /* line 1526, sass/mixins/animate.scss */
   60% {
     opacity: 1;
     transform: translateX(30px); }
 
-  /* line 1531, sass/mixins/animate.scss */
   80% {
     transform: translateX(-10px); }
 
-  /* line 1535, sass/mixins/animate.scss */
   100% {
     transform: translateX(0); } }
 
-/* line 1540, sass/mixins/animate.scss */
 .bounceInLeft {
   -webkit-animation-name: bounceInLeft;
   -moz-animation-name: bounceInLeft;
@@ -2182,82 +1749,65 @@ li:active .mtk-engineering:before {
   animation-name: bounceInLeft; }
 
 @-webkit-keyframes bounceInRight {
-  /* line 1547, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateX(2000px); }
 
-  /* line 1552, sass/mixins/animate.scss */
   60% {
     opacity: 1;
     -webkit-transform: translateX(-30px); }
 
-  /* line 1557, sass/mixins/animate.scss */
   80% {
     -webkit-transform: translateX(10px); }
 
-  /* line 1561, sass/mixins/animate.scss */
   100% {
     -webkit-transform: translateX(0); } }
 
 @-moz-keyframes bounceInRight {
-  /* line 1567, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -moz-transform: translateX(2000px); }
 
-  /* line 1572, sass/mixins/animate.scss */
   60% {
     opacity: 1;
     -moz-transform: translateX(-30px); }
 
-  /* line 1577, sass/mixins/animate.scss */
   80% {
     -moz-transform: translateX(10px); }
 
-  /* line 1581, sass/mixins/animate.scss */
   100% {
     -moz-transform: translateX(0); } }
 
 @-o-keyframes bounceInRight {
-  /* line 1587, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     -o-transform: translateX(2000px); }
 
-  /* line 1592, sass/mixins/animate.scss */
   60% {
     opacity: 1;
     -o-transform: translateX(-30px); }
 
-  /* line 1597, sass/mixins/animate.scss */
   80% {
     -o-transform: translateX(10px); }
 
-  /* line 1601, sass/mixins/animate.scss */
   100% {
     -o-transform: translateX(0); } }
 
 @keyframes bounceInRight {
-  /* line 1607, sass/mixins/animate.scss */
   0% {
     opacity: 0;
     transform: translateX(2000px); }
 
-  /* line 1612, sass/mixins/animate.scss */
   60% {
     opacity: 1;
     transform: translateX(-30px); }
 
-  /* line 1617, sass/mixins/animate.scss */
   80% {
     transform: translateX(10px); }
 
-  /* line 1621, sass/mixins/animate.scss */
   100% {
     transform: translateX(0); } }
 
-/* line 1626, sass/mixins/animate.scss */
 .bounceInRight {
   -webkit-animation-name: bounceInRight;
   -moz-animation-name: bounceInRight;
@@ -2265,82 +1815,65 @@ li:active .mtk-engineering:before {
   animation-name: bounceInRight; }
 
 @-webkit-keyframes bounceOut {
-  /* line 1633, sass/mixins/animate.scss */
   0% {
     -webkit-transform: scale(1); }
 
-  /* line 1637, sass/mixins/animate.scss */
   25% {
     -webkit-transform: scale(0.95); }
 
-  /* line 1641, sass/mixins/animate.scss */
   50% {
     opacity: 1;
     -webkit-transform: scale(1.1); }
 
-  /* line 1646, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -webkit-transform: scale(0.3); } }
 
 @-moz-keyframes bounceOut {
-  /* line 1653, sass/mixins/animate.scss */
   0% {
     -moz-transform: scale(1); }
 
-  /* line 1657, sass/mixins/animate.scss */
   25% {
     -moz-transform: scale(0.95); }
 
-  /* line 1661, sass/mixins/animate.scss */
   50% {
     opacity: 1;
     -moz-transform: scale(1.1); }
 
-  /* line 1666, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -moz-transform: scale(0.3); } }
 
 @-o-keyframes bounceOut {
-  /* line 1673, sass/mixins/animate.scss */
   0% {
     -o-transform: scale(1); }
 
-  /* line 1677, sass/mixins/animate.scss */
   25% {
     -o-transform: scale(0.95); }
 
-  /* line 1681, sass/mixins/animate.scss */
   50% {
     opacity: 1;
     -o-transform: scale(1.1); }
 
-  /* line 1686, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -o-transform: scale(0.3); } }
 
 @keyframes bounceOut {
-  /* line 1693, sass/mixins/animate.scss */
   0% {
     transform: scale(1); }
 
-  /* line 1697, sass/mixins/animate.scss */
   25% {
     transform: scale(0.95); }
 
-  /* line 1701, sass/mixins/animate.scss */
   50% {
     opacity: 1;
     transform: scale(1.1); }
 
-  /* line 1706, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     transform: scale(0.3); } }
 
-/* line 1712, sass/mixins/animate.scss */
 .bounceOut {
   -webkit-animation-name: bounceOut;
   -moz-animation-name: bounceOut;
@@ -2348,66 +1881,53 @@ li:active .mtk-engineering:before {
   animation-name: bounceOut; }
 
 @-webkit-keyframes bounceOutUp {
-  /* line 1719, sass/mixins/animate.scss */
   0% {
     -webkit-transform: translateY(0); }
 
-  /* line 1723, sass/mixins/animate.scss */
   20% {
     opacity: 1;
     -webkit-transform: translateY(20px); }
 
-  /* line 1728, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(-2000px); } }
 
 @-moz-keyframes bounceOutUp {
-  /* line 1735, sass/mixins/animate.scss */
   0% {
     -moz-transform: translateY(0); }
 
-  /* line 1739, sass/mixins/animate.scss */
   20% {
     opacity: 1;
     -moz-transform: translateY(20px); }
 
-  /* line 1744, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -moz-transform: translateY(-2000px); } }
 
 @-o-keyframes bounceOutUp {
-  /* line 1751, sass/mixins/animate.scss */
   0% {
     -o-transform: translateY(0); }
 
-  /* line 1755, sass/mixins/animate.scss */
   20% {
     opacity: 1;
     -o-transform: translateY(20px); }
 
-  /* line 1760, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -o-transform: translateY(-2000px); } }
 
 @keyframes bounceOutUp {
-  /* line 1767, sass/mixins/animate.scss */
   0% {
     transform: translateY(0); }
 
-  /* line 1771, sass/mixins/animate.scss */
   20% {
     opacity: 1;
     transform: translateY(20px); }
 
-  /* line 1776, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     transform: translateY(-2000px); } }
 
-/* line 1782, sass/mixins/animate.scss */
 .bounceOutUp {
   -webkit-animation-name: bounceOutUp;
   -moz-animation-name: bounceOutUp;
@@ -2415,66 +1935,53 @@ li:active .mtk-engineering:before {
   animation-name: bounceOutUp; }
 
 @-webkit-keyframes bounceOutDown {
-  /* line 1789, sass/mixins/animate.scss */
   0% {
     -webkit-transform: translateY(0); }
 
-  /* line 1793, sass/mixins/animate.scss */
   20% {
     opacity: 1;
     -webkit-transform: translateY(-20px); }
 
-  /* line 1798, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateY(2000px); } }
 
 @-moz-keyframes bounceOutDown {
-  /* line 1805, sass/mixins/animate.scss */
   0% {
     -moz-transform: translateY(0); }
 
-  /* line 1809, sass/mixins/animate.scss */
   20% {
     opacity: 1;
     -moz-transform: translateY(-20px); }
 
-  /* line 1814, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -moz-transform: translateY(2000px); } }
 
 @-o-keyframes bounceOutDown {
-  /* line 1821, sass/mixins/animate.scss */
   0% {
     -o-transform: translateY(0); }
 
-  /* line 1825, sass/mixins/animate.scss */
   20% {
     opacity: 1;
     -o-transform: translateY(-20px); }
 
-  /* line 1830, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -o-transform: translateY(2000px); } }
 
 @keyframes bounceOutDown {
-  /* line 1837, sass/mixins/animate.scss */
   0% {
     transform: translateY(0); }
 
-  /* line 1841, sass/mixins/animate.scss */
   20% {
     opacity: 1;
     transform: translateY(-20px); }
 
-  /* line 1846, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     transform: translateY(2000px); } }
 
-/* line 1852, sass/mixins/animate.scss */
 .bounceOutDown {
   -webkit-animation-name: bounceOutDown;
   -moz-animation-name: bounceOutDown;
@@ -2482,66 +1989,53 @@ li:active .mtk-engineering:before {
   animation-name: bounceOutDown; }
 
 @-webkit-keyframes bounceOutLeft {
-  /* line 1859, sass/mixins/animate.scss */
   0% {
     -webkit-transform: translateX(0); }
 
-  /* line 1863, sass/mixins/animate.scss */
   20% {
     opacity: 1;
     -webkit-transform: translateX(20px); }
 
-  /* line 1868, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(-2000px); } }
 
 @-moz-keyframes bounceOutLeft {
-  /* line 1875, sass/mixins/animate.scss */
   0% {
     -moz-transform: translateX(0); }
 
-  /* line 1879, sass/mixins/animate.scss */
   20% {
     opacity: 1;
     -moz-transform: translateX(20px); }
 
-  /* line 1884, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -moz-transform: translateX(-2000px); } }
 
 @-o-keyframes bounceOutLeft {
-  /* line 1891, sass/mixins/animate.scss */
   0% {
     -o-transform: translateX(0); }
 
-  /* line 1895, sass/mixins/animate.scss */
   20% {
     opacity: 1;
     -o-transform: translateX(20px); }
 
-  /* line 1900, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -o-transform: translateX(-2000px); } }
 
 @keyframes bounceOutLeft {
-  /* line 1907, sass/mixins/animate.scss */
   0% {
     transform: translateX(0); }
 
-  /* line 1911, sass/mixins/animate.scss */
   20% {
     opacity: 1;
     transform: translateX(20px); }
 
-  /* line 1916, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     transform: translateX(-2000px); } }
 
-/* line 1922, sass/mixins/animate.scss */
 .bounceOutLeft {
   -webkit-animation-name: bounceOutLeft;
   -moz-animation-name: bounceOutLeft;
@@ -2549,66 +2043,53 @@ li:active .mtk-engineering:before {
   animation-name: bounceOutLeft; }
 
 @-webkit-keyframes bounceOutRight {
-  /* line 1929, sass/mixins/animate.scss */
   0% {
     -webkit-transform: translateX(0); }
 
-  /* line 1933, sass/mixins/animate.scss */
   20% {
     opacity: 1;
     -webkit-transform: translateX(-20px); }
 
-  /* line 1938, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -webkit-transform: translateX(2000px); } }
 
 @-moz-keyframes bounceOutRight {
-  /* line 1945, sass/mixins/animate.scss */
   0% {
     -moz-transform: translateX(0); }
 
-  /* line 1949, sass/mixins/animate.scss */
   20% {
     opacity: 1;
     -moz-transform: translateX(-20px); }
 
-  /* line 1954, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -moz-transform: translateX(2000px); } }
 
 @-o-keyframes bounceOutRight {
-  /* line 1961, sass/mixins/animate.scss */
   0% {
     -o-transform: translateX(0); }
 
-  /* line 1965, sass/mixins/animate.scss */
   20% {
     opacity: 1;
     -o-transform: translateX(-20px); }
 
-  /* line 1970, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     -o-transform: translateX(2000px); } }
 
 @keyframes bounceOutRight {
-  /* line 1977, sass/mixins/animate.scss */
   0% {
     transform: translateX(0); }
 
-  /* line 1981, sass/mixins/animate.scss */
   20% {
     opacity: 1;
     transform: translateX(-20px); }
 
-  /* line 1986, sass/mixins/animate.scss */
   100% {
     opacity: 0;
     transform: translateX(2000px); } }
 
-/* line 1992, sass/mixins/animate.scss */
 .bounceOutRight {
   -webkit-animation-name: bounceOutRight;
   -moz-animation-name: bounceOutRight;
@@ -2616,46 +2097,38 @@ li:active .mtk-engineering:before {
   animation-name: bounceOutRight; }
 
 @-webkit-keyframes spinner-rotate {
-  /* line 1999, sass/mixins/animate.scss */
   100% {
     -webkit-transform: rotate(360deg); } }
 
 @keyframes spinner-rotate {
-  /* line 2000, sass/mixins/animate.scss */
   100% {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg); } }
 
 @-webkit-keyframes spinner-bounce {
-  /* line 2003, sass/mixins/animate.scss */
   0%, 100% {
     -webkit-transform: scale(0) skew(0deg, 0deg);
     z-index: 999; }
 
-  /* line 2004, sass/mixins/animate.scss */
   50% {
     -webkit-transform: scale(1) skew(3deg, 3deg);
     z-index: 0; } }
 
 @keyframes spinner-bounce {
-  /* line 2008, sass/mixins/animate.scss */
   0%, 100% {
     transform: scale(0) skew(0deg, 0deg);
     -webkit-transform: scale(0) skew(0deg, 0deg);
     z-index: 999; }
 
-  /* line 2012, sass/mixins/animate.scss */
   50% {
     transform: scale(1) skew(3deg, 3deg);
     -webkit-transform: scale(1) skew(3deg, 3deg);
     z-index: 0; } }
 
-/* line 1, sass/template/index.scss */
 html {
   width: 100%;
   height: 100%; }
 
-/* line 6, sass/template/index.scss */
 body {
   padding-left: 50px;
   width: 100%;
@@ -2665,13 +2138,11 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: #3b3d43; }
 
-/* line 16, sass/template/index.scss */
 .screen-reader-text {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left; }
 
-/* line 20, sass/template/index.scss */
 a {
   color: #5facff;
   border: 1px solid #f1f1f2;
@@ -2680,12 +2151,10 @@ a {
   padding: 2px 10px;
   text-decoration: none !important;
   position: relative; }
-  /* line 29, sass/template/index.scss */
   a:hover {
     background-color: rgba(0, 0, 0, 0.025);
     color: #1384ff; }
 
-/* line 35, sass/template/index.scss */
 .site-title {
   background: #3b3d43 0 0 no-repeat;
   color: white;
@@ -2706,38 +2175,32 @@ a {
   font-family: "league-gothic", sans-serif;
   text-shadow: 0px 1px 1px #555555; }
 
-/* line 56, sass/template/index.scss */
 #content {
   min-height: 100%;
   background-color: #3b3d43; }
 
 @media (max-width: 992px) {
-  /* line 64, sass/template/index.scss */
   .site-title {
     display: none; }
 
-  /* line 67, sass/template/index.scss */
   #page .spinner {
     z-index: 999999; }
 
-  /* line 70, sass/template/index.scss */
   body {
     padding: 0; }
 
-  /* line 74, sass/template/index.scss */
   body.overflow-fix {
     overflow: hidden; } }
-/* line 1, sass/template/primary.scss */
 .frame {
   margin-top: 102px;
   margin-bottom: 102px;
   background-color: #3b3d43;
   display: block; }
-  /* line 7, sass/template/primary.scss */
   .frame #primary {
     min-height: 100%;
     padding-top: 50px;
-    background-color: white;
+    background: white url("paper.png") 0 0 repeat;
+    background-size: 250px;
     position: relative;
     z-index: 2;
     -webkit-transform: translate3d(150px, 0, 0);
@@ -2750,7 +2213,6 @@ a {
     -moz-transition: all 150ms linear 75ms;
     -o-transition: all 150ms linear 75ms;
     transition: all 150ms linear 75ms; }
-    /* line 16, sass/template/primary.scss */
     .frame #primary #main {
       width: 750px;
       min-height: 1000px;
@@ -2766,11 +2228,9 @@ a {
       -ms-transform: translate3d(-50px, 0, 0);
       -o-transform: translate3d(-50px, 0, 0);
       transform: translate3d(-50px, 0, 0); }
-    /* line 29, sass/template/primary.scss */
     .frame #primary .nav-links {
       height: 150px;
       margin: 0 25px; }
-      /* line 33, sass/template/primary.scss */
       .frame #primary .nav-links a {
         font-family: "league-gothic";
         text-transform: uppercase;
@@ -2787,7 +2247,6 @@ a {
         -o-transition: all 75ms ease 0ms;
         transition: all 75ms ease 0ms;
         display: table; }
-        /* line 46, sass/template/primary.scss */
         .frame #primary .nav-links a .preview-title {
           display: table-cell;
           vertical-align: middle;
@@ -2798,7 +2257,6 @@ a {
           -moz-transition: all 75ms ease 50ms;
           -o-transition: all 75ms ease 50ms;
           transition: all 75ms ease 50ms; }
-        /* line 55, sass/template/primary.scss */
         .frame #primary .nav-links a span.mtk-arrow-left,
         .frame #primary .nav-links a span.mtk-arrow-right {
           position: absolute;
@@ -2814,7 +2272,6 @@ a {
           -moz-transition: all 75ms ease 50ms;
           -o-transition: all 75ms ease 50ms;
           transition: all 75ms ease 50ms; }
-          /* line 66, sass/template/primary.scss */
           .frame #primary .nav-links a span.mtk-arrow-left:before,
           .frame #primary .nav-links a span.mtk-arrow-right:before {
             position: absolute;
@@ -2832,33 +2289,25 @@ a {
             height: 100%;
             text-align: center;
             line-height: 150px; }
-        /* line 85, sass/template/primary.scss */
         .frame #primary .nav-links a[rel="prev"] {
           float: left; }
-        /* line 89, sass/template/primary.scss */
         .frame #primary .nav-links a:hover {
           background-color: white; }
-          /* line 92, sass/template/primary.scss */
           .frame #primary .nav-links a:hover span {
             opacity: 1; }
-        /* line 97, sass/template/primary.scss */
         .frame #primary .nav-links a[rel="next"]:hover {
           background-color: white; }
       @media (max-width: 992px) {
-        /* line 29, sass/template/primary.scss */
         .frame #primary .nav-links {
           height: auto; }
-          /* line 103, sass/template/primary.scss */
           .frame #primary .nav-links a {
             width: 100%;
             float: none;
             border-bottom: 1px solid #f1f1f2; } }
-    /* line 111, sass/template/primary.scss */
     .frame #primary article {
       font-weight: 100;
       font-size: 24px;
       font-family: "freight-text-pro",sans-serif; }
-      /* line 116, sass/template/primary.scss */
       .frame #primary article .pretty-embed {
         position: relative;
         padding-bottom: 56.25%;
@@ -2867,7 +2316,6 @@ a {
         overflow: hidden;
         max-width: 100%;
         height: auto; }
-        /* line 127, sass/template/primary.scss */
         .frame #primary article .pretty-embed iframe,
         .frame #primary article .pretty-embed object,
         .frame #primary article .pretty-embed embed {
@@ -2876,7 +2324,6 @@ a {
           left: 0;
           width: 100%;
           height: 100%; }
-      /* line 136, sass/template/primary.scss */
       .frame #primary article a {
         color: #5facff;
         border: 3px solid #ffffff;
@@ -2887,37 +2334,30 @@ a {
         background-color: white;
         box-shadow: 0 0 0 3px #f1f1f2;
         margin: 3px; }
-        /* line 147, sass/template/primary.scss */
         .frame #primary article a:hover {
           color: black; }
-        /* line 151, sass/template/primary.scss */
         .frame #primary article a:active {
           color: #3b3d43;
           background-color: #f1f1f2;
           box-shadow: 0 0 0 3px rgba(241, 241, 242, 0.8); }
-        /* line 158, sass/template/primary.scss */
         .frame #primary article a.btn {
           color: white;
           font-size: 18px; }
-      /* line 164, sass/template/primary.scss */
       .frame #primary article h2, .frame #primary article h3, .frame #primary article h4, .frame #primary article h5, .frame #primary article h6, .frame #primary article p, .frame #primary article span {
         font-family: "freight-text-pro",sans-serif;
         line-height: 175%;
         margin-bottom: 50px; }
-      /* line 165, sass/template/primary.scss */
       .frame #primary article p {
         letter-spacing: .01rem;
         font-weight: 400;
         font-style: normal;
         font-size: 22px;
-        line-height: 1.5; }
-      /* line 166, sass/template/primary.scss */
+        line-height: 35px;
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); }
       .frame #primary article blockquote {
         margin: 0 0px 0 -25px; }
-        /* line 168, sass/template/primary.scss */
         .frame #primary article blockquote p {
           margin-bottom: 4px; }
-      /* line 170, sass/template/primary.scss */
       .frame #primary article h1.entry-title {
         font-family: "league-gothic", 'Helvetica','Open Sans', serif;
         text-align: center;
@@ -2931,7 +2371,6 @@ a {
         width: 135%;
         margin-left: -17.5%; }
         @media screen and (-webkit-min-device-pixel-ratio: 0) {
-          /* line 170, sass/template/primary.scss */
           .frame #primary article h1.entry-title {
             background-size: 100%;
             background-clip: text;
@@ -2939,17 +2378,14 @@ a {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent; } }
         @media (max-width: 992px) {
-          /* line 170, sass/template/primary.scss */
           .frame #primary article h1.entry-title {
             width: 100%;
             margin-left: 0; } }
-        /* line 197, sass/template/primary.scss */
         .frame #primary article h1.entry-title a {
           position: initial;
           border: none;
           font-family: "league-gothic", sans-serif;
           font-weight: 100; }
-      /* line 204, sass/template/primary.scss */
       .frame #primary article h2.entry-subtitle {
         font-size: 75px;
         line-height: 125%;
@@ -2959,7 +2395,6 @@ a {
         width: 150%;
         margin-left: -25%;
         text-align: center; }
-      /* line 214, sass/template/primary.scss */
       .frame #primary article h2 {
         font-size: 45px;
         line-height: 150%;
@@ -2969,11 +2404,9 @@ a {
         width: 125%;
         margin-left: -12.5%;
         text-align: center; }
-      /* line 224, sass/template/primary.scss */
       .frame #primary article .entry-meta {
         min-height: 100px;
         padding-top: 25px; }
-      /* line 228, sass/template/primary.scss */
       .frame #primary article .edit-link {
         position: absolute;
         top: -122px;
@@ -2982,56 +2415,65 @@ a {
         width: 70px;
         margin: 0 auto;
         display: block; }
-    /* line 239, sass/template/primary.scss */
     .frame #primary .post-preview {
-      width: 220px;
-      height: 220px;
-      margin: 15px;
-      margin-right: .3333%;
+      width: 248px;
+      height: 208px;
       float: left;
-      display: block;
-      margin-top: 15px;
-      background-size: contain !important; }
-      /* line 248, sass/template/primary.scss */
+      display: block; }
       .frame #primary .post-preview p {
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
         margin-bottom: 5px; }
-      /* line 255, sass/template/primary.scss */
       .frame #primary .post-preview a {
         display: block;
         color: #3b3d43;
         z-index: 0;
-        overflow: hidden; }
-        /* line 260, sass/template/primary.scss */
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        border: 0;
+        background-color: transparent;
+        box-shadow: none; }
         .frame #primary .post-preview a * {
           position: relative;
           z-index: 1; }
-        /* line 261, sass/template/primary.scss */
-        .frame #primary .post-preview a img {
-          width: 150%;
-          height: auto;
-          display: block;
-          position: absolute;
-          top: 0;
-          left: -25%;
-          right: 0;
-          bottom: 0;
-          z-index: 0;
-          opacity: .25;
-          -webkit-filter: blur(5px); }
-        /* line 263, sass/template/primary.scss */
-        .frame #primary .post-preview a section {
-          font-size: 18px; }
-  /* line 270, sass/template/primary.scss */
+        .frame #primary .post-preview a .img-container {
+          position: relative;
+          overflow: hidden;
+          height: 170px;
+          width: 238px; }
+          .frame #primary .post-preview a .img-container img {
+            width: 130%;
+            height: auto;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            opacity: .6; }
+        .frame #primary .post-preview a header {
+          font-family: "league-gothic", 'Helvetica','Open Sans', serif;
+          color: #333;
+          text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1);
+          overflow: hidden;
+          text-overflow: ellipsis;
+          height: 38px;
+          width: 238px;
+          white-space: nowrap;
+          text-align: center; }
+        .frame #primary .post-preview a:hover .img-container img {
+          opacity: 1; }
   .frame.collapsed #primary {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
-    /* line 272, sass/template/primary.scss */
     .frame.collapsed #primary #main {
       -webkit-transform: translate3d(25px, 0, 0);
       -moz-transform: translate3d(25px, 0, 0);
@@ -3039,16 +2481,13 @@ a {
       -o-transform: translate3d(25px, 0, 0);
       transform: translate3d(25px, 0, 0); }
   @media (max-width: 1200px) {
-    /* line 1, sass/template/primary.scss */
     .frame {
       margin-bottom: 80px; } }
 
 @media (max-width: 992px) {
-  /* line 285, sass/template/primary.scss */
   .frame {
     margin-top: 0;
     margin-bottom: 300px; }
-    /* line 289, sass/template/primary.scss */
     .frame #primary {
       -webkit-transform: translate3d(0, 0, 0);
       -moz-transform: translate3d(0, 0, 0);
@@ -3056,7 +2495,6 @@ a {
       -o-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
       padding-top: 0; }
-      /* line 293, sass/template/primary.scss */
       .frame #primary #main {
         -webkit-transform: translate3d(0, 0, 0);
         -moz-transform: translate3d(0, 0, 0);
@@ -3064,7 +2502,6 @@ a {
         -o-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
         width: 100%; }
-        /* line 297, sass/template/primary.scss */
         .frame #primary #main .entry-title {
           font-size: 95px;
           line-height: 115px;
@@ -3080,21 +2517,17 @@ a {
           padding-right: 5px;
           text-align: right;
           text-shadow: 0px 1px 1px #555555; }
-        /* line 313, sass/template/primary.scss */
         .frame #primary #main .entry-content, .frame #primary #main .entry-meta, .frame #primary #main #disqus_thread {
           padding: 5px 15px; }
-        /* line 317, sass/template/primary.scss */
         .frame #primary #main .entry-meta .edit-link {
           position: absolute;
           top: 0; }
-    /* line 326, sass/template/primary.scss */
     .frame.collapsed #primary {
       -webkit-transform: translate3d(0, 0, 0);
       -moz-transform: translate3d(0, 0, 0);
       -ms-transform: translate3d(0, 0, 0);
       -o-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0); }
-      /* line 329, sass/template/primary.scss */
       .frame.collapsed #primary #main {
         -webkit-transform: translate3d(0, 0, 0);
         -moz-transform: translate3d(0, 0, 0);
@@ -3102,7 +2535,6 @@ a {
         -o-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0); } }
 @media (max-width: 650px) {
-  /* line 341, sass/template/primary.scss */
   .frame #primary #main .entry-title {
     font-size: 55px;
     line-height: 100px;
@@ -3111,12 +2543,10 @@ a {
     padding-right: 5px;
     text-align: right; } }
 @media (max-width: 480px) {
-  /* line 358, sass/template/primary.scss */
   .frame #primary #main .entry-title {
     font-size: 36px;
     line-height: 100px;
     height: 85px; } }
-/* line 2, sass/template/secondary.scss */
 .frame #secondary {
   position: fixed;
   z-index: 1000;
@@ -3131,14 +2561,12 @@ a {
   -moz-transition: all 150ms linear 75ms;
   -o-transition: all 150ms linear 75ms;
   transition: all 150ms linear 75ms; }
-  /* line 13, sass/template/secondary.scss */
   .frame #secondary h1 {
     position: relative;
     font-size: 0;
     line-height: 0;
     margin-bottom: 82px;
     font-family: "league-gothic", sans-serif; }
-    /* line 20, sass/template/secondary.scss */
     .frame #secondary h1 .logo {
       -webkit-transform-origin: center center;
       -moz-transform-origin: center center;
@@ -3161,7 +2589,6 @@ a {
       overflow: hidden;
       -webkit-animation: spin 120s infinite linear;
       animation: spin 120s infinite linear; }
-      /* line 35, sass/template/secondary.scss */
       .frame #secondary h1 .logo .stripe {
         -webkit-transition: all 150ms linear;
         -webkit-transition-delay: 75ms;
@@ -3173,30 +2600,23 @@ a {
         width: 100%;
         height: 26%;
         display: block; }
-        /* line 42, sass/template/secondary.scss */
         .frame #secondary h1 .logo .stripe.orange {
           background-color: #de5b1e;
           top: 0; }
-        /* line 46, sass/template/secondary.scss */
         .frame #secondary h1 .logo .stripe.yellow {
           background-color: #f0b747;
           top: 25%; }
-        /* line 50, sass/template/secondary.scss */
         .frame #secondary h1 .logo .stripe.green {
           background-color: #6aa427;
           top: 50%; }
-        /* line 54, sass/template/secondary.scss */
         .frame #secondary h1 .logo .stripe.blue {
           background-color: #9dd2b5;
           top: 75%; }
-  /* line 62, sass/template/secondary.scss */
   .frame #secondary aside {
     width: 200px;
     color: #666666; }
-    /* line 66, sass/template/secondary.scss */
     .frame #secondary aside:not(:first-child) {
       margin-top: 50px; }
-    /* line 70, sass/template/secondary.scss */
     .frame #secondary aside h3 {
       padding-left: 50px;
       font-weight: 100;
@@ -3208,13 +2628,11 @@ a {
       -moz-transition: all 150ms linear 0ms;
       -o-transition: all 150ms linear 0ms;
       transition: all 150ms linear 0ms; }
-    /* line 79, sass/template/secondary.scss */
     .frame #secondary aside li {
       position: relative;
       text-align: left;
       border-bottom: 1px solid #454545;
       color: #999999; }
-      /* line 85, sass/template/secondary.scss */
       .frame #secondary aside li a {
         padding-left: 55px;
         text-align: left;
@@ -3226,49 +2644,40 @@ a {
         -moz-transition: all 250ms linear 0ms;
         -o-transition: all 250ms linear 0ms;
         transition: all 250ms linear 0ms; }
-      /* line 94, sass/template/secondary.scss */
       .frame #secondary aside li:first-child {
         border-top: 1px solid #454545; }
-      /* line 98, sass/template/secondary.scss */
       .frame #secondary aside li:hover {
         background-color: rgba(0, 0, 0, 0.5); }
-        /* line 100, sass/template/secondary.scss */
         .frame #secondary aside li:hover a {
           color: #dadada; }
-      /* line 105, sass/template/secondary.scss */
       .frame #secondary aside li.active {
+        background: url("paper.png") 0 0 repeat;
+        background-size: 250px;
         background-color: white;
         border-color: rgba(255, 255, 255, 0.5);
         color: #3b3d43 !important; }
-        /* line 110, sass/template/secondary.scss */
         .frame #secondary aside li.active a {
           color: #3b3d43 !important; }
-/* line 119, sass/template/secondary.scss */
 .frame.collapsed #secondary {
   width: 50px; }
-  /* line 122, sass/template/secondary.scss */
   .frame.collapsed #secondary h1 .logo {
     right: 5px;
     top: 10px;
     border: 2px solid #232323;
     width: 40px;
     height: 40px; }
-  /* line 131, sass/template/secondary.scss */
   .frame.collapsed #secondary aside h3 {
     color: #3b3d43;
     padding-left: 60px; }
-  /* line 133, sass/template/secondary.scss */
   .frame.collapsed #secondary aside li a {
     color: #333333; }
 
 @media (max-width: 992px) {
-  /* line 144, sass/template/secondary.scss */
   .frame #secondary {
     width: 100%;
     left: 0px;
     padding-top: 50px;
     overflow: scroll; }
-    /* line 150, sass/template/secondary.scss */
     .frame #secondary h1 {
       -webkit-transition: all 250ms ease;
       -webkit-transition-delay: 0ms;
@@ -3293,14 +2702,12 @@ a {
       z-index: 999;
       border-bottom: 1px solid #454545;
       text-shadow: 0px 1px 1px #555555; }
-      /* line 171, sass/template/secondary.scss */
       .frame #secondary h1 .logo {
         top: 13px;
         right: 13px;
         cursor: pointer;
         text-shadow: none;
         border-width: 3px; }
-        /* line 178, sass/template/secondary.scss */
         .frame #secondary h1 .logo:after {
           font-family: 'mtk';
           speak: none;
@@ -3337,39 +2744,30 @@ a {
           -moz-transition: all 250ms ease 0ms;
           -o-transition: all 250ms ease 0ms;
           transition: all 250ms ease 0ms; }
-    /* line 216, sass/template/secondary.scss */
     .frame #secondary aside {
       width: 100%;
       overflow: hidden; }
-      /* line 220, sass/template/secondary.scss */
       .frame #secondary aside.widget_categories {
         margin-top: 0px !important; }
-  /* line 227, sass/template/secondary.scss */
   .frame.collapsed #secondary {
     margin-left: -50px;
     position: fixed;
     overflow: initial; }
-    /* line 232, sass/template/secondary.scss */
     .frame.collapsed #secondary h1 {
       left: -100%; }
-      /* line 234, sass/template/secondary.scss */
       .frame.collapsed #secondary h1 .logo {
         height: 85px;
         width: 85px;
         border-width: 3px;
         right: -100px;
         top: 7px; }
-        /* line 241, sass/template/secondary.scss */
         .frame.collapsed #secondary h1 .logo:after {
           opacity: 1; }
-    /* line 246, sass/template/secondary.scss */
     .frame.collapsed #secondary aside {
       width: 0; } }
 @media (max-width: 650px) {
-  /* line 256, sass/template/secondary.scss */
   .frame #secondary {
     padding-top: 25px; }
-    /* line 259, sass/template/secondary.scss */
     .frame #secondary h1 {
       -webkit-transition: all 250ms ease;
       -webkit-transition-delay: 0ms;
@@ -3380,31 +2778,25 @@ a {
       line-height: 65px;
       text-transform: uppercase;
       height: 76px; }
-      /* line 266, sass/template/secondary.scss */
       .frame #secondary h1 .logo {
         height: 50px;
         width: 50px;
         border-width: 2px;
         top: 11px;
         right: 11px; }
-  /* line 278, sass/template/secondary.scss */
   .frame.collapsed #secondary {
     margin-left: -50px; }
-    /* line 282, sass/template/secondary.scss */
     .frame.collapsed #secondary h1 .logo {
       height: 65px;
       width: 65px;
       border-width: 3px;
       right: -70px;
       top: 5px; }
-      /* line 289, sass/template/secondary.scss */
       .frame.collapsed #secondary h1 .logo:after {
         font-size: 56px; } }
 @media (max-width: 480px) {
-  /* line 302, sass/template/secondary.scss */
   .frame #secondary {
     padding-top: 25px; }
-    /* line 305, sass/template/secondary.scss */
     .frame #secondary h1 {
       -webkit-transition: all 250ms ease;
       -webkit-transition-delay: 0ms;
@@ -3415,26 +2807,21 @@ a {
       line-height: 67px;
       text-transform: uppercase;
       height: 76px; }
-      /* line 312, sass/template/secondary.scss */
       .frame #secondary h1 .logo {
         border-width: 2px;
         top: 12px;
         right: 12px; }
-  /* line 322, sass/template/secondary.scss */
   .frame.collapsed #secondary {
     overflow: initial;
     margin-left: -50px; }
-    /* line 327, sass/template/secondary.scss */
     .frame.collapsed #secondary h1 .logo {
       height: 65px;
       width: 65px;
       border-width: 3px;
       right: -70px;
       top: 5px; } }
-/* line 2, sass/template/page.scss */
 #page {
   overflow: hidden; }
-  /* line 5, sass/template/page.scss */
   #page .spinner {
     margin: 15% auto;
     width: 150px;
@@ -3452,10 +2839,8 @@ a {
     -o-transform-origin: center;
     transform-origin: center;
     display: none; }
-    /* line 16, sass/template/page.scss */
     #page .spinner.animated {
       display: block; }
-    /* line 20, sass/template/page.scss */
     #page .spinner .dot1, #page .spinner .dot2, #page .spinner .dot3, #page .spinner .dot4 {
       width: 150px;
       height: 150px;
@@ -3475,7 +2860,6 @@ a {
       -moz-animation: spinner-bounce 4s infinite ease-in-out;
       -ms-animation: spinner-bounce 4s infinite ease-in-out;
       animation: spinner-bounce 4s infinite ease-in-out; }
-    /* line 37, sass/template/page.scss */
     #page .spinner .dot2 {
       background-color: #6aa427;
       -webkit-animation-delay: -1.0s;
@@ -3486,7 +2870,6 @@ a {
       -moz-animation-duration: -1.0s;
       -ms-animation-duration: -1.0s;
       animation-duration: -1.0s; }
-    /* line 49, sass/template/page.scss */
     #page .spinner .dot3 {
       background-color: #de5b1e;
       -webkit-animation-delay: -2.0s;
@@ -3497,7 +2880,6 @@ a {
       -moz-animation-duration: -1.5s;
       -ms-animation-duration: -1.5s;
       animation-duration: -1.5s; }
-    /* line 61, sass/template/page.scss */
     #page .spinner .dot4 {
       background-color: #f0b747;
       -webkit-animation-delay: -3s;
@@ -3509,20 +2891,16 @@ a {
       -ms-animation-duration: -3.0s;
       animation-duration: -3.0s; }
 
-/* line 5, sass/template/format-image.scss */
 .single-format-image #primary .entry-content img {
   width: 100%;
   height: auto; }
 
-/* line 3, sass/template/format-quote.scss */
 .single-format-quote .site-title {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left; }
-/* line 7, sass/template/format-quote.scss */
 .single-format-quote #primary {
-  background-color: transparent; }
-  /* line 14, sass/template/format-quote.scss */
+  background: transparent; }
   .single-format-quote #primary #main .entry-content h1.entry-title {
     color: white;
     font-size: 150px;
@@ -3534,7 +2912,6 @@ a {
     -webkit-text-fill-color: initial;
     text-align: left;
     text-shadow: 0px 1px 1px #555555; }
-  /* line 26, sass/template/format-quote.scss */
   .single-format-quote #primary #main .entry-content h2.entry-subtitle {
     margin-top: 40px;
     color: white;
@@ -3547,11 +2924,9 @@ a {
     -webkit-text-fill-color: initial;
     text-align: center;
     text-shadow: 0px 1px 1px #555555; }
-/* line 43, sass/template/format-quote.scss */
 .single-format-quote .site-footer {
   position: fixed; }
 
-/* line 1, sass/template/footer.scss */
 .site-footer {
   background: rgba(59, 61, 67, 0.2) no-repeat;
   position: fixed;
@@ -3561,14 +2936,11 @@ a {
   display: block;
   color: white;
   background-size: 100%; }
-  /* line 12, sass/template/footer.scss */
   .site-footer .site-info {
     width: 100%; }
-    /* line 15, sass/template/footer.scss */
     .site-footer .site-info .section {
       width: 33.333333333%;
       float: left; }
-      /* line 19, sass/template/footer.scss */
       .site-footer .site-info .section h1 {
         font-family: "league-gothic", sans-serif;
         text-align: center;
@@ -3578,48 +2950,37 @@ a {
         font-weight: 100;
         text-shadow: 0px 1px 1px #555555; }
         @media (max-width: 1200px) {
-          /* line 19, sass/template/footer.scss */
           .site-footer .site-info .section h1 {
             font-size: 65px;
             line-height: 80px; } }
-      /* line 34, sass/template/footer.scss */
       .site-footer .site-info .section:first-child h1 {
         text-align: right; }
-      /* line 39, sass/template/footer.scss */
       .site-footer .site-info .section:last-child h1 {
         text-align: left; }
   @media (max-width: 1200px) {
-    /* line 1, sass/template/footer.scss */
     .site-footer {
       height: 80px; } }
   @media (max-width: 992px) {
-    /* line 1, sass/template/footer.scss */
     .site-footer {
       height: 315px; }
-      /* line 52, sass/template/footer.scss */
       .site-footer .site-info .section {
         width: 100%;
         float: none;
         margin-top: 8px; }
-        /* line 57, sass/template/footer.scss */
         .site-footer .site-info .section h1 {
           height: 100px;
           line-height: 100px;
           text-align: center;
           color: #999; }
-          /* line 62, sass/template/footer.scss */
           .site-footer .site-info .section h1:first-child, .site-footer .site-info .section h1:last-child {
             text-align: center; } }
 
-/* line 2, sass/template/konami.scss */
 .konami {
   display: none; }
-  /* line 5, sass/template/konami.scss */
   .konami * {
     -webkit-box-sizing: initial;
     -moz-box-sizing: initial;
     box-sizing: initial; }
-  /* line 11, sass/template/konami.scss */
   .konami .ghost {
     position: fixed;
     top: 50%;
@@ -3631,7 +2992,6 @@ a {
     display: block;
     border-radius: 100%;
     border: 3px solid #333; }
-    /* line 23, sass/template/konami.scss */
     .konami .ghost:after {
       content: " ";
       position: absolute;
@@ -3641,7 +3001,6 @@ a {
       height: 50px;
       border-radius: 100%;
       background: white; }
-    /* line 34, sass/template/konami.scss */
     .konami .ghost .tail {
       position: absolute;
       background-color: white;
@@ -3654,7 +3013,6 @@ a {
       width: 80%;
       height: 40%;
       z-index: -1; }
-    /* line 48, sass/template/konami.scss */
     .konami .ghost .mouth {
       position: absolute;
       background-color: red;
@@ -3664,7 +3022,6 @@ a {
       bottom: 12px;
       left: 8px;
       z-index: 1; }
-      /* line 58, sass/template/konami.scss */
       .konami .ghost .mouth .corners {
         position: absolute;
         bottom: 6px;
@@ -3673,7 +3030,6 @@ a {
         height: 5px;
         background-color: red;
         border-right: 3px solid white; }
-      /* line 68, sass/template/konami.scss */
       .konami .ghost .mouth:before, .konami .ghost .mouth:after {
         width: 15px;
         height: 0px;
@@ -3684,13 +3040,11 @@ a {
         z-index: 0;
         top: -3px;
         left: -2px; }
-      /* line 80, sass/template/konami.scss */
       .konami .ghost .mouth:after {
         top: auto;
         bottom: -3px;
         left: 2px;
         width: 16px; }
-    /* line 88, sass/template/konami.scss */
     .konami .ghost .eye {
       position: absolute;
       width: 3px;
@@ -3698,16 +3052,12 @@ a {
       background-color: black;
       top: 12px;
       z-index: 999; }
-      /* line 97, sass/template/konami.scss */
       .konami .ghost .eye.left {
         left: 16px; }
-      /* line 101, sass/template/konami.scss */
       .konami .ghost .eye.right {
         left: 9px; }
-    /* line 106, sass/template/konami.scss */
     .konami .ghost .hand {
       position: absolute; }
-      /* line 109, sass/template/konami.scss */
       .konami .ghost .hand.left {
         left: 30px;
         top: 20px;
@@ -3718,17 +3068,13 @@ a {
         width: 10px;
         height: 10px;
         z-index: 999; }
-      /* line 121, sass/template/konami.scss */
       .konami .ghost .hand.right {
         left: 0; }
-    /* line 129, sass/template/konami.scss */
     .konami .ghost.step2 .mouth {
       height: 0;
       bottom: 17px; }
-      /* line 133, sass/template/konami.scss */
       .konami .ghost.step2 .mouth .corners {
         display: none; }
-    /* line 138, sass/template/konami.scss */
     .konami .ghost.step2 .tail {
       bottom: -1px;
       right: -3px;
@@ -3737,7 +3083,6 @@ a {
       -ms-transform: rotate(-3deg);
       -o-transform: rotate(-3deg);
       transform: rotate(-3deg); }
-    /* line 145, sass/template/konami.scss */
     .konami .ghost.step2 .hand.left {
       left: 30px;
       top: 18px;
@@ -3746,16 +3091,13 @@ a {
       -ms-transform: rotate(-30deg);
       -o-transform: rotate(-30deg);
       transform: rotate(-30deg); }
-  /* line 156, sass/template/konami.scss */
   .konami.active {
     display: block; }
-    /* line 159, sass/template/konami.scss */
     .konami.active .ghost {
       -webkit-animation: konami-ghost 25s infinite ease-in-out;
       -moz-animation: konami-ghost 25s infinite ease-in-out;
       -ms-animation: konami-ghost 25s infinite ease-in-out;
       animation: konami-ghost 25s infinite ease-in-out; }
-      /* line 165, sass/template/konami.scss */
       .konami.active .ghost .eye {
         -webkit-animation: konami-ghost-blink 6s infinite alternate ease-in-out;
         -moz-animation: konami-ghost-blink 6s infinite alternate ease-in-out;
@@ -3763,7 +3105,6 @@ a {
         animation: konami-ghost-blink 6s infinite alternate ease-in-out; }
 
 @-moz-keyframes konami-ghost {
-  /* line 177, sass/template/konami.scss */
   0% {
     right: -10%;
     margin-top: 10px;
@@ -3773,7 +3114,6 @@ a {
     -o-transform: rotateY(0deg);
     transform: rotateY(0deg); }
 
-  /* line 178, sass/template/konami.scss */
   20% {
     right: 10%;
     -webkit-transform: rotateY(0deg);
@@ -3782,7 +3122,6 @@ a {
     -o-transform: rotateY(0deg);
     transform: rotateY(0deg); }
 
-  /* line 179, sass/template/konami.scss */
   22.5% {
     right: 10%;
     -webkit-transform: rotateY(180deg);
@@ -3792,7 +3131,6 @@ a {
     transform: rotateY(180deg);
     margin-top: -10px; }
 
-  /* line 180, sass/template/konami.scss */
   32.5% {
     right: 10%;
     -webkit-transform: rotateY(180deg);
@@ -3801,7 +3139,6 @@ a {
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg); }
 
-  /* line 181, sass/template/konami.scss */
   35% {
     right: 10%;
     -webkit-transform: rotateY(0deg);
@@ -3810,25 +3147,20 @@ a {
     -o-transform: rotateY(0deg);
     transform: rotateY(0deg); }
 
-  /* line 182, sass/template/konami.scss */
   40% {
     right: 10%; }
 
-  /* line 183, sass/template/konami.scss */
   60% {
     margin-top: 10px; }
 
-  /* line 184, sass/template/konami.scss */
   85% {
     margin-top: -10px; }
 
-  /* line 185, sass/template/konami.scss */
   100% {
     right: 110%;
     margin-top: 10px; } }
 
 @-webkit-keyframes konami-ghost {
-  /* line 189, sass/template/konami.scss */
   0% {
     right: -10%;
     margin-top: 10px;
@@ -3838,7 +3170,6 @@ a {
     -o-transform: rotateY(0deg);
     transform: rotateY(0deg); }
 
-  /* line 190, sass/template/konami.scss */
   20% {
     right: 10%;
     -webkit-transform: rotateY(0deg);
@@ -3847,7 +3178,6 @@ a {
     -o-transform: rotateY(0deg);
     transform: rotateY(0deg); }
 
-  /* line 191, sass/template/konami.scss */
   22.5% {
     right: 10%;
     -webkit-transform: rotateY(180deg);
@@ -3857,7 +3187,6 @@ a {
     transform: rotateY(180deg);
     margin-top: -10px; }
 
-  /* line 192, sass/template/konami.scss */
   32.5% {
     right: 10%;
     -webkit-transform: rotateY(180deg);
@@ -3866,7 +3195,6 @@ a {
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg); }
 
-  /* line 193, sass/template/konami.scss */
   35% {
     right: 10%;
     -webkit-transform: rotateY(0deg);
@@ -3875,25 +3203,20 @@ a {
     -o-transform: rotateY(0deg);
     transform: rotateY(0deg); }
 
-  /* line 194, sass/template/konami.scss */
   40% {
     right: 10%; }
 
-  /* line 195, sass/template/konami.scss */
   60% {
     margin-top: 10px; }
 
-  /* line 196, sass/template/konami.scss */
   85% {
     margin-top: -10px; }
 
-  /* line 197, sass/template/konami.scss */
   100% {
     right: 110%;
     margin-top: 10px; } }
 
 @keyframes konami-ghost {
-  /* line 201, sass/template/konami.scss */
   0% {
     right: -10%;
     margin-top: 10px;
@@ -3903,7 +3226,6 @@ a {
     -o-transform: rotateY(0deg);
     transform: rotateY(0deg); }
 
-  /* line 202, sass/template/konami.scss */
   20% {
     right: 10%;
     -webkit-transform: rotateY(0deg);
@@ -3912,7 +3234,6 @@ a {
     -o-transform: rotateY(0deg);
     transform: rotateY(0deg); }
 
-  /* line 203, sass/template/konami.scss */
   22.5% {
     right: 10%;
     -webkit-transform: rotateY(180deg);
@@ -3922,7 +3243,6 @@ a {
     transform: rotateY(180deg);
     margin-top: -10px; }
 
-  /* line 204, sass/template/konami.scss */
   32.5% {
     right: 10%;
     -webkit-transform: rotateY(180deg);
@@ -3931,7 +3251,6 @@ a {
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg); }
 
-  /* line 205, sass/template/konami.scss */
   35% {
     right: 10%;
     -webkit-transform: rotateY(0deg);
@@ -3940,80 +3259,62 @@ a {
     -o-transform: rotateY(0deg);
     transform: rotateY(0deg); }
 
-  /* line 206, sass/template/konami.scss */
   40% {
     right: 10%; }
 
-  /* line 207, sass/template/konami.scss */
   60% {
     margin-top: 10px; }
 
-  /* line 208, sass/template/konami.scss */
   85% {
     margin-top: -10px; }
 
-  /* line 209, sass/template/konami.scss */
   100% {
     right: 110%;
     margin-top: 10px; } }
 
 @-moz-keyframes konami-ghost-blink {
-  /* line 213, sass/template/konami.scss */
   0% {
     height: 9px; }
 
-  /* line 214, sass/template/konami.scss */
   98% {
     height: 9px; }
 
-  /* line 215, sass/template/konami.scss */
   99% {
     height: 1px; }
 
-  /* line 216, sass/template/konami.scss */
   100% {
     height: 9px; } }
 
 @-webkit-keyframes konami-ghost-blink {
-  /* line 220, sass/template/konami.scss */
   0% {
     height: 9px; }
 
-  /* line 221, sass/template/konami.scss */
   98% {
     height: 9px; }
 
-  /* line 222, sass/template/konami.scss */
   99% {
     height: 1px; }
 
-  /* line 223, sass/template/konami.scss */
   100% {
     height: 9px; } }
 
 @keyframes konami-ghost-blink {
-  /* line 227, sass/template/konami.scss */
   0% {
     height: 9px; }
 
-  /* line 228, sass/template/konami.scss */
   98% {
     height: 9px; }
 
-  /* line 229, sass/template/konami.scss */
   99% {
     height: 1px; }
 
-  /* line 230, sass/template/konami.scss */
   100% {
     height: 9px; } }
 
 @-moz-document url-prefix() {
-  /* line 2, sass/template/legacy.scss */
   .frame #primary article h1.entry-title {
     background-image: none !important; } }
 
-/* line 1, sass/template/social-sharing.scss */
 .entry-social {
   /*  Twitter */
   /*  Facebook */
@@ -4023,78 +3324,61 @@ a {
   /*  GitHub */
   /* VK */
   /*  Xing */ }
-  /* line 3, sass/template/social-sharing.scss */
   .entry-social .btn {
     color: white;
     border: 0; }
-  /* line 8, sass/template/social-sharing.scss */
   .entry-social .btn-tweet {
     background-color: #41b7d8 !important;
     border-color: #41b7d8 !important; }
-  /* line 14, sass/template/social-sharing.scss */
   .entry-social .btn-tweet:hover,
   .entry-social a .btn-tweet:hover {
     background-color: #238caa !important;
     border-color: #238caa !important; }
-  /* line 20, sass/template/social-sharing.scss */
   .entry-social .btn-facebook {
     background-color: #3b5997 !important;
     border-color: #3b5997 !important; }
-  /* line 26, sass/template/social-sharing.scss */
   .entry-social .btn-facebook:hover,
   .entry-social a .btn-facebook:hover {
     background-color: #263960 !important;
     border-color: #263960 !important; }
-  /* line 32, sass/template/social-sharing.scss */
   .entry-social .btn-google {
     background-color: #d64937 !important;
     border-color: #d64937 !important; }
-  /* line 38, sass/template/social-sharing.scss */
   .entry-social .btn-google:hover,
   .entry-social a .btn-google:hover {
     background-color: #a02f21 !important;
     border-color: #a02f21 !important; }
-  /* line 44, sass/template/social-sharing.scss */
   .entry-social .btn-linkedin {
     background-color: #0073b2 !important;
     border-color: #0073b2 !important; }
-  /* line 50, sass/template/social-sharing.scss */
   .entry-social .btn-linkedin:hover,
   .entry-social a .btn-linkedin:hover {
     background-color: #004265 !important;
     border-color: #004265 !important; }
-  /* line 56, sass/template/social-sharing.scss */
   .entry-social .btn-pinterest {
     background-color: #cb2027 !important;
     border-color: #cb2027 !important; }
-  /* line 62, sass/template/social-sharing.scss */
   .entry-social .btn-pinterest:hover,
   .entry-social a .btn-pinterest:hover {
     background-color: #89161a !important;
     border-color: #89161a !important; }
-  /* line 68, sass/template/social-sharing.scss */
   .entry-social .btn-github {
     background-color: #3a3838 !important;
     border-color: #3a3838 !important; }
-  /* line 74, sass/template/social-sharing.scss */
   .entry-social .btn-github:hover,
   .entry-social a .btn-github:hover {
     background-color: #131212 !important;
     border-color: #131212 !important; }
-  /* line 80, sass/template/social-sharing.scss */
   .entry-social .btn-vk {
     background-color: #5e82a8 !important;
     border-color: #5e82a8 !important; }
-  /* line 86, sass/template/social-sharing.scss */
   .entry-social .btn-vk:hover,
   .entry-social a .btn-vk:hover {
     background-color: #415c78 !important;
     border-color: #415c78 !important; }
-  /* line 92, sass/template/social-sharing.scss */
   .entry-social .btn-xing {
     background-color: #175e60 !important;
     border-color: #175e60 !important; }
-  /* line 98, sass/template/social-sharing.scss */
   .entry-social .btn-xing:hover,
   .entry-social a .btn-xing:hover {
     background-color: #082222 !important;

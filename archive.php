@@ -7,7 +7,7 @@
  * @package innovation_ajax
  */
 if ($_GET['ajax'] == 1) : ?>
-		<script>setTitle("<?php wp_title( '|', true, 'right' ); ?>"); setBodyClass('<?php echo implode(" ", get_body_class()); ?>');</script>
+		<script>setTitle("<?php echo html_entity_decode(get_the_title(), ENT_COMPAT, 'UTF-8'); ?> | Mash the Keyboard"); setBodyClass('<?php echo implode(" ", get_body_class()); ?>');</script>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">

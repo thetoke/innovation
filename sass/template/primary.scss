@@ -7,7 +7,8 @@
 	#primary {
 		min-height: 100%;
 		padding-top: 50px;
-		background-color: white;
+		background: white url('paper.png') 0 0 repeat;
+		background-size: 250px;
 		position: relative;
 		z-index: 2;
 		@include translate3d(150px, 0, 0);
@@ -162,7 +163,7 @@
 			}
 
 			h2, h3, h4, h5, h6, p, span { font-family: "freight-text-pro",sans-serif; line-height: 175%; margin-bottom: 50px;  }
-			p { letter-spacing: .01rem; font-weight: 400; font-style: normal; font-size: 22px; line-height: 1.5; }
+			p { letter-spacing: .01rem; font-weight: 400; font-style: normal; font-size: 22px; line-height: 35px; text-shadow: 0px 1px 0px rgba(0,0,0,.1); }
 			blockquote {
 				margin: 0 0px 0 -25px;
 				p { margin-bottom: 4px; }
@@ -237,32 +238,71 @@
 		}
 
 		.post-preview {
-			width: 220px; height: 220px;
-			margin: 15px;
-			margin-right:.3333%;
+			width: 248px;
+			height: 208px;
 			float: left;
 			display: block;
-			margin-top: 15px;
-			background-size: contain !important;
 
-				p {
-					white-space: nowrap;
+			p {
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				margin-bottom: 5px;
+			}
+
+			a {
+				display: block;
+				color: $base;
+				z-index: 0;
+				overflow: hidden;
+				height: 100%;
+				width: 100%;
+				border-radius: 0;
+				box-shadow: none;
+				border: 0;
+				background-color: transparent;
+				box-shadow: none;
+
+				* { position: relative; z-index: 1 }
+				.img-container {
+					position: relative;
+					overflow: hidden;
+					height: 170px;
+					width: 238px;
+
+					img {
+						width: 130%;
+						height: auto;
+						display: block;
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						z-index: 0;
+						opacity: .6;
+					}
+				}
+				header {
+					font-family: "league-gothic", 'Helvetica','Open Sans', serif;
+					color: #333;
+					text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1);
+					overflow: hidden;
 					text-overflow: ellipsis;
-					overflow: hidden;
-					margin-bottom: 5px;
+					height: 38px;
+					width: 238px;
+					white-space: nowrap;
+					text-align: center;
 				}
 
-				a {
-					display: block;
-					color: $base;
-					z-index: 0;
-					overflow: hidden;
-					* { position: relative; z-index: 1 }
-					img { width: 150%; height: auto; display: block; position: absolute; top: 0; left: -25%; right: 0; bottom: 0; z-index: 0; opacity: .25; -webkit-filter: blur(5px) }
-					header {  }
-					section { font-size: 18px; }
-					footer {  }
+				&:hover {
+					.img-container {
+						img {
+							opacity: 1;
+						}
+					}
 				}
+			}
 		}
 	}
 

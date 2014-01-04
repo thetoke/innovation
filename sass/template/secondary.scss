@@ -103,6 +103,8 @@
 				}
 
 				&.active {
+					background: url('paper.png') 0 0 repeat;
+					background-size: 250px;
 					background-color: white;
 					border-color: rgba(255, 255, 255, 0.5);
 					color: $base !important;

@@ -125,7 +125,7 @@ function ajaxify(href) {
 	if ($(window).scrollTop() !== 0){
 		$('body, html').animate({
 			scrollTop: 0
-		}, 1000);
+		}, 0);
 	}
 
 	if ($(window).innerWidth() <= 992) {
@@ -143,7 +143,12 @@ function ajaxify(href) {
 
 		$('a.ajax', '#main').on('click', function(e) {
 			e.preventDefault();
+			$('li', '#secondary').removeClass('active');
 			ajaxify($(this).attr('href'));
+		});
+
+		$('a', '.post-preview').on('click',function(){
+			$(this).addClass('animated flipOutY')
 		});
 
 		setTimeout(function(){$('.site-title').css('background-image', "url("+$('h1:first-child', '#main').attr('data-bgi')+")").fadeIn(150); }, 300);
