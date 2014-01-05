@@ -339,6 +339,19 @@
 	}
 }
 
+.hellyesdeviceorientation {
+	.frame {
+		#primary {
+			#main {
+				.entry-title {
+					background-size: 200%;
+					background-position: -25%;
+				}
+			}
+		}
+	}
+}
+
 @include respond-to(md) {
 	.frame {
 		margin-top: 0;

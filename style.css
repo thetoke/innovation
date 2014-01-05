@@ -2496,6 +2496,10 @@ a {
     .frame {
       margin-bottom: 80px; } }
 
+.hellyesdeviceorientation .frame #primary #main .entry-title {
+  background-size: 200%;
+  background-position: -25%; }
+
 @media (max-width: 992px) {
   .frame {
     margin-top: 0;
