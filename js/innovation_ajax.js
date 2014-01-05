@@ -98,6 +98,16 @@ var scrollBottom = function(){
 	return $(document).height() - $(window).height() - $(window).scrollTop();
 }
 
+var canHandleOrientation;
+if (window.DeviceOrientationEvent) {
+    window.addEventListener("deviceorientation", handleOrientation, false);
+}
+
+function handleOrientation(event){
+  console.log("Orientation:" + event.alpha + ", " + event.beta + ", " + event.gamma);
+  canHandleOrientation = event; // will be either null or with event data
+}
+
 function uQSP(uri, key, value) {
   var re = new RegExp("([?|&])" + key + "=.*?(&|$)", "i");
   separator = uri.indexOf('?') !== -1 ? "&" : "?";
@@ -211,20 +221,23 @@ $(document).ready(function() {
 		}
 	});
 
-	window.addEventListener('deviceorientation', function(eventData) {
-		if ($(window).innerWidth() <= 992) {
-			var yTilt = Math.round((-eventData.beta + 90) * (40/180) - 40);
-			var xTilt = Math.round(-eventData.gamma * (20/180) - 20);
-			if (xTilt > 0) {
-				xTilt = -xTilt;
-			} else if (xTilt < -40) {
-				xTilt = -(xTilt + 80);
-			}
+	if (canHandleOrientation) {
+		$('body').addClass('hellyesdeviceorientation');
+		window.addEventListener('deviceorientation', function(eventData) {
+			if ($(window).innerWidth() <= 992) {
+				var yTilt = Math.round((-eventData.beta + 90) * (40/180));
+				var xTilt = Math.round(-eventData.gamma * (20/180));
+				if (xTilt > 0) {
+					xTilt = -xTilt;
+				} else if (xTilt < -40) {
+					xTilt = -(xTilt + 80);
+				}
 
-			var backgroundPositionValue = yTilt + 'px ' + xTilt + "px";
-			$('.entry-title').css("background-position", backgroundPositionValue);
-		}
-	}, false);
+				var backgroundPositionValue = yTilt + 'px ' + xTilt + "px";
+				$('.entry-title').css("background-position", backgroundPositionValue);
+			}
+		}, false);
+	}
 
 	// Toggles collapsed class to nav (desktop)
 	$('#secondary').hover(function() {
