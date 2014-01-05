@@ -154,15 +154,13 @@
 
 			a {
 				color: $cta;
-				border: 3px solid #ffffff;
-				border-radius: 25px;
-				padding: 0 10px;
+				text-shadow: 0px 1px 0px rgba(0,0,0,.1);
 				text-decoration: none !important;
 				position: relative;
-				background-color: white;
-				box-shadow: 0 0 0 3px lighten($base, 70%);
-				margin: 3px;
 				display: inline-block;
+				border: 0;
+				padding: 0;
+				text-decoration: underline !important;
 
 				&:hover {
 					color: black;
@@ -181,8 +179,15 @@
 				}
 			}
 
-			h2, h3, h4, h5, h6, p, span { font-family: "freight-text-pro",sans-serif; line-height: 175%; margin-bottom: 50px; text-shadow: 0px 1px 0px rgba(0,0,0,.1); }
-			p { letter-spacing: .01rem; font-weight: 400; font-style: normal; font-size: 22px; line-height: 35px; }
+			h2, h3, h4, h5, h6, p, span { font-family: "freight-text-pro",sans-serif; line-height: 175%; margin-bottom:30px; text-shadow: 0px 1px 0px rgba(0,0,0,.1); }
+			p { 
+				letter-spacing: .01rem; font-weight: 400; font-style: normal; font-size: 22px; line-height: 1.5;
+
+				@include respond-to(sm) {
+					font-size: 20px;
+					line-height: 1.4;
+				}
+			}
 			blockquote{
 				margin: 0 0px 0 -25px;
 				p { margin-bottom: 4px; }
@@ -235,14 +240,21 @@
 				text-align: center;
 			}
 			h2 {
-				font-size: 45px;
-				line-height: 150%;
+				font-size: 35px;
+				line-height: 100%;
 				font-family: "freight-text-pro",sans-serif;
-				color: $base;
+				color: #3b3d43;
 				font-weight: 100;
-				width: 125%;
-				margin-left:-12.5%;
-				text-align: center;
+				width: 100%;
+				margin-left: auto;
+				margin: 0;
+				font-weight: 600;
+				margin-bottom: 10px;
+
+				@include respond-to(md) {
+					width: 100%;
+					margin-left: 0;
+				}
 			}
 			.entry-meta {
 				min-height: 100px;

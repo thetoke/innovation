@@ -199,7 +199,7 @@ $(document).ready(function() {
 					xTilt = -(xTilt + 80);
 				}
 
-				var backgroundPositionValue = yTilt + 'px ' + xTilt + "px";
+				var backgroundPositionValue = xTilt + 'px ' + yTilt + "px";
 				$('.entry-title, .site-title').css("background-position", backgroundPositionValue);
 			}
 		}, false);

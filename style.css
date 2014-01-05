@@ -2339,15 +2339,13 @@ a {
           height: 100%; }
       .frame #primary article a {
         color: #5facff;
-        border: 3px solid #ffffff;
-        border-radius: 25px;
-        padding: 0 10px;
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
         text-decoration: none !important;
         position: relative;
-        background-color: white;
-        box-shadow: 0 0 0 3px #f1f1f2;
-        margin: 3px;
-        display: inline-block; }
+        display: inline-block;
+        border: 0;
+        padding: 0;
+        text-decoration: underline !important; }
         .frame #primary article a:hover {
           color: black; }
         .frame #primary article a:active {
@@ -2360,14 +2358,18 @@ a {
       .frame #primary article h2, .frame #primary article h3, .frame #primary article h4, .frame #primary article h5, .frame #primary article h6, .frame #primary article p, .frame #primary article span {
         font-family: "freight-text-pro",sans-serif;
         line-height: 175%;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); }
       .frame #primary article p {
         letter-spacing: .01rem;
         font-weight: 400;
         font-style: normal;
         font-size: 22px;
-        line-height: 35px; }
+        line-height: 1.5; }
+        @media (max-width: 740px) {
+          .frame #primary article p {
+            font-size: 20px;
+            line-height: 1.4; } }
       .frame #primary article blockquote {
         margin: 0 0px 0 -25px; }
         .frame #primary article blockquote p {
@@ -2413,14 +2415,20 @@ a {
         margin-left: -25%;
         text-align: center; }
       .frame #primary article h2 {
-        font-size: 45px;
-        line-height: 150%;
+        font-size: 35px;
+        line-height: 100%;
         font-family: "freight-text-pro",sans-serif;
         color: #3b3d43;
         font-weight: 100;
-        width: 125%;
-        margin-left: -12.5%;
-        text-align: center; }
+        width: 100%;
+        margin-left: auto;
+        margin: 0;
+        font-weight: 600;
+        margin-bottom: 10px; }
+        @media (max-width: 992px) {
+          .frame #primary article h2 {
+            width: 100%;
+            margin-left: 0; } }
       .frame #primary article .entry-meta {
         min-height: 100px;
         padding-top: 25px; }
