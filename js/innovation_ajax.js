@@ -94,6 +94,15 @@ var Konami = function (callback) {
 	return konami;
 };
 
+var canHandleOrientation;
+if (window.DeviceOrientationEvent) {
+	window.addEventListener("deviceorientation", handleOrientation, false);
+}
+
+function handleOrientation(event){
+	canHandleOrientation = event; // will be either null or with event data
+}
+
 var scrollBottom = function(){
 	return $(document).height() - $(window).height() - $(window).scrollTop();
 }
@@ -129,12 +138,11 @@ function ajaxify(href) {
 	}
 
 	if ($(window).innerWidth() <= 992) {
-		$('body').addClass('overflow-fix');
 		$('.frame').addClass('collapsed');
 	}
 	$('#main').load(uQSP(href, "ajax", 1), {ajax: 1}, function(responseText, textStatus, XMLHttpRequest) {
 		setTimeout(function(){$('#primary').removeClass('bounceOutDown').addClass('bounceInUp'); $('.site-footer').css({ transform: "translateY(" + scrollBottom()/2 + "px)" }); }, 600);
-
+		$('.frame').addClass('collapsed');
 		$('.spinner').removeClass('bounceIn').addClass('bounceOut');
 
 		$("a", ".post-navigation").each(function(){
@@ -179,28 +187,59 @@ easter_egg.load();
 
 $(document).ready(function() {
 
+	// if the screen size is small
 	if ($(window).innerWidth() <= 992) {
-		$('body').toggleClass('overflow-fix');
-		$('.frame').toggleClass('collapsed');
+		$('body').removeClass('overflow-fix');
+		$('.frame').addClass('collapsed');
+	} // if the screen size is large
+	else {
+		$('.site-footer').css({ transform: "translateY(" + scrollBottom()/2 + "px)" });
 	}
-
-	$('.site-footer').css({ transform: "translateY(" + scrollBottom()/2 + "px)" });
 
 	// parallax header
 	$(window).scroll(function() {
-		var scroll = $(window).scrollTop(), slowScroll = scroll/2;
-		$('.site-title').css({ transform: "translateY(-" + slowScroll + "px)" });
-		$('.entry-title').css("background-position", "0 -" + slowScroll + "px");
+		if ($(window).innerWidth() > 992) {
+			var scroll = $(window).scrollTop(), slowScroll = scroll/2;
+			$('.site-title').css({ transform: "translateY(-" + slowScroll + "px)" });
+			$('.entry-title').css("background-position", "0 -" + slowScroll + "px");
+		}
 	});
 
+	// parallax footer
 	$(window).scroll(function() {
-		var scroll = scrollBottom(), slowScroll = scroll/2;
-		$('.site-footer').css({ transform: "translateY(" + slowScroll + "px)" });
+		if ($(window).innerWidth() > 992) {
+			var scroll = scrollBottom(), slowScroll = scroll/2;
+			$('.site-footer').css({ transform: "translateY(" + slowScroll + "px)" });
+		}
 	});
 
-	// Mobile fixes for fixed position navigation
-	if ($(window).innerWidth() <= 992) {
-		$('body').addClass('overflow-fix');
+	$(window).resize(function(){
+		if ($(window).innerWidth() <= 992) {
+			$('.site-footer, .site-header').css({ transform: "translateY(0px)" });
+			$('.entry-title').css("background-position", "0 0");
+		}
+	});
+
+	if (($(window).innerWidth() <= 992) && window.DeviceMotionEvent && !canHandleOrientation) {
+		window.addEventListener('devicemotion', handleMotion, false);
+	}
+
+	function handleMotion(event) {
+		if(event.acceleration) {
+			var yTilt = Math.round((-event.acceleration.y + 90) * (40/180) - 40);
+			var xTilt = Math.round(-event.acceleration.x * (20/180) - 20);
+			if (xTilt > 0) {
+				xTilt = -xTilt;
+			} else if (xTilt < -40) {
+				xTilt = -(xTilt + 80);
+			}
+
+			var backgroundPositionValue = yTilt + 'px ' + xTilt + "px";
+			$('.entry-title').css("background-position", backgroundPositionValue);
+		}
+		else {
+			console.log("Motion AccelerationGravity: " + event.accelerationIncludingGravity.x + ", " + event.accelerationIncludingGravity.y + ", " + event.accelerationIncludingGravity.z);
+		}
 	}
 
 	// Toggles collapsed class to nav (desktop)
@@ -217,8 +256,13 @@ $(document).ready(function() {
 	// Toggles collapsed class to nav (mobile)
 	$('h1.widget-title').click(function(){
 		if ($(window).innerWidth() <= 992) {
-			$('body').toggleClass('overflow-fix');
-			$('.frame').toggleClass('collapsed');
+			if ($('.frame').hasClass('collapsed')) {
+				$('body').addClass('overflow-fix');
+				$('.frame').removeClass('collapsed');
+			} else {
+				$('body').removeClass('overflow-fix');
+				$('.frame').addClass('collapsed');
+			}
 		}
 	});
 
@@ -235,6 +279,7 @@ $(document).ready(function() {
 	// Make ajax request
 	$('a.ajax').on('click', function(e) {
 		e.preventDefault();
+		$('.frame').addClass('collapsed');
 		$('li', '#secondary').removeClass('active');
 		if ($(window).innerWidth() <= 992) {
 			$('body').removeClass('overflow-fix');

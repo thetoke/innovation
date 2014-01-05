@@ -100,11 +100,29 @@
 				}
 			}
 			@include respond-to(md) {
-				height: auto;
 				a {
-					width: 100%;
-					float: none;
-					border-bottom: 1px solid #f1f1f2;
+					width: 50%;
+					float: left;
+				}
+			}
+			@include respond-to(xs) {
+				margin: 0;
+				clear: both;
+				a {
+					width: 50%;
+					float: left;
+					padding: 0;
+
+					.mtk-arrow-left, .mtk-arrow-right {
+						left: 0;
+						&:before {
+							font-size: 160px !important;
+						}
+						.preview-title {
+							font-size: 24px;
+							line-height: 34px;
+						}
+					}
 				}
 			}
 		}
