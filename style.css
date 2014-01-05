@@ -2517,7 +2517,12 @@ a {
       margin-bottom: 80px; } }
 
 .hellyesdeviceorientation .frame #primary #main .entry-title {
-  background-size: 200%;
+  -webkit-transition: background-position 1ms ease, 1s;
+  -webkit-transition-delay: 0ms, 0s;
+  -moz-transition: background-position 1ms ease 0ms, 1s;
+  -o-transition: background-position 1ms ease 0ms, 1s;
+  transition: background-position 1ms ease 0ms, 1s;
+  background-size: 100%;
   background-position: -25%; }
 
 @media (max-width: 992px) {

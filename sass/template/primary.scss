@@ -368,7 +368,8 @@
 		#primary {
 			#main {
 				.entry-title {
-					background-size: 200%;
+					@include single-transition(background-position 1ms ease 0ms);
+					background-size: 100%;
 					background-position: -25%;
 				}
 			}
