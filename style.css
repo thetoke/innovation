@@ -2365,7 +2365,8 @@ a {
         font-family: "freight-text-pro",sans-serif;
         line-height: 175%;
         margin-bottom: 30px;
-        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); }
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+        line-height: 1; }
       .frame #primary article p {
         letter-spacing: .01rem;
         font-weight: 400;
