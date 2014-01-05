@@ -54,9 +54,17 @@
 			margin-bottom: 0;
 		}
 
+		.post-navigation {
+			h1 {
+				display: none;
+			}
+		}
+
 		#primary {
 			#main {
 				padding-top: 100px;
+				min-height: initial;
+				padding-bottom: 0;
 				h1.entry-title {
 					height: auto;
 					line-height: auto !important;

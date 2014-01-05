@@ -2946,8 +2946,12 @@ a {
     display: block; }
   .single-format-quote .frame {
     margin-bottom: 0; }
+  .single-format-quote .post-navigation h1 {
+    display: none; }
   .single-format-quote #primary #main {
-    padding-top: 100px; }
+    padding-top: 100px;
+    min-height: initial;
+    padding-bottom: 0; }
     .single-format-quote #primary #main h1.entry-title {
       height: auto;
       line-height: auto !important;
