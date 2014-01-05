@@ -132,7 +132,15 @@ function ajaxify(href) {
 		$('.frame').addClass('collapsed');
 	}
 	$('#main').load(uQSP(href, "ajax", 1), {ajax: 1}, function(responseText, textStatus, XMLHttpRequest) {
-		setTimeout(function(){$('#primary').removeClass('bounceOutDown').addClass('bounceInUp'); $('.site-footer').css({ transform: "translateY(" + scrollBottom()/2 + "px)" }); }, 600);
+		setTimeout(function(){
+			$('#primary').removeClass('bounceOutDown').addClass('bounceInUp');
+			if ($(window).innerWidth() > 992) {
+				$('.site-footer').css({ transform: "translateY(" + scrollBottom()/2 + "px)" });
+			}
+			else {
+				$('.site-footer').css({ transform: "translateY(0px)" });
+			}
+		}, 600);
 		$('.frame').addClass('collapsed');
 		$('.spinner').removeClass('bounceIn').addClass('bounceOut');
 
