@@ -2346,7 +2346,8 @@ a {
         position: relative;
         background-color: white;
         box-shadow: 0 0 0 3px #f1f1f2;
-        margin: 3px; }
+        margin: 3px;
+        display: inline-block; }
         .frame #primary article a:hover {
           color: black; }
         .frame #primary article a:active {
@@ -2371,6 +2372,9 @@ a {
         margin: 0 0px 0 -25px; }
         .frame #primary article blockquote p {
           margin-bottom: 4px; }
+      .frame #primary article div.thumbnail p {
+        margin-bottom: 4px;
+        text-align: center; }
       .frame #primary article h1.entry-title {
         font-family: "league-gothic", 'Helvetica','Open Sans', serif;
         text-align: center;
