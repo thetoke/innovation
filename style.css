@@ -2177,6 +2177,7 @@ a {
 
 #content {
   min-height: 100%;
+  padding-bottom: 15px;
   background-color: #3b3d43; }
 
 @media (max-width: 992px) {
@@ -2230,7 +2231,7 @@ a {
       transform: translate3d(-50px, 0, 0); }
     .frame #primary .nav-links {
       height: 150px;
-      margin: 0 25px; }
+      margin: 25px; }
       .frame #primary .nav-links a {
         font-family: "league-gothic";
         text-transform: uppercase;
@@ -2836,76 +2837,74 @@ a {
       border-width: 3px;
       right: -70px;
       top: 5px; } }
-#page {
-  overflow: hidden; }
-  #page .spinner {
-    margin: 15% auto;
+#page .spinner {
+  margin: 15% auto;
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -ms-transform-origin: center;
+  -o-transform-origin: center;
+  transform-origin: center;
+  display: none; }
+  #page .spinner.animated {
+    display: block; }
+  #page .spinner .dot1, #page .spinner .dot2, #page .spinner .dot3, #page .spinner .dot4 {
     width: 150px;
     height: 150px;
-    position: fixed;
-    text-align: center;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9;
+    display: inline-block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: #9dd2b5;
+    border-radius: 100%;
+    opacity: .9;
     -webkit-transform-origin: center;
     -moz-transform-origin: center;
     -ms-transform-origin: center;
     -o-transform-origin: center;
     transform-origin: center;
-    display: none; }
-    #page .spinner.animated {
-      display: block; }
-    #page .spinner .dot1, #page .spinner .dot2, #page .spinner .dot3, #page .spinner .dot4 {
-      width: 150px;
-      height: 150px;
-      display: inline-block;
-      position: absolute;
-      top: 0%;
-      left: 0%;
-      background-color: #9dd2b5;
-      border-radius: 100%;
-      opacity: .9;
-      -webkit-transform-origin: center;
-      -moz-transform-origin: center;
-      -ms-transform-origin: center;
-      -o-transform-origin: center;
-      transform-origin: center;
-      -webkit-animation: spinner-bounce 4s infinite ease-in-out;
-      -moz-animation: spinner-bounce 4s infinite ease-in-out;
-      -ms-animation: spinner-bounce 4s infinite ease-in-out;
-      animation: spinner-bounce 4s infinite ease-in-out; }
-    #page .spinner .dot2 {
-      background-color: #6aa427;
-      -webkit-animation-delay: -1.0s;
-      -moz-animation-delay: -1.0s;
-      -ms-animation-delay: -1.0s;
-      animation-delay: -1.0s;
-      -webkit-animation-duration: -1.0s;
-      -moz-animation-duration: -1.0s;
-      -ms-animation-duration: -1.0s;
-      animation-duration: -1.0s; }
-    #page .spinner .dot3 {
-      background-color: #de5b1e;
-      -webkit-animation-delay: -2.0s;
-      -moz-animation-delay: -2.0s;
-      -ms-animation-delay: -2.0s;
-      animation-delay: -2.0s;
-      -webkit-animation-duration: -1.5s;
-      -moz-animation-duration: -1.5s;
-      -ms-animation-duration: -1.5s;
-      animation-duration: -1.5s; }
-    #page .spinner .dot4 {
-      background-color: #f0b747;
-      -webkit-animation-delay: -3s;
-      -moz-animation-delay: -3s;
-      -ms-animation-delay: -3s;
-      animation-delay: -3s;
-      -webkit-animation-duration: -3.0s;
-      -moz-animation-duration: -3.0s;
-      -ms-animation-duration: -3.0s;
-      animation-duration: -3.0s; }
+    -webkit-animation: spinner-bounce 4s infinite ease-in-out;
+    -moz-animation: spinner-bounce 4s infinite ease-in-out;
+    -ms-animation: spinner-bounce 4s infinite ease-in-out;
+    animation: spinner-bounce 4s infinite ease-in-out; }
+  #page .spinner .dot2 {
+    background-color: #6aa427;
+    -webkit-animation-delay: -1.0s;
+    -moz-animation-delay: -1.0s;
+    -ms-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+    -webkit-animation-duration: -1.0s;
+    -moz-animation-duration: -1.0s;
+    -ms-animation-duration: -1.0s;
+    animation-duration: -1.0s; }
+  #page .spinner .dot3 {
+    background-color: #de5b1e;
+    -webkit-animation-delay: -2.0s;
+    -moz-animation-delay: -2.0s;
+    -ms-animation-delay: -2.0s;
+    animation-delay: -2.0s;
+    -webkit-animation-duration: -1.5s;
+    -moz-animation-duration: -1.5s;
+    -ms-animation-duration: -1.5s;
+    animation-duration: -1.5s; }
+  #page .spinner .dot4 {
+    background-color: #f0b747;
+    -webkit-animation-delay: -3s;
+    -moz-animation-delay: -3s;
+    -ms-animation-delay: -3s;
+    animation-delay: -3s;
+    -webkit-animation-duration: -3.0s;
+    -moz-animation-duration: -3.0s;
+    -ms-animation-duration: -3.0s;
+    animation-duration: -3.0s; }
 
 .single-format-image #primary .entry-content img {
   width: 100%;
@@ -2945,8 +2944,8 @@ a {
 @media (max-width: 992px) {
   .single-format-quote .site-title {
     display: block; }
-  .single-format-quote #content {
-    min-height: 1200px; }
+  .single-format-quote .frame {
+    margin-bottom: 0; }
   .single-format-quote #primary #main {
     padding-top: 100px; }
     .single-format-quote #primary #main h1.entry-title {
@@ -2958,7 +2957,9 @@ a {
       line-height: auto !important;
       font-size: 75px !important; }
     .single-format-quote #primary #main .entry-social {
-      display: none; } }
+      display: none; }
+  .single-format-quote .site-footer {
+    position: relative; } }
 @media (max-width: 740px) {
   .single-format-quote #primary #main {
     padding-top: 100px; }

@@ -50,8 +50,8 @@
 			display: block;
 		}
 
-		#content {
-			min-height: 1200px
+		.frame {
+			margin-bottom: 0;
 		}
 
 		#primary {
@@ -71,6 +71,9 @@
 					display: none;
 				}
 			}
+		}
+		.site-footer {
+			position: relative;
 		}
 	}
 
