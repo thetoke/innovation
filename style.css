@@ -2533,7 +2533,7 @@ a {
           padding-top: 5px;
           padding-right: 5px;
           text-align: right;
-          text-shadow: 0px 1px 1px #555555; }
+          text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25); }
         .frame #primary #main .entry-content, .frame #primary #main .entry-meta, .frame #primary #main #disqus_thread {
           padding: 5px 15px; }
         .frame #primary #main .entry-meta .edit-link {
@@ -2615,20 +2615,20 @@ a {
         position: absolute;
         content: '';
         width: 100%;
-        height: 26%;
+        height: 27%;
         display: block; }
         .frame #secondary h1 .logo .stripe.orange {
           background-color: #de5b1e;
           top: 0; }
         .frame #secondary h1 .logo .stripe.yellow {
           background-color: #f0b747;
-          top: 25%; }
+          top: 24%; }
         .frame #secondary h1 .logo .stripe.green {
           background-color: #6aa427;
-          top: 50%; }
+          top: 48%; }
         .frame #secondary h1 .logo .stripe.blue {
           background-color: #9dd2b5;
-          top: 75%; }
+          top: 73%; }
   .frame #secondary aside {
     width: 200px;
     color: #666666; }
@@ -2718,7 +2718,7 @@ a {
       background-color: #3b3d43;
       z-index: 999;
       border-bottom: 1px solid #454545;
-      text-shadow: 0px 1px 1px #555555; }
+      text-shadow: 0px 1px 0px #000; }
       .frame #secondary h1 .logo {
         top: 13px;
         right: 13px;
@@ -2810,7 +2810,7 @@ a {
       right: -70px;
       top: 5px; }
       .frame.collapsed #secondary h1 .logo:after {
-        font-size: 56px; } }
+        font-size: 62px; } }
 @media (max-width: 480px) {
   .frame #secondary {
     padding-top: 25px; }

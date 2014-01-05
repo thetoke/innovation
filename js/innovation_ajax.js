@@ -186,7 +186,6 @@ easter_egg.load();
 
 $(document).ready(function() {
 
-
 	var canHandleOrientation;
 	if (window.DeviceOrientationEvent) {
 		window.addEventListener("deviceorientation", function(eventData) {
@@ -201,7 +200,7 @@ $(document).ready(function() {
 				}
 
 				var backgroundPositionValue = yTilt + 'px ' + xTilt + "px";
-				$('.entry-title').css("background-position", backgroundPositionValue);
+				$('.entry-title, .site-title').css("background-position", backgroundPositionValue);
 			}
 		}, false);
 	}
