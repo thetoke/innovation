@@ -104,7 +104,7 @@ if (window.DeviceOrientationEvent) {
 }
 
 function handleOrientation(event){
-  console.log("Orientation:" + event.alpha + ", " + event.beta + ", " + event.gamma);
+  alert("Orientation:" + event.alpha + ", " + event.beta + ", " + event.gamma);
   canHandleOrientation = event; // will be either null or with event data
 }
 
@@ -222,6 +222,7 @@ $(document).ready(function() {
 	});
 
 	if (canHandleOrientation) {
+		alert("device orientation");
 		$('body').addClass('hellyesdeviceorientation');
 		window.addEventListener('deviceorientation', function(eventData) {
 			if ($(window).innerWidth() <= 992) {
