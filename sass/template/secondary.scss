@@ -148,6 +148,7 @@
 			left: 0px;
 			padding-top: 50px;
 			overflow: scroll;
+			-webkit-overflow-scrolling: touch;
 
 			h1 {
 				@include single-transition(all, 250ms, ease, 0ms);

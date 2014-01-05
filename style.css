@@ -2177,7 +2177,7 @@ a {
 
 #content {
   min-height: 100%;
-  padding-bottom: 15px;
+  padding-bottom: 1px;
   background-color: #3b3d43; }
 
 @media (max-width: 992px) {
@@ -2699,7 +2699,8 @@ a {
     width: 100%;
     left: 0px;
     padding-top: 50px;
-    overflow: scroll; }
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch; }
     .frame #secondary h1 {
       -webkit-transition: all 250ms ease;
       -webkit-transition-delay: 0ms;
