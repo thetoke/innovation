@@ -94,15 +94,6 @@ var Konami = function (callback) {
 	return konami;
 };
 
-var canHandleOrientation;
-if (window.DeviceOrientationEvent) {
-	window.addEventListener("deviceorientation", handleOrientation, false);
-}
-
-function handleOrientation(event){
-	canHandleOrientation = event; // will be either null or with event data
-}
-
 var scrollBottom = function(){
 	return $(document).height() - $(window).height() - $(window).scrollTop();
 }
@@ -220,14 +211,10 @@ $(document).ready(function() {
 		}
 	});
 
-	if (($(window).innerWidth() <= 992) && window.DeviceMotionEvent && !canHandleOrientation) {
-		window.addEventListener('devicemotion', handleMotion, false);
-	}
-
-	function handleMotion(event) {
-		if(event.acceleration) {
-			var yTilt = Math.round((-event.acceleration.y + 90) * (40/180) - 40);
-			var xTilt = Math.round(-event.acceleration.x * (20/180) - 20);
+	window.addEventListener('deviceorientation', function(eventData) {
+		if ($(window).innerWidth() <= 992) {
+			var yTilt = Math.round((-eventData.beta + 90) * (40/180) - 40);
+			var xTilt = Math.round(-eventData.gamma * (20/180) - 20);
 			if (xTilt > 0) {
 				xTilt = -xTilt;
 			} else if (xTilt < -40) {
@@ -237,10 +224,7 @@ $(document).ready(function() {
 			var backgroundPositionValue = yTilt + 'px ' + xTilt + "px";
 			$('.entry-title').css("background-position", backgroundPositionValue);
 		}
-		else {
-			console.log("Motion AccelerationGravity: " + event.accelerationIncludingGravity.x + ", " + event.accelerationIncludingGravity.y + ", " + event.accelerationIncludingGravity.z);
-		}
-	}
+	}, false);
 
 	// Toggles collapsed class to nav (desktop)
 	$('#secondary').hover(function() {
