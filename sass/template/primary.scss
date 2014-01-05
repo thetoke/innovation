@@ -369,7 +369,7 @@
 			#main {
 				.entry-title {
 					@include single-transition(background-position 1ms ease 0ms);
-					background-size: 100%;
+					background-size: 125%;
 					background-position: -25%;
 				}
 			}
