@@ -2502,6 +2502,11 @@ a {
   background-position: -25%; }
 
 @media (max-width: 992px) {
+  .site-title {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left; }
+
   .frame {
     margin-top: 0;
     margin-bottom: 300px; }

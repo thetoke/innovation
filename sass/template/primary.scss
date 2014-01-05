@@ -353,6 +353,9 @@
 }
 
 @include respond-to(md) {
+	.site-title {
+		@include hide-text();
+	}
 	.frame {
 		margin-top: 0;
 		margin-bottom: 300px;
