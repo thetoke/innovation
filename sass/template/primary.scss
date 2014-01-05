@@ -387,6 +387,7 @@
 					padding-right: 5px;
 					text-align: right;
 					text-shadow: 0px 2px 0px rgba(0,0,0,.25);
+					height: auto;
 				}
 				.entry-content, .entry-meta, #disqus_thread {
 					padding: 5px 15px;
@@ -418,9 +419,9 @@
 			#main {
 				.entry-title {
 					font-size: 55px;
-					line-height: 100px;
-					height: 85px;
-					padding-top: 0;
+					line-height: 68px;
+					height: auto;
+					padding-top: 12px;
 					padding-right: 5px;
 					text-align: right;
 				}
@@ -435,8 +436,9 @@
 			#main {
 				.entry-title {
 					font-size: 36px;
-					line-height: 100px;
-					height: 85px;
+					line-height: 42px;
+					min-height: 85px;
+					padding-left: 75px;
 				}
 			}
 		}
