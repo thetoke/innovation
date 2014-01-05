@@ -152,12 +152,20 @@
 				}
 			}
 
+			hr {
+				margin-top: 30px;
+				margin-bottom: 30px;
+				border: 0;
+				border-top: 1px solid #ddd;
+				width: 20%;
+			}
+
 			a {
 				color: $cta;
 				text-shadow: 0px 1px 0px rgba(0,0,0,.1);
 				text-decoration: none !important;
 				position: relative;
-				display: inline-block;
+				display: inline;
 				border: 0;
 				padding: 0;
 				text-decoration: underline !important;
