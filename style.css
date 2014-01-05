@@ -2543,7 +2543,8 @@ a {
           padding-right: 5px;
           text-align: right;
           text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
-          height: auto; }
+          height: auto;
+          padding-left: 120px; }
         .frame #primary #main .entry-content, .frame #primary #main .entry-meta, .frame #primary #main #disqus_thread {
           padding: 5px 15px; }
         .frame #primary #main .entry-meta .edit-link {
@@ -2566,6 +2567,7 @@ a {
     font-size: 55px;
     line-height: 68px;
     height: auto;
+    padding-left: 75px;
     padding-top: 12px;
     padding-right: 5px;
     text-align: right; } }
@@ -2573,8 +2575,7 @@ a {
   .frame #primary #main .entry-title {
     font-size: 36px;
     line-height: 42px;
-    min-height: 85px;
-    padding-left: 75px; } }
+    min-height: 85px; } }
 .frame #secondary {
   position: fixed;
   z-index: 1000;
