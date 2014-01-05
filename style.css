@@ -2180,6 +2180,9 @@ a {
   padding-bottom: 1px;
   background-color: #3b3d43; }
 
+#page {
+  overflow: hidden; }
+
 @media (max-width: 992px) {
   .site-title {
     display: none; }

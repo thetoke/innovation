@@ -59,6 +59,10 @@ a {
 	background-color: $base;
 }
 
+#page {
+	overflow: hidden;
+}
+
 
 @include respond-to(md) {
 
