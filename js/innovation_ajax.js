@@ -120,7 +120,7 @@ function ajaxify(href) {
 	$('.spinner').removeClass('bounceOut').addClass('animated bounceIn');
 
 	$('.site-title').fadeOut();
-	$('#primary').removeClass('bounceInUp').addClass('animated bounceOutDown');
+	$('#primary').removeClass('bounceInUp delay-500').addClass('animated bounceOutDown');
 
 	if ($(window).scrollTop() !== 0){
 		$('body, html').animate({
@@ -133,7 +133,7 @@ function ajaxify(href) {
 	}
 	$('#main').load(uQSP(href, "ajax", 1), {ajax: 1}, function(responseText, textStatus, XMLHttpRequest) {
 		setTimeout(function(){
-			$('#primary').removeClass('bounceOutDown').addClass('bounceInUp');
+			$('#primary').removeClass('bounceOutDown').addClass('bounceInUp delay-500');
 			if ($(window).innerWidth() > 992) {
 				$('.site-footer').css({ transform: "translateY(" + scrollBottom()/2 + "px)" });
 			}
@@ -185,7 +185,6 @@ easter_egg.code = function() {
 easter_egg.load();
 
 $(document).ready(function() {
-
 	var canHandleOrientation;
 	if (window.DeviceOrientationEvent) {
 		window.addEventListener("deviceorientation", function(eventData) {

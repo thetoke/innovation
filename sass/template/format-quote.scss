@@ -22,6 +22,8 @@
 					-webkit-text-fill-color: initial;
 					text-align: left;
 					@include text-shadow(0px 2px 0px rgba(0,0,0,.25));
+					-webkit-text-stroke-width: 0px !important;
+					-webkit-text-stroke-color: rgba(0,0,0,0) !important;
 				}
 				h2.entry-subtitle {
 					margin-top:40px;
