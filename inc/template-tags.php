@@ -142,12 +142,12 @@ function innovation_ajax_posted_on() {
 		esc_html( get_the_modified_date() )
 	);
 
-	printf( __( '<span class="posted-on">Posted on %1$s</span><span class="byline"> by %2$s</span>', 'innovation_ajax' ),
+	printf( __( 'Written by %2$s <br /><br /> Posted on %1$s ', 'innovation_ajax' ),
 		sprintf( '<a href="%1$s" class="ajax" rel="bookmark">%2$s</a>',
 			esc_url( get_permalink() ),
 			$time_string
 		),
-		sprintf( '<span class="author vcard"><a class="url fn n ajax" href="%1$s">%2$s</a></span>',
+		sprintf( '<a class="url fn n ajax" href="%1$s">%2$s</a>',
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			esc_html( get_the_author() )
 		)

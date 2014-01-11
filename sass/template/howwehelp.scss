@@ -1,0 +1,94 @@
+.howwehelp-container {
+	width: 97.5%;
+	margin: 0 auto;
+
+	.post-preview {
+		width: 248px;
+		height: 208px;
+		float: left;
+		display: block;
+
+		p {
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			margin-bottom: 5px;
+		}
+
+		a {
+			display: block;
+			color: $base;
+			z-index: 0;
+			overflow: hidden;
+			height: 100%;
+			width: 100%;
+			border-radius: 0;
+			box-shadow: none;
+			border: 0;
+			background-color: transparent;
+			box-shadow: none;
+			text-decoration: none;
+
+			* { position: relative; z-index: 1 }
+			.img-container {
+				position: relative;
+				overflow: hidden;
+				height: 170px;
+				width: 238px;
+
+				img {
+					width: 130%;
+					height: auto;
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					z-index: 0;
+					opacity: .6;
+				}
+			}
+			header {
+				font-family: "league-gothic", 'Helvetica','Open Sans', serif;
+				color: #333;
+				text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1);
+				overflow: hidden;
+				text-overflow: ellipsis;
+				height: 38px;
+				width: 238px;
+				white-space: nowrap;
+				text-align: center;
+			}
+
+			&:hover {
+				.img-container {
+					img {
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		@include respond-to(md) {
+			width: 33.333333%;
+			height: 33.333333%;
+
+			a {
+				display: block !important;
+				.img-container {
+					margin: 0 auto;
+				}
+				header {
+					width: 100%;
+
+				}
+			}
+		}
+
+		@include respond-to(xs) {
+			margin: 0 auto;
+			float: none;
+		}
+	}
+}

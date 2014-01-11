@@ -194,7 +194,7 @@ $(document).ready(function() {
 			if ($(window).innerWidth() <= 992) {
 				$('body').addClass('hellyesdeviceorientation');
 				var yTilt = Math.round((-eventData.beta + 90) * (40/180) - 20);
-				var xTilt = Math.round(-eventData.gamma * (20/180));
+				var xTilt = Math.round(-eventData.gamma * (20/180) - 40);
 				if (xTilt > 0) {
 					xTilt = -xTilt;
 				} else if (xTilt < -40) {

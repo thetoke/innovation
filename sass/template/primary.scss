@@ -168,7 +168,7 @@
 				display: inline;
 				border: 0;
 				padding: 0;
-				text-decoration: underline !important;
+				text-decoration: underline;
 
 				&:hover {
 					color: black;
@@ -184,6 +184,21 @@
 				&.btn {
 					color: white;
 					font-size: 18px;
+					padding: 5px;
+					border-radius: 5px;
+					text-decoration: none !important;
+
+					b:before {
+						font-size: 18px !important;
+						width: 30px !important;
+						height: 20px !important;
+						padding: 0px 0px !important;
+						display: inline-block !important;
+						position: relative !important;
+						left: 0px !important;
+						top: 2px !important;
+						color: #FFF !important;
+					}
 				}
 			}
 
@@ -270,10 +285,7 @@
 					margin-left: 0;
 				}
 			}
-			.entry-meta {
-				min-height: 100px;
-				padding-top: 25px;
-			}
+
 			.edit-link {
 				position: absolute;
 				top: -122px;
@@ -283,80 +295,15 @@
 				margin: 0 auto;
 				display: block;
 			}
-		}
-
-		.post-preview {
-			width: 248px;
-			height: 208px;
-			float: left;
-			display: block;
-
-			p {
-				white-space: nowrap;
-				text-overflow: ellipsis;
-				overflow: hidden;
-				margin-bottom: 5px;
-			}
-
-			a {
-				display: block;
-				color: $base;
-				z-index: 0;
-				overflow: hidden;
-				height: 100%;
-				width: 100%;
-				border-radius: 0;
-				box-shadow: none;
-				border: 0;
-				background-color: transparent;
-				box-shadow: none;
-
-				* { position: relative; z-index: 1 }
-				.img-container {
-					position: relative;
-					overflow: hidden;
-					height: 170px;
-					width: 238px;
-
-					img {
-						width: 130%;
-						height: auto;
-						display: block;
-						position: absolute;
-						top: 0;
-						left: 0;
-						right: 0;
-						bottom: 0;
-						z-index: 0;
-						opacity: .6;
-					}
-				}
-				header {
-					font-family: "league-gothic", 'Helvetica','Open Sans', serif;
-					color: #333;
-					text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1);
-					overflow: hidden;
-					text-overflow: ellipsis;
-					height: 38px;
-					width: 238px;
-					white-space: nowrap;
+			.entry-meta {
+				span {
 					text-align: center;
+					width: 100%;
+					display: inline-block;
 				}
-
-				&:hover {
-					.img-container {
-						img {
-							opacity: 1;
-						}
-					}
-				}
-			}
-
-			@include respond-to(xs) {
-				margin: 0 auto;
-				float: none;
 			}
 		}
+
 	}
 
 	&.collapsed {
@@ -421,14 +368,8 @@
 					height: auto;
 					padding-left: 120px;
 				}
-				.entry-content, .entry-meta, #disqus_thread {
+				.entry-content, #disqus_thread {
 					padding: 5px 15px;
-				}
-				.entry-meta {
-					.edit-link {
-						position: absolute;
-						top: 0;
-					}
 				}
 			}
 		}
