@@ -76,7 +76,7 @@ a {
 		padding: 0;
 	}
 
-	body.overflow-fix {
-		overflow: hidden;
+	body.overflow-fix, html.overflow-fix {
+		overflow: hidden !important;
 	}
 }
