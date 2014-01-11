@@ -1,5 +1,5 @@
 .howwehelp-container {
-	width: 97.5%;
+	width: 100%;
 	margin: 0 auto;
 
 	.post-preview {
@@ -99,5 +99,9 @@
 			margin-bottom: 15px;
 			float: none;
 		}
+	}
+
+	@include respond-to(md) {
+		width: 97.5%;
 	}
 }

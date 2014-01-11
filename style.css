@@ -3189,7 +3189,7 @@ a {
             text-align: center; } }
 
 .howwehelp-container {
-  width: 97.5%;
+  width: 100%;
   margin: 0 auto; }
   .howwehelp-container .post-preview {
     width: 248px;
@@ -3267,6 +3267,9 @@ a {
         margin: 0 auto;
         margin-bottom: 15px;
         float: none; } }
+  @media (max-width: 992px) {
+    .howwehelp-container {
+      width: 97.5%; } }
 
 .konami {
   display: none; }
