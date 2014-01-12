@@ -2530,7 +2530,8 @@ a {
             position: relative !important;
             left: 0px !important;
             top: 2px !important;
-            color: #FFF !important; }
+            color: #FFF !important;
+            -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1); }
       .frame #primary article h2, .frame #primary article h3, .frame #primary article h4, .frame #primary article h5, .frame #primary article h6, .frame #primary article p, .frame #primary article span {
         font-family: "freight-text-pro",sans-serif;
         line-height: 175%;

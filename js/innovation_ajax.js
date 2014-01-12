@@ -223,8 +223,11 @@ $(document).ready(function() {
 	// parallax header
 	$(window).scroll(function() {
 		if ($(window).innerWidth() > 992) {
-			var scroll = $(window).scrollTop(), slowScroll = scroll/2;
-			$('.site-title').css({ transform: "translateY(-" + slowScroll + "px)" });
+			var scroll = $(window).scrollTop(), slowScroll = scroll/2,blurMax = (slowScroll/2 >= 25) ? 25 : slowScroll/2;
+
+			$('.site-title').css({ transform: "translateY(-" + slowScroll + "px)",
+				'-webkit-filter': 'blur(' + blurMax + 'px) grayscale(' + (slowScroll / 2) + '%)'
+			});
 			$('.entry-title').css("background-position", "0 -" + slowScroll + "px");
 		}
 	});
