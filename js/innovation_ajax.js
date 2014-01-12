@@ -245,6 +245,16 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.site-title').on('click', function() {
+		$('#primary').addClass('animated').removeClass('delay-500');
+		if ($('#primary').hasClass('bounceOutDown')) {
+			$('#primary').removeClass('bounceOutDown').addClass('bounceInUp');
+		}
+		else {
+			$('#primary').addClass('bounceOutDown').removeClass('bounceInUp');
+		}
+	});
+
 	// Toggles collapsed class to nav (desktop)
 	$('#secondary').hover(function() {
 		if ($(window).innerWidth() > 992) {
