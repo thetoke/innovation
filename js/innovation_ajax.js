@@ -226,7 +226,7 @@ $(document).ready(function() {
 			var scroll = $(window).scrollTop(), slowScroll = scroll/2,blurMax = (slowScroll/2 >= 25) ? 25 : slowScroll/2;
 
 			$('.site-title').css({ transform: "translateY(-" + slowScroll + "px)",
-				'-webkit-filter': 'blur(' + blurMax + 'px) grayscale(' + (slowScroll / 2) + '%)'
+				'-webkit-filter': 'blur(' + Math.ceil(blurMax) + 'px) grayscale(' + (slowScroll / 2) + '%)'
 			});
 			$('.entry-title').css("background-position", "0 -" + slowScroll + "px");
 		}
