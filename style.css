@@ -3063,7 +3063,8 @@ a {
 .single-format-quote .site-title {
   text-indent: -119988px;
   overflow: hidden;
-  text-align: left; }
+  text-align: left;
+  -webkit-filter: blur(30px); }
 .single-format-quote #primary {
   background: transparent; }
   .single-format-quote #primary #main .entry-content h1.entry-title {

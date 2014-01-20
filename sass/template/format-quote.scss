@@ -2,6 +2,7 @@
 
 	.site-title {
 		@include hide-text();
+		-webkit-filter: blur(30px);
 	}
 
 	#primary {
